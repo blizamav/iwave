@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="iWave automatiza procesos, conecta datos y crea soluciones con IA para que las empresas trabajen mas rapido y con menos errores."
+    />
+    <title>iWave | Automatizacion, datos e IA para operaciones mas eficientes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas class="data-canvas" aria-hidden="true"></canvas>
+
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container nav-bar">
+          <a class="brand" href="#inicio" aria-label="Ir al inicio de iWave">
+            <img class="brand-logo" src="img/logo/iwave.jpg" alt="Logo iWave" />
+            <span class="brand-text-wrap">
+              <span class="brand-text">iWave</span>
+              <span class="brand-subtext">Automation • Data • AI</span>
+            </span>
+          </a>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="main-menu"
+            aria-label="Abrir menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="site-nav" id="main-menu" aria-label="Principal">
+            <a href="#servicios">Servicios</a>
+            <a href="#impacto">Impacto</a>
+            <a href="#proceso">Proceso</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero-section" id="inicio">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <div class="hero-badge" data-reveal>
+                <span class="badge-pulse"></span>
+                Automatizacion inteligente para operaciones modernas
+              </div>
+              <h1 data-reveal>Automatizacion, datos e IA para operar <span class="text-glow">mas rapido</span></h1>
+              <p class="hero-text" data-reveal>
+                Elimina tareas manuales, conecta tus datos y toma decisiones con informacion clara en tiempo real.
+              </p>
+
+              <div class="hero-actions" data-reveal>
+                <a class="button button-primary" href="https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20evaluar%20una%20automatizacion%20para%20mi%20negocio."
+                  >Hablar por WhatsApp</a
+                >
+                <a class="button button-secondary" href="#servicios"
+                  >Explorar soluciones</a
+                >
+              </div>
+
+              <div class="signal-strip" data-reveal aria-label="Capacidades iWave">
+                <span>Procesos</span>
+                <span>Datos</span>
+                <span>IA</span>
+                <span>Dashboards</span>
+              </div>
+            </div>
+
+            <div class="hero-visual" data-reveal aria-hidden="true">
+              <div class="dashboard-frame">
+                <div class="dashboard-header">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <div class="hero-brand-card">
+                  <img src="img/logo/iwave.jpg" alt="" />
+                  <div>
+                    <strong>Centro operativo iWave</strong>
+                    <p>Procesos activos, datos claros y alertas utiles.</p>
+                  </div>
+                </div>
+
+                <div class="dashboard-grid">
+                  <article class="dashboard-card dashboard-card-wide">
+                    <div class="card-label">Flujo automatizado</div>
+                    <div class="flow-track">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="flow-steps">
+                      <div>Entrada</div>
+                      <div>Validacion</div>
+                      <div>Entrega</div>
+                    </div>
+                  </article>
+
+                  <article class="dashboard-card">
+                    <div class="card-label">Trabajo manual</div>
+                    <strong>-42%</strong>
+                    <p>menos carga operativa manual</p>
+                  </article>
+
+                  <article class="dashboard-card">
+                    <div class="card-label">Velocidad de respuesta</div>
+                    <strong>24/7</strong>
+                    <p>automatizaciones siempre disponibles</p>
+                  </article>
+
+                  <article class="dashboard-card dashboard-card-tall">
+                    <div class="card-label">Datos y monitoreo</div>
+                    <div class="chart-bars">
+                      <span style="--size: 68%"></span>
+                      <span style="--size: 84%"></span>
+                      <span style="--size: 58%"></span>
+                      <span style="--size: 92%"></span>
+                      <span style="--size: 76%"></span>
+                    </div>
+                    <ul class="metric-list">
+                      <li><span>Alertas</span><strong>Activas</strong></li>
+                      <li><span>Errores manuales</span><strong>Baja</strong></li>
+                      <li><span>Visibilidad</span><strong>Alta</strong></li>
+                    </ul>
+                  </article>
+
+                  <article class="dashboard-card dashboard-card-wide">
+                    <div class="card-label">Integracion operativa</div>
+                    <div class="network-map">
+                      <span class="node node-a"></span>
+                      <span class="node node-b"></span>
+                      <span class="node node-c"></span>
+                      <span class="node node-d"></span>
+                    </div>
+                    <p>
+                      Datos conectados para operar con mas control.
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container live-flow" data-reveal aria-label="Flujo de automatizacion iWave">
+            <div class="live-flow-track">
+              <span>Planillas manuales</span>
+              <strong>-></strong>
+              <span>Datos conectados</span>
+              <strong>-></strong>
+              <span>Automatizacion</span>
+              <strong>-></strong>
+              <span>Alertas</span>
+              <strong>-></strong>
+              <span>Dashboard en tiempo real</span>
+              <strong>-></strong>
+              <span>Mejores decisiones</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section outcome-section" aria-label="Resultados iWave">
+          <div class="container outcome-strip" data-reveal>
+            <article>
+              <span>01</span>
+              <strong>Menos trabajo manual</strong>
+              <p>Automatiza tareas que consumen horas.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <strong>Datos en tiempo real</strong>
+              <p>Convierte datos dispersos en accion.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <strong>Procesos mas rapidos</strong>
+              <p>Flujo continuo entre tareas criticas.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <strong>Menos errores</strong>
+              <p>Menos digitacion, omisiones y reprocesos.</p>
+            </article>
+            <article>
+              <span>05</span>
+              <strong>Mejores decisiones</strong>
+              <p>Indicadores claros para decidir rapido.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section dashboard-showcase" aria-label="Vista operativa iWave">
+          <div class="container dashboard-showcase-grid">
+            <div class="section-heading dashboard-showcase-copy" data-reveal>
+              <p class="eyebrow">Centro operativo</p>
+              <h2>Visualiza procesos, datos y alertas en un solo flujo</h2>
+              <p>Una capa de control para entender que ocurre, automatizar tareas y actuar mas rapido.</p>
+            </div>
+
+            <div class="hero-visual dashboard-showcase-visual" data-reveal aria-hidden="true">
+              <div class="dashboard-frame">
+                <div class="dashboard-header">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <div class="hero-brand-card">
+                  <img src="img/logo/iwave.jpg" alt="" />
+                  <div>
+                    <strong>Centro operativo iWave</strong>
+                    <p>Procesos activos, datos claros y alertas utiles.</p>
+                  </div>
+                </div>
+
+                <div class="dashboard-grid">
+                  <article class="dashboard-card dashboard-card-wide">
+                    <div class="card-label">Flujo automatizado</div>
+                    <div class="flow-track">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="flow-steps">
+                      <div>Entrada</div>
+                      <div>Validacion</div>
+                      <div>Entrega</div>
+                    </div>
+                  </article>
+
+                  <article class="dashboard-card">
+                    <div class="card-label">Trabajo manual</div>
+                    <strong>-42%</strong>
+                    <p>menos carga operativa manual</p>
+                  </article>
+
+                  <article class="dashboard-card">
+                    <div class="card-label">Velocidad</div>
+                    <strong>24/7</strong>
+                    <p>automatizaciones disponibles</p>
+                  </article>
+
+                  <article class="dashboard-card dashboard-card-wide">
+                    <div class="card-label">Datos y monitoreo</div>
+                    <div class="chart-bars">
+                      <span style="--size: 68%"></span>
+                      <span style="--size: 84%"></span>
+                      <span style="--size: 58%"></span>
+                      <span style="--size: 92%"></span>
+                      <span style="--size: 76%"></span>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="section section-glow" id="servicios">
+          <div class="container">
+            <div class="section-heading" data-reveal>
+              <p class="eyebrow">Soluciones</p>
+              <h2>Automatiza, conecta y mide tu operacion</h2>
+              <p>
+                Soluciones enfocadas en ahorrar tiempo, reducir errores y dar visibilidad inmediata.
+              </p>
+            </div>
+
+            <div class="cards-grid services-grid">
+              <article class="info-card" data-reveal>
+                <div class="card-icon">01</div>
+                <h3>Automatizacion de procesos</h3>
+                <p>
+                  Flujos automaticos para tareas repetitivas y controles diarios.
+                </p>
+              </article>
+              <article class="info-card" data-reveal>
+                <div class="card-icon">02</div>
+                <h3>Reportes y dashboards</h3>
+                <p>
+                  Paneles claros para ver avances, desvios y oportunidades.
+                </p>
+              </article>
+              <article class="info-card" data-reveal>
+                <div class="card-icon">03</div>
+                <h3>Integracion de datos</h3>
+                <p>
+                  Conecta sistemas, planillas y fuentes clave sin duplicar trabajo.
+                </p>
+              </article>
+              <article class="info-card" data-reveal>
+                <div class="card-icon">04</div>
+                <h3>Soluciones con IA</h3>
+                <p>
+                  IA aplicada para clasificar, responder, analizar y acelerar.
+                </p>
+              </article>
+              <article class="info-card" data-reveal>
+                <div class="card-icon">05</div>
+                <h3>Scripts y tareas programadas</h3>
+                <p>
+                  Tareas automaticas para reportes, alertas y procesos recurrentes.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="impacto">
+          <div class="container impact-grid">
+            <div class="impact-copy">
+              <div class="section-heading" data-reveal>
+                <p class="eyebrow">Impacto</p>
+                <h2>Menos trabajo manual. Mas control operativo.</h2>
+                <p>
+                  Diseñado para gerencias, operaciones, ventas y administracion que necesitan datos confiables sin esperar reportes manuales.
+                </p>
+              </div>
+
+              <div class="benefit-highlight" data-reveal>
+                <p class="benefit-number">Resultado esperado</p>
+                <h3>Ahorra horas cada semana con automatizacion inteligente</h3>
+                <p>
+                  Simplificamos procesos, aceleramos respuestas y dejamos la informacion lista para actuar.
+                </p>
+              </div>
+            </div>
+
+            <div class="cards-grid benefits-grid">
+              <article class="info-card impact-card impact-card-error" data-reveal>
+                <span class="impact-icon" aria-hidden="true"></span>
+                <h3>Menos errores operativos</h3>
+                <p>Reduce omisiones, retrabajo y diferencias de informacion.</p>
+              </article>
+              <article class="info-card impact-card impact-card-speed" data-reveal>
+                <span class="impact-icon" aria-hidden="true"></span>
+                <h3>Mas productividad</h3>
+                <p>Libera al equipo para tareas de mayor valor.</p>
+              </article>
+              <article class="info-card impact-card impact-card-live" data-reveal>
+                <span class="impact-icon" aria-hidden="true"></span>
+                <h3>Informacion disponible en tiempo real</h3>
+                <p>Indicadores visibles sin consolidaciones de ultima hora.</p>
+              </article>
+              <article class="info-card impact-card impact-card-decision" data-reveal>
+                <span class="impact-icon" aria-hidden="true"></span>
+                <h3>Mejor toma de decisiones</h3>
+                <p>Datos utiles para responder rapido y con certeza.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-glow" id="proceso">
+          <div class="container">
+            <div class="section-heading" data-reveal>
+              <p class="eyebrow">Como trabajamos</p>
+              <h2>De problema operativo a solucion funcionando</h2>
+            </div>
+
+            <div class="timeline">
+              <article class="timeline-step" data-reveal>
+                <span>1</span>
+                <h3>Revisamos tu proceso</h3>
+                <p>Ubicamos tareas repetidas, errores y cuellos de botella.</p>
+              </article>
+              <article class="timeline-step" data-reveal>
+                <span>2</span>
+                <h3>Proponemos una solucion</h3>
+                <p>Definimos una mejora concreta y medible.</p>
+              </article>
+              <article class="timeline-step" data-reveal>
+                <span>3</span>
+                <h3>Desarrollamos y entregamos</h3>
+                <p>Construimos y dejamos la solucion operativa.</p>
+              </article>
+              <article class="timeline-step" data-reveal>
+                <span>4</span>
+                <h3>Ajustamos y acompanamos</h3>
+                <p>Ajustamos, medimos y acompanamos la adopcion.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section contact-section" id="contacto">
+          <div class="container contact-panel" data-reveal>
+            <div class="contact-copy">
+              <p class="eyebrow">Contacto</p>
+              <h2>Cuentanos que proceso quieres automatizar</h2>
+              <p>
+                Revisamos tu caso y te mostramos oportunidades concretas para ahorrar tiempo y reducir errores.
+              </p>
+            </div>
+
+            <div class="contact-actions">
+              <a class="button button-primary" href="https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20evaluar%20una%20automatizacion%20para%20mi%20negocio."
+                >Hablar por WhatsApp</a
+              >
+              <a class="button button-secondary" href="mailto:contacto@iwave.cl"
+                >Escribir por correo</a
+              >
+              <div class="contact-data">
+                <p>contacto@iwave.cl</p>
+                <p>+56 9 5344 2563</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <a class="whatsapp-float" href="https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20evaluar%20una%20automatizacion%20para%20mi%20negocio." aria-label="Contactar a iWave por WhatsApp">
+      <span class="whatsapp-icon" aria-hidden="true">WA</span>
+      <span>WhatsApp</span>
+    </a>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
