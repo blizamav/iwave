@@ -1,0 +1,9 @@
+{
+  "errors": [],
+  "checks": [
+    "final responsive captures",
+    "no overflow",
+    "floating WhatsApp clear of controls",
+    "capability active connections"
+  ]
+}

@@ -1,0 +1,186 @@
+# UX-014 — recorrido corporativo continuo
+
+Decisión vigente del 2026-11-19; sustituye el orden UX-011/EXP-010 descrito debajo.
+
+- DOM y menú: Inicio → Transformación → Soluciones → Experiencia profesional → Capacidades → Cómo trabajamos → Contacto → Footer. Siete capítulos y pie. `#informacion` y `#impacto` son anclas compatibles dentro de Transformación; los controles de problemas sobreviven en un `details` accesible, sin sección duplicada.
+- `journey.js`: siete anchors, ScrollTrigger y atmósferas alineadas; metodología vinculada al índice 5. Se reutiliza la geometría existente como constelación de contornos, con superficies sólidas ocultas: órbita, fragmentación, organización, hélice y red. Un renderer, un RAF, buffers y ciclo de vida existentes. Los viewports siguen usando scissor en `exp009.js`.
+- `exp009.js`: fragmentos de marcas con InstancedMesh/ShaderMaterial y GSAP existentes; movimiento angular suave y reacción CSS de energía durante salida/reconstrucción. Avance tras 7.5 segundos visibles de reposo, pausa/teclado/swipe preservados. Siete formas (fragmentación + integración, automatización, BI, plataformas, productividad y control), sin buffers creados por frame.
+- `script.js`: repetición cada 10 segundos de la demostración seleccionada, suspendida fuera de vista, página oculta o movimiento reducido. Halo existente con inercia CSS y estela corta, sin bucle adicional.
+- `refinement.css`: reglas vigentes de composición modificadas en su lugar y declaraciones antiguas conflictivas retiradas. Superficies corporativas, contenedor de 1320px, placa clara localizada en escenario oscuro y enlaces textuales integrados; no segundo carrusel ni tarjetas de marcas.
+- Formulario mailto y canales conservados. No hay backend ni confirmación de recepción. No hay dependencias nuevas, infraestructura ni publicación.
+
+Validación reproducible: `node docs/qa/ux014/qa.cjs 1440` (también `768` y `390`) El verificador gestiona un servidor HTTP en el puerto `8771 + ancho`; las pruebas adicionales usan 9555/9655. Evidencias y límites en `qa/ux014/REPORT.md`. La copia previa de los archivos de aplicación afectados está en `/tmp/iwave-ux014/before/`; no sustituye al control de versiones.
+
+---
+
+# UX-011 — evolución visual sobre EXP-010
+
+Esta entrada prevalece sobre los experimentos históricos afectados. Se confirmó EXP-010 en el código; se mantienen sus ocho secciones y este orden: inicio → informacion → servicios → transformacion → proceso → experiencia → capacidades → contacto. Menú alineado con los siete destinos posteriores al Hero; marca vuelve a Inicio. No se aplica el orden alternativo del encargo porque ya existe EXP-010.
+
+- `styles.css`: tokens oficiales de marca y semánticos, alias compatibles, H1 cian/menta y CTA menta.
+- `img/experience/refinement.css`: capa UX-011 de composición, superficies, tipografía, atmósferas, holograma, diagramas, controles, formulario, navegación, pie y cursor; respeta las reglas responsive/estructurales existentes.
+- `journey.js`: conserva renderer, ciclo de vida, resolución y RAF. Sustituye solo el campo de partículas por tres capas deterministas con atributos de tamaño/semilla, shaders suaves y conexiones ocasionales persistentes. CSS y WebGL comparten tokens al inicio; ocho presets interpolados controlan brillo, actividad, matiz y posición/intensidad de luz. El ciclo de metodología modula la actividad en su hito. La geometría ambiental oculta previa sigue oculta y ya no se actualiza por cuadro.
+- `exp009.js`: misma composición render-to-texture y viewports DOM para marcas/morph; energía actualizada a cian/azul y composición ambiental ajustada. Sin nuevo contexto ni RAF, sin cambios al arte empresarial.
+- `script.js`: primera muestra del halo se posiciona sin barrer desde la esquina; continúa por eventos y transiciones CSS, con supresión sobre campos y según preferencias.
+- `index.html`: menú ordenado y recursos modificados con consulta `ux011`; contenido comercial y secciones preservados. Logo y eslogan incorporado intactos.
+
+Sin cambios a infraestructura, dependencias, backend, formulario mailto ni procesos de publicación. QA local en `docs/qa/ux011/qa.cjs` requiere Playwright/Chromium externos existentes y un servidor HTTP local. Resultados y límites en `docs/qa/ux011/REPORT.md`.
+
+---
+
+## EXP-010 — refinamiento del recorrido
+
+Prevalece sobre las entradas históricas afectadas. Orden DOM: inicio → informacion → servicios → transformacion → proceso → experiencia → capacidades → contacto. El motor usa esos ocho hitos en orden creciente. El fondo reutiliza el renderizador y compositor existentes, con partículas distribuidas a todo el ancho; se oculta la geometría de bloques anterior. Se retiran completamente las mallas tubulares del cursor; `script.js` controla un halo DOM por eventos, sin RAF adicional. Se conserva el cursor nativo.
+
+Trayectoria combina carrusel y un índice textual de enlaces oficiales en una sola composición. Las imágenes ocultas del índice suministran las cuatro texturas al motor y sus nombres accesibles se mantienen en los enlaces. La placa de marca activa también enlaza al sitio oficial. Sin WebGL/JS se muestra MetLife y los cuatro enlaces; la rotación y disolución requieren WebGL. BancoEstado continúa usando el logo matriz disponible.
+
+`img/experience/refinement.css` ajusta composición, superficies, cursor y responsive. No hay dependencias nuevas ni cambios de infraestructura. Contacto mantiene mailto, sin backend ni confirmación de recepción.
+
+# Arquitectura y mapa práctico
+
+## EXP-009 — cinco mecanismos y composición WebGL compartida
+
+- `img/experience/exp009.js` se importa desde `journey.js`. Reutiliza su único WebGLRenderer y RAF: renderiza el ambiente a un WebGLRenderTarget, lo compone con alfa moderada y dibuja escenas con viewport/scissor ligados al DOM. El canvas decorativo se sitúa sobre DOM con `pointer-events:none`; cada viewport se limpia antes de dibujar para preservar placas y legibilidad. No se añaden contextos WebGL.
+- Carrusel `.logo-showcase` adicional al muro de enlaces permanente: cuatro texturas locales, InstancedMesh con celdas UV, atributos de posición/desplazamiento/rotación y matrices GLSL. GSAP controla salida/entrada. Flechas, teclado, swipe horizontal sin cancelar gestos verticales; pausa de avance automático por hover/foco. La marca matriz de BancoEstado sigue siendo el recurso disponible, identificada textualmente como Corredores de Seguros; no se acredita permiso de animación de las marcas.
+- `.morph-system` amplía Operación Conectada sin sustituirla: 1.200 puntos en escritorio, 480 en compacto; cinco Float32Array (fragmentación, integración, flujo, indicadores, módulos), buffers source/target/current/swarm reutilizados y Bézier cuadrática CPU. Ruido/respiración GLSL, selección manual con suspensión automática de 12 segundos visibles, ciclo automático fuera de esa pausa.
+- Energía en el mismo viewport: TorusGeometry con rotaciones independientes y ShaderMaterial de pulsos, cuatro QuadraticBezierCurve3 muestreadas una sola vez con TubeGeometry y paquetes que recorren las curvas. Núcleo reacciona con intensidad y escala. Se usa emisión aditiva contenida; no se incorpora UnrealBloomPass ni su coste de targets extra para conservar nitidez.
+- Cursor original: CatmullRomCurve3 sobre historial de 36 Vector3, tres mallas tubulares circulares de BufferGeometry dinámica, 56 segmentos × 8 lados. Buffers e índices persistentes; sin recrear TubeGeometry por frame. Inercia, variación Z, disipación, mayor energía en CTA, pulso de clic y supresión sobre formularios; desactivado con puntero no preciso. No usa threejs-components.
+- `lifecycle.js`: un único timeline GSAP repetitivo para progreso 0–100%, cuatro etapas seleccionables, pausa/reanudación, pausa manual de 12 segundos. Funciona sin WebGL; conserva las explicaciones originales. IntersectionObserver, visibilidad y reduced-motion controlan la ejecución.
+- Resize, reloj y entrada global de puntero WebGL centralizados en `journey.js`; el controlador transmite los eventos a la estela. Escenas fuera de viewport no actualizan sus efectos. Liberación de targets, geometrías, materiales, texturas, timelines y listeners en la disposición del motor; bfcache conserva el contexto pausado. Movimiento reducido, saveData, memoria limitada, importación fallida o WebGL no disponible mantienen DOM y marcas estáticas.
+- `exp009.css` contiene los nuevos estilos, sin reescribir el sistema previo. No se añadieron dependencias ni build. QA reproducible y evidencia en `docs/qa/exp009/`.
+
+## EXP-007 — componentes vigentes de transformación y trayectoria
+
+Esta entrada sustituye el diagrama de tres columnas, el progreso por scroll de transformación y el carrusel empresarial descritos en entradas históricas inferiores.
+
+- `index.html`: `.transform-demo[data-transformation]`, seis documentos HTML, conexiones SVG con `fill="none"`, núcleo y dashboard ilustrativo. Controles Antes/Después y repetición; estado inicial HTML Después, disponible sin JS y sin WebGL.
+- `img/experience/enterprise.js`: mejora progresiva de comparación, secuencia finita Dispersión → Conexión → Control una vez al entrar al viewport, cancelación fuera de vista o con página oculta y resultado estático con movimiento reducido. Solo temporizadores breves de secuencia; sin renderizador ni bucle permanente adicional. Conserva el explorador de capacidades; retira la lógica del carrusel sustituido.
+- `.trust-wall`: cuatro enlaces siempre accesibles a sitios oficiales; recursos locales en `img/experience/brands/`. Grilla 4/2 columnas y reacción de hover/foco; no oculta marcas ni requiere JS.
+- CSS/enterprise con consulta `exp007`. Sin cambios al motor, navegación, formulario, infraestructura ni dependencias.
+- Evidencia y reproducción: `docs/qa/exp007/REPORT.md` y `qa.cjs` (Playwright externo al proyecto).
+
+Landing estática en HTML5, CSS3 y JavaScript puro. Sin framework, bundler, gestor de paquetes ni suite de pruebas configurada. Three.js se sirve como módulo local versionado; no requiere construcción.
+
+## Archivos y entradas
+| Archivo | Responsabilidad |
+| --- | --- |
+| `index.html` | Metadatos, contenido, secciones, anclas, enlaces comerciales y carga de recursos. |
+| `styles.css` | Tokens, base, componentes, animaciones, responsive y movimiento reducido. Cargado en el head. |
+| `script.js` | Menú progresivo, apariciones y navegación contextual. Cargado al final del body, después del DOM. |
+| `img/logo/iwave.jpg` | Logo del header. |
+| `README.md` | Presentación y comandos locales; contiene también instrucciones de infraestructura que no autorizan su ejecución. |
+| `Dockerfile`, `nginx.conf` | Infraestructura existente; fuera del alcance sin autorización expresa. |
+| `AGENTS.md`, `docs/` | Reglas permanentes y conocimiento para cambios incrementales. |
+
+Fuentes externas: Google Fonts (Plus Jakarta Sans y Space Grotesk); enlaces comerciales a WhatsApp y correo. Three.js 0.170.0 está vendorizado localmente (licencia MIT); no usa CDN en ejecución.
+
+## Mapa de componentes base (consultar cambios EXP-001 al final)
+Cada fila orienta la lectura al bloque HTML y sus selectores en CSS; revisar JS solo cuando la interacción lo requiera.
+
+| Cambio | HTML / IDs | CSS principal | JS relacionado |
+| --- | --- | --- | --- |
+| Navegación / marca | `header.site-header`, `nav#main-menu`, `.menu-toggle` | `.nav-bar`, `.brand*`, `.site-nav`, `.menu-toggle`, `.is-enhanced`, `.is-open`, `body.menu-open` | `setMenu`, eventos y `mobileQuery` |
+| Hero | `section#inicio`, `h1#hero-title` | `.hero-section`, `.hero-grid`, `.hero-copy`, `.hero-badge`, `.hero-text`, `.hero-actions`, `.signal-strip`, `.hero-orbit`, `.orbit-*`, `.text-gradient` | Apariciones para `[data-reveal]`; `.hero-network` usa Canvas 2D; órbita es CSS |
+| Resultados | sección sin ID, `aria-label="Resultados iWave"` | `.outcome-section`, `.outcome-strip` | Aparición del contenedor |
+| Servicios | `section#servicios` | `.services-grid`, `.service-card`, `.service-icon`, `.icon-automation`, `.icon-analytics`, `.icon-information`, `.icon-digital` | Apariciones |
+| Transformación Antes/Después | `section#transformacion`, `h2#transformation-title` | `.transformation-*`, `.state-*`, `.flow-node`, `.node-symbol`, `.engine-core`, `.flow-connector`, `.connector-in`, `.connector-out`, `.flow-caption` | Apariciones; transferencia y nodos son CSS |
+| Impacto | `section#impacto` | `.impact-grid`, `.impact-copy`, `.benefits-grid`, `.benefit-highlight`, `.benefit-number`, `.impact-card`, `.impact-icon` | Apariciones |
+| Proceso | `section#proceso` | `.timeline`, `.timeline-step` | Apariciones |
+| Contacto | `section#contacto` | `.contact-section`, `.contact-panel`, `.contact-copy`, `.contact-actions`, `.contact-data` | Aparición del panel |
+| Pie / WhatsApp flotante | `footer.site-footer`, `a.whatsapp-float` | `.footer-content`, `.whatsapp-float`, `.whatsapp-icon` | Ninguno |
+| Accesibilidad de salto | `.skip-link` → `main#contenido` | `.skip-link`, `:focus-visible`, márgenes de scroll | Ninguno |
+
+Los IDs de la base anterior eran `main-menu`, `contenido`, `inicio`, `hero-title`, `servicios`, `transformacion`, `transformation-title`, `impacto`, `proceso` y `contacto`. Los títulos con ID sirven a `aria-labelledby`; `impacto` no figura en el menú.
+
+## JavaScript y dependencias del DOM
+- `menuToggle` y `siteNav` buscan `.menu-toggle` y `.site-nav`. El bloque solo se activa si ambos existen.
+- `mobileQuery`: `matchMedia('(max-width: 760px)')`, coordinado con CSS.
+- `setMenu(open, restoreFocus = false)`: sincroniza `aria-expanded`, etiqueta del botón, `.is-open`, bloqueo de scroll y devolución opcional del foco. Función local al bloque del menú.
+- Eventos: clic del botón alterna; enlace cierra y enfoca el destino con `tabindex=-1`; Escape cierra y devuelve foco; clic exterior cierra; `focusout` comprueba el foco mediante `requestAnimationFrame`; cambio de breakpoint cierra. `.is-enhanced` habilita el menú colapsable solo tras instalar los eventos.
+- `motionQuery`: `matchMedia('(prefers-reduced-motion: reduce)')`.
+- `IntersectionObserver` se crea si está disponible y no se pide movimiento reducido; umbral `0.08`. Añade `.is-entering` a `[data-reveal]` una sola vez, retira la clase en `animationend` y deja de observar ese elemento. Si se activa movimiento reducido, desconecta el observador y elimina clases activas. No hay funciones exportadas ni módulos.
+- Sin JS, contenido y enlaces siguen visibles. No introducir ocultamiento previo a la observación.
+
+## Compartidos y animaciones
+Reutilizar `.container`, `.section`, `.section-heading`, `.eyebrow`, `.cards-grid`, `.info-card`, `.button` y sus variantes. Iconos de servicios y de flujo se dibujan con CSS/pseudoelementos. Las clases modificadoras `impact-card-*` existen en HTML pero no tienen reglas individuales actuales.
+
+CSS define `orbit`, `transfer-x`, `transfer-y`, `node-activate` y `reveal-in`; detalles en `DESIGN_SYSTEM.md`. Transformación cambia de horizontal a vertical hasta 820px; menú hasta 760px. Toda animación y transición se anula con movimiento reducido.
+
+## Validación disponible y uso focalizado
+- `node --check script.js`: sintaxis JavaScript; ejecutar si se toca JS. No valida interacción.
+- `git diff --check`: errores de whitespace del diff versionado.
+- `git diff -- <archivos>` y `git status --short --branch`: revisar alcance y preservar cambios previos. Los archivos nuevos requieren lectura directa o diff contra `/dev/null` hasta que estén versionados; no hacer staging sin autorización.
+- `python3 -m http.server 8080`: servidor local opcional, abrir `http://localhost:8080` para revisión manual.
+- Cambios visuales o de interacción: revisar en navegador escritorio, tablet y móvil, overflow, teclado, anclas, menú, sin JS y movimiento reducido según alcance. Informar si no se realizó.
+- No hay comando de build de aplicación ni pruebas automatizadas configuradas. No ejecutar Docker ni despliegues como validación rutinaria.
+
+Para texto o enlaces, tocar el bloque correspondiente en HTML; para apariencia, su bloque CSS y media queries pertinentes; para menú o apariciones, añadir solo el bloque JS relacionado. Para cambios de identidad o diseño permanente, actualizar también el documento afectado.
+
+## UI-001 — Fondo del Hero
+Implementación histórica retirada por EXP-001: `canvas.hero-network` era decorativo (`aria-hidden`, sin eventos de puntero) y queda detrás del contenido mediante el contexto aislado del Hero. El bloque final de `script.js` usa `drawNetwork`, `tick`, `syncNetwork` y `resizeNetwork`, con `motionQuery` compartido. Canvas 2D nativo, sin librerías; si no está disponible, el contenido permanece igual.
+
+El bucle requestAnimationFrame dibuja como máximo a 30 fps; DPR limitado a 1.5. ResizeObserver adapta dimensiones y densidad (18 nodos hasta 760px, 38 sobre ese ancho), con fallback a resize. IntersectionObserver pausa fuera del Hero; visibilitychange pausa en pestaña oculta; movimiento reducido deja una red estática. Las pausas también detienen los anillos CSS del Hero mediante `.is-network-paused`. No afecta las otras secciones.
+
+
+## EXP-001 — Escena y recorrido actuales
+Esta sección sustituye las referencias anteriores a órbita, red Canvas 2D, servicios uniformes y animación de nodos.
+
+- `index.html`: `.journey-scene` fija, decorativa y sin eventos; canvas `#journey-canvas` y fallback `.scene-fallback` CSS. Hero con `.hero-system` y logo original sin deformar. Sección nueva `#informacion`/`#friction-title` antes de resultados. Cuatro `.service-visual` diferenciados. Antes/Después añade documentos y vista de indicadores conceptuales, sin datos reales.
+- `script.js`: conserva menú y apariciones, retira completamente el motor UI-001 y añade `aria-current=location` al observar las secciones de navegación.
+- `img/experience/journey.js`: módulo independiente, importación dinámica de `vendor/three.module.min.js` (Three.js 0.170.0 / r170). Sin descarga de Three en movimiento reducido, ahorro de datos o memoria declarada de 2 GB o menos. La licencia está en `img/experience/vendor/LICENSE`.
+- Un `WebGLRenderer`, una escena y un bucle RAF a máximo 30 fps. 24 bloques de información (12 en móvil al iniciar), aristas y cuatro transferencias sobre canales deterministas; sin partículas aleatorias, texturas, sombras ni postprocesado. Scroll interpola fuentes dispersas, canales y matriz organizada; cámara y puntero tienen desplazamiento acotado. Los hitos son `inicio`, `informacion`, `servicios`, `transformacion`, `contacto`.
+- DPR máximo 1.5 en escritorio / 1 en móvil al iniciar; baja a .8 al acumular cuadros lentos. Pausa tras 4.2 segundos sin interacción, en pestaña oculta, fuera del main y durante pagehide con bfcache. ResizeObserver actualiza hitos ante cambios de layout.
+- Movimiento reducido activado durante la sesión libera recursos y conserva el fallback hasta recargar. Error de importación, WebGL no disponible o pérdida de contexto mantienen el esquema CSS. Se liberan geometrías, materiales, renderer, observadores y listeners; bfcache pausa y reanuda sin duplicar el motor.
+- Archivos bajo `img/experience/` para aprovechar el COPY existente de `img` en Docker. Sin modificar infraestructura ni añadir paso de build. Servir mediante HTTP; los módulos no se prueban con file://.
+- Sin JS: enlaces, menú completo, contenido comercial, diagramas y fallback CSS permanecen disponibles; el canvas nunca contiene información exclusiva.
+
+Validación adicional: `node --input-type=module --check < img/experience/journey.js`. La validación visual real en escritorio/tablet/móvil, contraste, teclado, overflow, WebGL y rendimiento sigue siendo necesaria; las comprobaciones estáticas no la sustituyen.
+
+## EXP-002 — experiencia corporativa interactiva
+Esta sección sustituye el mapa EXP-001 en los componentes indicados.
+
+- Cinco secciones principales: `inicio`, `informacion`, `servicios`, `proceso`, `contacto`. `transformacion` permanece como ancla dentro de `informacion`. Se integró Antes/Después en problemas y se retiraron los bloques redundantes de resultados e impacto.
+- `script.js`: menú y apariciones conservados; navegación contextual observa las cinco secciones. Explorador `[data-problem]` con cuatro botones y respuesta anunciada mediante `aria-live`. Sin JS los botones están deshabilitados y queda explicación estática.
+- Halo `.pointer-halo` sin eventos y con interpolación CSS, solo para hover/puntero preciso y sin movimiento reducido. Iluminación y profundidad local mediante variables CSS en `[data-reactive]`. Se detiene al salir, ocultar página o cambiar preferencias. El renderizador WebGL mantiene el único loop de animación; el halo usa transiciones del navegador sin RAF adicional.
+- `img/experience/journey.js`: conserva un renderer, límites y ciclo de vida EXP-001. Hitos ahora `inicio`, `informacion`, `servicios`, `proceso`, `contacto`, en orden DOM. Composiciones: circuito de identidad, dispersión, canales, matriz y columnas de indicadores. Transferencias siguen segmentos reales entre registros. Reacción de cámara restringida también por hover/puntero preciso.
+- `img/experience/contact.js`: módulo comercial separado del renderizado y navegación. `buildContactMailto(values)` codifica asunto y cuerpo; `prepareContact(values)` concentra el transporte temporal para reemplazarlo por un endpoint sin cambiar el diseño. Validación de campos requeridos, espacios en blanco y correo, errores por campo, foco al primer error y estado anunciado. Sin almacenamiento ni logs. No borra el formulario ni confirma entrega. Límites de longitud reducen el tamaño del URI, cuya compatibilidad depende del cliente de correo.
+- Sin JS o si el módulo de contacto falla: formulario HTML con validación nativa y acción mailto, además de enlaces directos de correo/WhatsApp. La construcción explícita de asunto/cuerpo requiere el módulo. No hay backend ni garantía de apertura o recepción.
+- Verificar también `node --input-type=module --check < img/experience/contact.js`. Las pruebas aisladas no certifican WebGL, interacción física, responsive o entrega de correo.
+
+## UI-003 — explorador de Soluciones
+- Solo `#servicios`: `.solutions-explorer` con navegación y cuatro `.solution-panel`. `script.js` mejora enlaces a pestañas ARIA con selección exclusiva, foco itinerante, flechas, Home/End y Enter/Espacio; sin JS conserva los cuatro artículos y sus enlaces internos.
+- Diagramas SVG inline diferenciados para escritorio y móvil, con descripciones accesibles y CTA WhatsApp específico por servicio. HTML/CSS independientes de WebGL, sin dependencias ni otro renderizador. No se modifica `journey.js`.
+- Secuencias CSS finitas al entrar o seleccionar; botón para repetir. IntersectionObserver y visibilidad detienen las secuencias fuera de vista/pestaña oculta. `prefers-reduced-motion` conserva el estado estático y oculta repetición. El puntero reutiliza las variables del controlador `[data-reactive]`; no intercepta gestos táctiles.
+
+## UI-004 — resolución y ambiente
+- `journey.js`: antialiasing en desktop y móvil. DPR recalculado en resize: mínimo entre DPR nativo, 2 y presupuesto de 8 millones de píxeles (sin bajar de 1× por presupuesto). Sustituye los límites EXP-001 y la reducción a .8×; ante 45 cuadros lentos baja de 30 a 20 fps. Conserva pausas, fallback y liberación de recursos.
+- Progreso interpolado publicado en `--scene-progress` para desplazar suavemente la luz CSS dentro del mismo bucle. Oscilación angular discreta durante las secuencias activas; continúa el reposo a los 4.2 segundos.
+- `styles.css`: gradientes CSS a resolución nativa, iluminación por sección y separadores progresivos; sin recursos raster, dependencias ni cambios al contenido comercial.
+
+## UI-005 — holograma del Hero
+- `.hologram-stage` contiene marca, proyección, anillos elípticos y conexiones SVG decorativas. CSS independiente de WebGL, disponible sin JS y sin añadir renderizadores. Motor Three.js compartido intacto.
+- `img/experience/iwave-hologram.svg` incorpora el JPG original sin redibujar, con encuadre `890 × 710` y filtro alfa sRGB para retirar tonos próximos al negro. Conserva el texto original; no es arte vectorial ni aumenta su resolución.
+- Puntero reutiliza variables de `[data-reactive]`; touch usa `:active` sin interceptar gestos. Script principal pausa animaciones CSS fuera de vista, en pestaña oculta y pagehide; pageshow reanuda. Movimiento reducido desactiva animaciones y perspectiva. Sin otro RAF ni dependencia.
+
+## EXP-003 — capacidades y experiencia
+- `img/experience/enterprise.js` separa interacción de contenido y navegación. `#capacidades` mejora cinco enlaces en selector con flechas/Home/End; sin JS conserva todos los artículos. `#experiencia` mejora tres referencias tipográficas en carrusel CSS 3D: botones, teclado y swipe horizontal, sin autoplay ni cancelación del scroll vertical; solo el enlace central recibe foco. Controles y marcas son objetivos separados.
+- Antes/Después sustituye los paneles repetidos por `.operation-theatre`: HTML/SVG 2.5D, progreso CSS `--connect` calculado mediante RAF solicitado por scroll/resize, acotado y observado; sin bucle continuo adicional. Sin JS o con movimiento reducido muestra operación conectada estática.
+- Holograma conserva arte, renderizador compartido y controlador de pausa UI-005; añade 18 fragmentos CSS (10 en móvil), shimmer, trazas y respiración ambiental. Ninguna dependencia ni otro contexto WebGL.
+- Carrusel usa 32 puntos CSS durante 720 ms y fundido nítido de texto; efecto conceptual de dispersión/recomposición, no muestreo del contorno de marcas. Sin movimiento reducido ni actividad fuera de pantalla. No se incorporan logotipos empresariales: autorización promocional pendiente. Banco de Chile accesible en consulta web; MetLife respondió 403 y referencia BancoEstado no accesible, pendientes de comprobación manual.
+- Sintaxis: `node --input-type=module --check < img/experience/enterprise.js`. Cambios conservan fallback independiente de WebGL y no modifican `journey.js`, contacto ni infraestructura.
+
+## QA-001 — recuperación visual verificada
+- Antes/Después conserva el controlador de scroll de `enterprise.js`, pero sus nodos ahora usan Grid y altura intrínseca, sin coordenadas absolutas ni perspectivas que puedan cruzar las tarjetas. Solo el SVG decorativo se posiciona absolutamente; en tablet/móvil sus conexiones siguen un eje vertical.
+- `fill="none"` se declara en el SVG y en cada trazado, independientemente del CSS. `styles.css?v=qa001` solicita una URL nueva para evitar reutilizar la hoja anterior a EXP-003; no cambia políticas del servidor.
+- El contenido del diagrama mantiene contraste constante; progreso de conexiones y barras depende de `--connect`. Sin JS y en movimiento reducido se conserva el estado conectado.
+- Evidencia de navegador local y límites: [QA-001](qa/QA-001.md). No implica despliegue.
+
+## EXP-006 — núcleo inmersivo
+- Conserva Three r170 y la arquitectura estática sin build. GSAP/ScrollTrigger 3.14.2 vendorizados en `img/experience/vendor`, con aviso de licencia en cabecera; condiciones en https://gsap.com/standard-license. No son dependencias MIT ni se modifica la licencia de Three.
+- `journey.js` concentra escena, cámara, puntero, efectos, rendimiento y ciclo de vida. Siete hitos DOM: inicio, información, transformación, servicios, capacidades, experiencia y contacto. ScrollTrigger publica un estado numérico; el render interpola ese estado y suma ambiente y cursor. GSAP no escribe transforms de objetos Three.
+- Geometrías reutilizadas, 360/960 partículas en un BufferGeometry y ShaderMaterial. Vertex shader aplica circulación, ascenso y desplazamiento desde CanvasTexture 128²; fragment shader dibuja puntos suaves aditivos. No hay compositor ni segundo renderer.
+- TouchTexture acumula pulsos de intensidad según desplazamiento de puntero, con decaimiento por cuadro. Touch responde únicamente a pointerdown pasivo. Solo se deforma el campo de partículas; cámara interpolada y logotipo original intacto.
+- Alineación horizontal con centro real de `.hero-system` calculada al resize/ResizeObserver. Sin lecturas de layout por cuadro. Selección de soluciones/capacidades cambia color de conexiones y fase del campo.
+- Ambientación continua sustituye reposo de 4.2 s; permanecen pausa por visibilidad/main, bfcache, DPR limitado, cadencia adaptativa 30→20 fps y liberación de textura, geometrías, materiales y triggers. No se afirma objetivo de 60 fps.
+- Menú fullscreen progresivo en todos los tamaños; GSAP anima enlaces, foco inicial, circuito de Tab con botón de cierre, Escape y retorno de foco. Desactiva backdrop-filter del header al abrir para evitar containing block que recorte navegación fija.
+- Diagramas comerciales, carrusel y transporte mailto conservan implementación independiente anterior. Sin Rapier, Lenis, postprocesamiento, bundler ni modificaciones de infraestructura.

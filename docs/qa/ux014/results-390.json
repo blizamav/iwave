@@ -1,0 +1,59 @@
+{
+  "browser": "159.0.8154.6",
+  "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "matrices": [
+    {
+      "width": 390,
+      "height": 844,
+      "tokens": {
+        "--iwave-midnight": "#050B14",
+        "--iwave-deep-navy": "#0B1C2B",
+        "--iwave-electric-cyan": "#35D6FF",
+        "--iwave-digital-mint": "#67E8C8",
+        "--iwave-royal-blue": "#246BFD",
+        "--iwave-ice-white": "#F3F8FF"
+      },
+      "order": [
+        "inicio",
+        "transformacion",
+        "servicios",
+        "experiencia",
+        "capacidades",
+        "proceso",
+        "contacto"
+      ],
+      "overflow": false,
+      "errors": [],
+      "http": [],
+      "checks": [
+        "all sections captured",
+        "solutions 4 + keyboard",
+        "capabilities 5",
+        "problems",
+        "before/after no collisions",
+        "SVG fill none",
+        "morph",
+        "carousel",
+        "process auto/pause",
+        "form validation",
+        "menu/Escape/focus/anchor",
+        "cursor mode"
+      ]
+    }
+  ],
+  "fallbacks": [],
+  "performance": [
+    {
+      "label": "hero-390",
+      "drawnFrames": 41,
+      "contexts": 1,
+      "atmosphere": "inicio",
+      "renderedFps": 18.33,
+      "medianMs": 49.8,
+      "p95Ms": 97.1,
+      "maxMs": 183.4
+    }
+  ],
+  "errors": [],
+  "failedRequests": []
+}

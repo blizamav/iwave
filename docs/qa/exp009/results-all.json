@@ -1,0 +1,122 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "errors": [],
+    "http": [],
+    "overflow": [],
+    "links": [
+      {
+        "href": "https://www.metlife.cl/",
+        "loaded": true
+      },
+      {
+        "href": "https://www.bancoestado.cl/",
+        "loaded": true
+      },
+      {
+        "href": "https://www.bancochile.cl/",
+        "loaded": true
+      },
+      {
+        "href": "https://www.scotiabankchile.cl/",
+        "loaded": true
+      }
+    ],
+    "morphSnapshot": "platforms",
+    "automaticMorph": true,
+    "automaticLogos": true,
+    "lifecycleRestart": true,
+    "scheduler": {
+      "samples": 45,
+      "medianMs": 533.3999999999942,
+      "p95Ms": 716.7000000000116,
+      "maxMs": 1016.5999999999767
+    }
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "errors": [],
+    "http": [],
+    "overflow": [],
+    "links": [
+      {
+        "href": "https://www.metlife.cl/",
+        "loaded": true
+      },
+      {
+        "href": "https://www.bancoestado.cl/",
+        "loaded": true
+      },
+      {
+        "href": "https://www.bancochile.cl/",
+        "loaded": true
+      },
+      {
+        "href": "https://www.scotiabankchile.cl/",
+        "loaded": true
+      }
+    ],
+    "morphSnapshot": "platforms",
+    "automaticMorph": true,
+    "automaticLogos": true,
+    "lifecycleRestart": true,
+    "scheduler": {
+      "samples": 45,
+      "medianMs": 16.70000000001164,
+      "p95Ms": 733.2999999999884,
+      "maxMs": 983.2999999999884
+    }
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "errors": [],
+    "http": [],
+    "overflow": [],
+    "links": [
+      {
+        "href": "https://www.metlife.cl/",
+        "loaded": true
+      },
+      {
+        "href": "https://www.bancoestado.cl/",
+        "loaded": true
+      },
+      {
+        "href": "https://www.bancochile.cl/",
+        "loaded": true
+      },
+      {
+        "href": "https://www.scotiabankchile.cl/",
+        "loaded": true
+      }
+    ],
+    "morphSnapshot": "platforms",
+    "automaticMorph": true,
+    "automaticLogos": true,
+    "lifecycleRestart": true,
+    "scheduler": {
+      "samples": 45,
+      "medianMs": 16.70000000001164,
+      "p95Ms": 200,
+      "maxMs": 466.6000000000058
+    }
+  },
+  {
+    "mode": "reduced",
+    "fallback": true,
+    "overflow": false
+  },
+  {
+    "mode": "no-webgl",
+    "fallback": true,
+    "overflow": false
+  },
+  {
+    "mode": "no-js",
+    "fallback": true,
+    "overflow": false
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "checks": [
+    "pause/resume",
+    "carousel keyboard previous",
+    "touch horizontal changes brand; vertical keeps scroll gesture",
+    "automatic rotation",
+    "productivity/control visual states",
+    "contact final",
+    "token contrast >=4.5:1"
+  ],
+  "errors": [],
+  "contrast": {
+    "body": 9.564624578690514,
+    "heading": 18.490669768202963,
+    "muted": 6.997551389126383,
+    "action": 13.108868841708789
+  }
+}

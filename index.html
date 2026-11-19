@@ -5,28 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="iWave automatiza procesos, conecta datos y crea soluciones con IA para que las empresas trabajen mas rapido y con menos errores."
+      content="iWave impulsa la productividad digital con automatización, gestión de información, Inteligencia de Negocios y soluciones digitales para tu operación."
     />
-    <title>iWave | Automatizacion, datos e IA para operaciones mas eficientes</title>
+    <title>iWave | Productividad digital para tu operación</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="canonical" href="https://iwave.cl/" />
+    <link rel="stylesheet" href="styles.css?v=ux014" />
+    <link rel="stylesheet" href="img/experience/exp009.css?v=ux014" />
+  <link rel="stylesheet" href="img/experience/refinement.css?v=ux014" />
   </head>
   <body>
-    <canvas class="data-canvas" aria-hidden="true"></canvas>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
+    <div class="journey-scene" aria-hidden="true">
+      <div class="scene-fallback"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <canvas id="journey-canvas"></canvas>
+    </div>
+    <div class="pointer-halo" aria-hidden="true"></div>
     <div class="page-shell">
       <header class="site-header">
         <div class="container nav-bar">
           <a class="brand" href="#inicio" aria-label="Ir al inicio de iWave">
-            <img class="brand-logo" src="img/logo/iwave.jpg" alt="Logo iWave" />
+            <img class="brand-logo" src="img/logo/iwave.jpg" alt="Logo iWave" width="1254" height="1254" />
             <span class="brand-text-wrap">
               <span class="brand-text">iWave</span>
-              <span class="brand-subtext">Automation • Data • AI</span>
+              <span class="brand-subtext">Productividad digital</span>
             </span>
           </a>
 
@@ -35,7 +43,7 @@
             type="button"
             aria-expanded="false"
             aria-controls="main-menu"
-            aria-label="Abrir menu"
+            aria-label="Abrir menú"
           >
             <span></span>
             <span></span>
@@ -43,394 +51,208 @@
           </button>
 
           <nav class="site-nav" id="main-menu" aria-label="Principal">
-            <a href="#servicios">Servicios</a>
-            <a href="#impacto">Impacto</a>
-            <a href="#proceso">Proceso</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#transformacion">Transformación</a>
+            <a href="#servicios">Soluciones</a>
+            <a href="#experiencia">Experiencia profesional</a>
+            <a href="#capacidades">Capacidades</a>
+            <a href="#proceso">Cómo trabajamos</a>
             <a href="#contacto">Contacto</a>
           </nav>
         </div>
       </header>
 
-      <main>
-        <section class="hero-section" id="inicio">
+      <main id="contenido">
+<section class="hero-section" id="inicio" aria-labelledby="hero-title">
           <div class="container hero-grid">
             <div class="hero-copy">
-              <div class="hero-badge" data-reveal>
-                <span class="badge-pulse"></span>
-                Automatizacion inteligente para operaciones modernas
-              </div>
-              <h1 data-reveal>Automatizacion, datos e IA para operar <span class="text-glow">mas rapido</span></h1>
-              <p class="hero-text" data-reveal>
-                Elimina tareas manuales, conecta tus datos y toma decisiones con informacion clara en tiempo real.
-              </p>
-
+              <p class="hero-badge" data-reveal><span class="badge-pulse" aria-hidden="true"></span>Soluciones digitales para productividad operacional</p>
+              <h1 id="hero-title" data-reveal>Elevamos la forma de trabajar con <span class="text-gradient">productividad digital.</span></h1>
+              <p class="hero-text" data-reveal>Optimizamos tareas, estructuramos información y desarrollamos soluciones digitales que fortalecen la gestión, agilizan decisiones e impulsan operaciones más eficientes, visibles y escalables.</p>
               <div class="hero-actions" data-reveal>
-                <a class="button button-primary" href="https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20evaluar%20una%20automatizacion%20para%20mi%20negocio."
-                  >Hablar por WhatsApp</a
-                >
-                <a class="button button-secondary" href="#servicios"
-                  >Explorar soluciones</a
-                >
+                <a class="button button-primary" href="https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.">Solicitar evaluación <span aria-hidden="true">↗</span></a>
+                <a class="button button-secondary" href="#servicios">Conocer soluciones <span aria-hidden="true">↓</span></a>
               </div>
-
-              <div class="signal-strip" data-reveal aria-label="Capacidades iWave">
-                <span>Procesos</span>
-                <span>Datos</span>
-                <span>IA</span>
-                <span>Dashboards</span>
+              <div class="signal-strip" data-reveal aria-label="Soluciones iWave">
+                <span>Optimización</span><span>Información</span><span>Gestión</span><span>Inteligencia de Negocios</span>
               </div>
             </div>
-
-            <div class="hero-visual" data-reveal aria-hidden="true">
-              <div class="dashboard-frame">
-                <div class="dashboard-header">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-
-                <div class="hero-brand-card">
-                  <img src="img/logo/iwave.jpg" alt="" />
-                  <div>
-                    <strong>Centro operativo iWave</strong>
-                    <p>Procesos activos, datos claros y alertas utiles.</p>
-                  </div>
-                </div>
-
-                <div class="dashboard-grid">
-                  <article class="dashboard-card dashboard-card-wide">
-                    <div class="card-label">Flujo automatizado</div>
-                    <div class="flow-track">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                    <div class="flow-steps">
-                      <div>Entrada</div>
-                      <div>Validacion</div>
-                      <div>Entrega</div>
-                    </div>
-                  </article>
-
-                  <article class="dashboard-card">
-                    <div class="card-label">Trabajo manual</div>
-                    <strong>-42%</strong>
-                    <p>menos carga operativa manual</p>
-                  </article>
-
-                  <article class="dashboard-card">
-                    <div class="card-label">Velocidad de respuesta</div>
-                    <strong>24/7</strong>
-                    <p>automatizaciones siempre disponibles</p>
-                  </article>
-
-                  <article class="dashboard-card dashboard-card-tall">
-                    <div class="card-label">Datos y monitoreo</div>
-                    <div class="chart-bars">
-                      <span style="--size: 68%"></span>
-                      <span style="--size: 84%"></span>
-                      <span style="--size: 58%"></span>
-                      <span style="--size: 92%"></span>
-                      <span style="--size: 76%"></span>
-                    </div>
-                    <ul class="metric-list">
-                      <li><span>Alertas</span><strong>Activas</strong></li>
-                      <li><span>Errores manuales</span><strong>Baja</strong></li>
-                      <li><span>Visibilidad</span><strong>Alta</strong></li>
-                    </ul>
-                  </article>
-
-                  <article class="dashboard-card dashboard-card-wide">
-                    <div class="card-label">Integracion operativa</div>
-                    <div class="network-map">
-                      <span class="node node-a"></span>
-                      <span class="node node-b"></span>
-                      <span class="node node-c"></span>
-                      <span class="node node-d"></span>
-                    </div>
-                    <p>
-                      Datos conectados para operar con mas control.
-                    </p>
-                  </article>
+            <div class="hero-system">
+              <p class="eyebrow">01 / Identidad · Ecosistema iWave</p>
+              <div class="identity-stage hologram-stage" data-reactive>
+                <div class="hologram-space">
+                  <div class="hologram-energy" aria-hidden="true"><i style="--i:0;--x:12%;--z:0"></i><i style="--i:1;--x:35%;--z:1"></i><i style="--i:2;--x:58%;--z:2"></i><i style="--i:3;--x:81%;--z:0"></i><i style="--i:4;--x:28%;--z:1"></i><i style="--i:5;--x:51%;--z:2"></i><i style="--i:6;--x:74%;--z:0"></i><i style="--i:7;--x:21%;--z:1"></i><i style="--i:8;--x:44%;--z:2"></i><i style="--i:9;--x:67%;--z:0"></i><i style="--i:10;--x:14%;--z:1"></i><i style="--i:11;--x:37%;--z:2"></i><i style="--i:12;--x:60%;--z:0"></i><i style="--i:13;--x:83%;--z:1"></i><i style="--i:14;--x:30%;--z:2"></i><i style="--i:15;--x:53%;--z:0"></i><i style="--i:16;--x:76%;--z:1"></i><i style="--i:17;--x:23%;--z:2"></i></div><div class="hologram-sweep" aria-hidden="true"></div><div class="hologram-aura" aria-hidden="true"></div>
+                  <div class="hologram-beam" aria-hidden="true"></div>
+                  <svg class="hologram-network" viewBox="0 0 500 430" fill="none" aria-hidden="true">
+                    <g stroke="currentColor" stroke-width="1"><path d="M35 142h45l30 30M390 155l30-30h45M30 280h55l35-35M380 275l35 25h50"/><path d="M42 124v-28h55M403 90h55v28M42 318v24h55M403 342h55v-24" opacity=".4"/><circle cx="35" cy="142" r="3"/><circle cx="465" cy="125" r="3"/><circle cx="30" cy="280" r="3"/><circle cx="465" cy="300" r="3"/><path d="M47 246v-15m6 15v-25m6 25v-19m380-54h23m-23 6h15m-15 6h20"/></g>
+                  </svg>
+                  <div class="hologram-brand"><img src="img/experience/iwave-hologram.svg" alt="iWave · Productividad digital" width="890" height="710" fetchpriority="high" /></div>
+                  <div class="hologram-platform" aria-hidden="true"><span class="hologram-ring"></span><span class="hologram-ring ring-inner"></span><span class="hologram-ring ring-track"></span><span class="hologram-core"></span></div>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div class="container live-flow" data-reveal aria-label="Flujo de automatizacion iWave">
-            <div class="live-flow-track">
-              <span>Planillas manuales</span>
-              <strong>-></strong>
-              <span>Datos conectados</span>
-              <strong>-></strong>
-              <span>Automatizacion</span>
-              <strong>-></strong>
-              <span>Alertas</span>
-              <strong>-></strong>
-              <span>Dashboard en tiempo real</span>
-              <strong>-></strong>
-              <span>Mejores decisiones</span>
+              <div class="system-legend"><span>01 / Conectar</span><span>02 / Estructurar</span><span>03 / Decidir</span></div>
+              <p class="scene-caption">Unimos información, procesos y personas.</p>
             </div>
           </div>
         </section>
 
-        <section class="section outcome-section" aria-label="Resultados iWave">
-          <div class="container outcome-strip" data-reveal>
-            <article>
-              <span>01</span>
-              <strong>Menos trabajo manual</strong>
-              <p>Automatiza tareas que consumen horas.</p>
-            </article>
-            <article>
-              <span>02</span>
-              <strong>Datos en tiempo real</strong>
-              <p>Convierte datos dispersos en accion.</p>
-            </article>
-            <article>
-              <span>03</span>
-              <strong>Procesos mas rapidos</strong>
-              <p>Flujo continuo entre tareas criticas.</p>
-            </article>
-            <article>
-              <span>04</span>
-              <strong>Menos errores</strong>
-              <p>Menos digitacion, omisiones y reprocesos.</p>
-            </article>
-            <article>
-              <span>05</span>
-              <strong>Mejores decisiones</strong>
-              <p>Indicadores claros para decidir rapido.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section dashboard-showcase" aria-label="Vista operativa iWave">
-          <div class="container dashboard-showcase-grid">
-            <div class="section-heading dashboard-showcase-copy" data-reveal>
-              <p class="eyebrow">Centro operativo</p>
-              <h2>Visualiza procesos, datos y alertas en un solo flujo</h2>
-              <p>Una capa de control para entender que ocurre, automatizar tareas y actuar mas rapido.</p>
+<section class="section transformation-section" id="transformacion" aria-labelledby="transformation-title">
+          <div class="container"><span id="informacion" class="anchor-alias" aria-hidden="true"></span><span id="impacto" class="anchor-alias" aria-hidden="true"></span>
+            <div class="section-heading"><p class="eyebrow">Impacto / Transformación operativa</p><h2 id="transformation-title">De procesos fragmentados a operaciones conectadas.</h2></div>
+            <details class="operation-context"><summary>¿Dónde comienza la transformación?</summary><div class="operation-explorer" data-reactive>
+              <p class="eyebrow">Explora el cambio</p>
+              <div class="problem-controls" role="group" aria-label="Dificultades operativas">
+                <button type="button" disabled data-problem="manual" aria-pressed="true">Procesos manuales <span aria-hidden="true">↗</span></button>
+                <button type="button" disabled data-problem="dispersa" aria-pressed="false">Información dispersa <span aria-hidden="true">↗</span></button>
+                <button type="button" disabled data-problem="sistemas" aria-pressed="false">Sistemas desconectados <span aria-hidden="true">↗</span></button>
+                <button type="button" disabled data-problem="visibilidad" aria-pressed="false">Falta de visibilidad <span aria-hidden="true">↗</span></button>
+              </div>
+              <div class="operation-map" aria-hidden="true"><div class="operation-sources"><span>Archivos</span><span>Sistemas</span><span>Solicitudes</span></div><div class="operation-bridge"><i></i><strong>iWave</strong><i></i></div><div class="operation-destination"><span>Información organizada</span><span>Seguimiento visible</span><span>Decisiones ágiles</span></div></div><div class="operation-result" aria-live="polite" aria-atomic="true"><span>DE LA FRICCIÓN AL FLUJO</span><h3>Tareas que avanzan, sin repetir el trabajo.</h3><p>Automatización de validaciones y acciones para reducir digitación y reprocesos.</p></div>
+              <noscript><p>Integramos fuentes y sistemas, automatizamos tareas y organizamos indicadores para mejorar la visibilidad.</p></noscript>
+            </div></details>
+            <div class="transform-demo" data-transformation data-state="after">
+              <div class="transform-toolbar"><div class="transform-state"><i aria-hidden="true"></i><span data-transform-status aria-live="polite" aria-atomic="true">Operación conectada</span></div><div class="transform-switch" role="group" aria-label="Comparar estados"><button type="button" data-transform-state="before" aria-pressed="false" disabled>Antes</button><button type="button" data-transform-state="after" aria-pressed="true" disabled>Después</button></div></div>
+              <div class="transform-canvas" role="img" aria-label="Demostración conceptual: seis archivos y sistemas dispersos convergen en fuentes organizadas, un núcleo de integración y un dashboard con flujos, indicadores y alertas.">
+                <div class="transform-grid" aria-hidden="true"></div>
+                <span class="scene-label label-sources" aria-hidden="true">FUENTES DE TRABAJO</span>
+                <svg class="transform-channels" viewBox="0 0 1000 500" preserveAspectRatio="none" fill="none" aria-hidden="true"><path d="M240 100H340V250H480M240 250H480M240 400H340V250M520 250H620V130H730M620 250H730M620 250V370H730"/><path class="channel-pulse" d="M240 100H340V250H480M240 250H480M240 400H340V250M520 250H620V130H730M620 250H730M620 250V370H730"/></svg>
+                <div class="transform-files" aria-hidden="true"><div class="transform-file file-0" style="--order:0"><span class="file-type">XLS</span><div><strong>Ventas.xlsx</strong><small>Copia local</small></div><b aria-hidden="true">!</b><i aria-hidden="true"></i></div><div class="transform-file file-1" style="--order:1"><span class="file-type">CSV</span><div><strong>Base_clientes.csv</strong><small>Sin sincronizar</small></div><b aria-hidden="true">!</b><i aria-hidden="true"></i></div><div class="transform-file file-2" style="--order:2"><span class="file-type">DOC</span><div><strong>Reporte_final_v3</strong><small>Duplicado</small></div><b aria-hidden="true">!</b><i aria-hidden="true"></i></div><div class="transform-file file-3" style="--order:3"><span class="file-type">ERP</span><div><strong>Sistema de gestión</strong><small>Desconectado</small></div><b aria-hidden="true">!</b><i aria-hidden="true"></i></div><div class="transform-file file-4" style="--order:4"><span class="file-type">MAIL</span><div><strong>Solicitud pendiente</strong><small>Ingreso manual</small></div><b aria-hidden="true">!</b><i aria-hidden="true"></i></div><div class="transform-file file-5" style="--order:5"><span class="file-type">XLS</span><div><strong>Ventas_copia.xlsx</strong><small>Duplicado</small></div><b aria-hidden="true">!</b><i aria-hidden="true"></i></div></div>
+                <div class="transform-core" aria-hidden="true"><div class="core-orbit"></div><span>iWave</span><small>INTEGRAR<br>ESTRUCTURAR</small></div>
+                <div class="control-room" aria-hidden="true"><div class="control-header"><span>◈ &nbsp; CENTRO DE CONTROL</span><i>Conectado</i></div><div class="control-body"><div class="control-kpis"><div><small>Fuentes</small><strong>Unificadas <b>↗</b></strong></div><div><small>Flujos</small><strong>Coordinados <b>✓</b></strong></div></div><div class="control-chart"><span>Visibilidad operativa</span><svg viewBox="0 0 360 120" fill="none"><path class="chart-guides" d="M0 25H360M0 65H360M0 105H360"/><path class="chart-area" d="M0 100L45 83L90 91L135 54L180 64L225 28L270 39L315 13L360 20V120H0Z"/><path class="chart-line" d="M0 100L45 83L90 91L135 54L180 64L225 28L270 39L315 13L360 20"/></svg><div class="chart-legend"><span>Datos organizados</span><span>Seguimiento continuo</span></div></div><div class="control-event"><i>✓</i><span>Validación completada<small>Información lista para decidir</small></span><b>Auto</b></div><div class="control-event"><i>↗</i><span>Alerta de operación<small>Tu equipo recibe lo que necesita</small></span><b>Activa</b></div></div></div>
+                <div class="chaos-note" aria-hidden="true"><span>↺</span> Copiar. Revisar. Volver a empezar.</div>
+              </div>
+              <div class="transform-footer"><ol aria-label="Etapas de la transformación"><li data-phase="0">01 <span>Dispersión</span></li><li data-phase="1">02 <span>Conexión</span></li><li data-phase="2">03 <span>Control</span></li></ol><button type="button" class="transform-play" data-transform-play disabled><span aria-hidden="true">↗</span> Ver transformación</button></div>
             </div>
-
-            <div class="hero-visual dashboard-showcase-visual" data-reveal aria-hidden="true">
-              <div class="dashboard-frame">
-                <div class="dashboard-header">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-
-                <div class="hero-brand-card">
-                  <img src="img/logo/iwave.jpg" alt="" />
-                  <div>
-                    <strong>Centro operativo iWave</strong>
-                    <p>Procesos activos, datos claros y alertas utiles.</p>
-                  </div>
-                </div>
-
-                <div class="dashboard-grid">
-                  <article class="dashboard-card dashboard-card-wide">
-                    <div class="card-label">Flujo automatizado</div>
-                    <div class="flow-track">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                    <div class="flow-steps">
-                      <div>Entrada</div>
-                      <div>Validacion</div>
-                      <div>Entrega</div>
-                    </div>
-                  </article>
-
-                  <article class="dashboard-card">
-                    <div class="card-label">Trabajo manual</div>
-                    <strong>-42%</strong>
-                    <p>menos carga operativa manual</p>
-                  </article>
-
-                  <article class="dashboard-card">
-                    <div class="card-label">Velocidad</div>
-                    <strong>24/7</strong>
-                    <p>automatizaciones disponibles</p>
-                  </article>
-
-                  <article class="dashboard-card dashboard-card-wide">
-                    <div class="card-label">Datos y monitoreo</div>
-                    <div class="chart-bars">
-                      <span style="--size: 68%"></span>
-                      <span style="--size: 84%"></span>
-                      <span style="--size: 58%"></span>
-                      <span style="--size: 92%"></span>
-                      <span style="--size: 76%"></span>
-                    </div>
-                  </article>
-                </div>
+            <div class="morph-system" data-shape="fragmented">
+              <div class="morph-heading"><p data-morph-name aria-live="polite">Datos fragmentados</p><small>Transformación de sistemas · Representación conceptual</small></div>
+              <div class="morph-viewport" role="img" aria-label="Datos que se transforman en integración, flujos automáticos, indicadores y módulos de plataformas conectadas."><div class="morph-fallback"><span>Fuentes</span><span>Integración</span><span>Operación conectada</span></div></div>
+              <div class="morph-controls" role="group" aria-label="Seleccionar estructura de datos">
+                <button type="button" data-morph="fragmented" aria-pressed="true" disabled>Datos fragmentados</button>
+                <button type="button" data-morph="integrated" aria-pressed="false" disabled>Integración</button>
+                <button type="button" data-morph="automated" aria-pressed="false" disabled>Automatización</button>
+                <button type="button" data-morph="analytics" aria-pressed="false" disabled>Business Intelligence</button>
+                <button type="button" data-morph="platforms" aria-pressed="false" disabled>Plataformas</button>
+                <button type="button" data-morph="productivity" aria-pressed="false" disabled>Productividad</button>
+                <button type="button" data-morph="control" aria-pressed="false" disabled>Control operativo</button>
+                <button type="button" data-morph-pause aria-pressed="false" disabled>Pausar ciclo</button>
               </div>
             </div>
+            <p class="flow-caption">Demostración conceptual · Datos ilustrativos, sin métricas de resultados.</p>
           </div>
         </section>
 
-
-        <section class="section section-glow" id="servicios">
+<section class="section" id="servicios" aria-labelledby="solutions-title">
           <div class="container">
             <div class="section-heading" data-reveal>
-              <p class="eyebrow">Soluciones</p>
-              <h2>Automatiza, conecta y mide tu operacion</h2>
-              <p>
-                Soluciones enfocadas en ahorrar tiempo, reducir errores y dar visibilidad inmediata.
-              </p>
+              <p class="eyebrow">Soluciones / Productividad digital</p>
+              <h2 id="solutions-title">Reconoce el desafío.<br>Explora la solución.</h2>
+              <p>Selecciona una solución. Mira cómo funciona.</p>
             </div>
-
-            <div class="cards-grid services-grid">
-              <article class="info-card" data-reveal>
-                <div class="card-icon">01</div>
-                <h3>Automatizacion de procesos</h3>
-                <p>
-                  Flujos automaticos para tareas repetitivas y controles diarios.
-                </p>
-              </article>
-              <article class="info-card" data-reveal>
-                <div class="card-icon">02</div>
-                <h3>Reportes y dashboards</h3>
-                <p>
-                  Paneles claros para ver avances, desvios y oportunidades.
-                </p>
-              </article>
-              <article class="info-card" data-reveal>
-                <div class="card-icon">03</div>
-                <h3>Integracion de datos</h3>
-                <p>
-                  Conecta sistemas, planillas y fuentes clave sin duplicar trabajo.
-                </p>
-              </article>
-              <article class="info-card" data-reveal>
-                <div class="card-icon">04</div>
-                <h3>Soluciones con IA</h3>
-                <p>
-                  IA aplicada para clasificar, responder, analizar y acelerar.
-                </p>
-              </article>
-              <article class="info-card" data-reveal>
-                <div class="card-icon">05</div>
-                <h3>Scripts y tareas programadas</h3>
-                <p>
-                  Tareas automaticas para reportes, alertas y procesos recurrentes.
-                </p>
-              </article>
+            <div class="solutions-explorer">
+              <nav class="solution-navigation" aria-label="Explorar soluciones"><p class="solution-nav-label">¿Qué necesita tu negocio?</p><div class="solution-tabs"><a class="solution-tab" id="solution-tab-automation" href="#solution-automation"><span class="solution-index">01</span><span>Productividad y optimización operativa</span><span class="solution-arrow" aria-hidden="true">↗</span></a><a class="solution-tab" id="solution-tab-information" href="#solution-information"><span class="solution-index">02</span><span>Gestión e integración de información</span><span class="solution-arrow" aria-hidden="true">↗</span></a><a class="solution-tab" id="solution-tab-analytics" href="#solution-analytics"><span class="solution-index">03</span><span>Inteligencia de Negocios</span><span class="solution-arrow" aria-hidden="true">↗</span></a><a class="solution-tab" id="solution-tab-digital" href="#solution-digital"><span class="solution-index">04</span><span>Soluciones digitales</span><span class="solution-arrow" aria-hidden="true">↗</span></a></div><p class="solution-nav-note">Productividad, información, inteligencia y plataformas.<br>Soluciones a la medida de tu operación.</p></nav>
+              <div class="solution-stage"><article class="solution-panel solution-automation" id="solution-automation" aria-labelledby="solution-title-automation">
+ <div class="solution-problem"><span>El desafío</span><h3 id="solution-title-automation">Tu equipo repite las mismas tareas todos los días.</h3></div>
+ <figure class="solution-demo" data-reactive><div class="demo-topline"><span>01 / Productividad y optimización operativa</span><span class="demo-status">Demostración conceptual</span></div><svg class="demo-desktop" viewBox="0 0 585 310" role="img" aria-label="Tareas manuales → flujo automatizado" xmlns="http://www.w3.org/2000/svg"><g class="demo-node source source-0"><rect x="25" y="32" width="124" height="44" rx="5"/><text x="87.0" y="59.0" text-anchor="middle">Solicitud</text></g><g class="demo-node source source-1"><rect x="25" y="93" width="124" height="44" rx="5"/><text x="87.0" y="120.0" text-anchor="middle">Documento</text></g><g class="demo-node source source-2"><rect x="25" y="154" width="124" height="44" rx="5"/><text x="87.0" y="181.0" text-anchor="middle">Aprobación</text></g><path class="demo-route" d="M149 54 H177 V115 H216 M149 115 H216 M149 176 H177 V115"/><path class="demo-transfer" d="M149 54 H177 V115 H216 M149 115 H216 M149 176 H177 V115"/><g class="demo-node step-one"><rect x="216" y="82" width="133" height="66" rx="5"/><text x="282.5" y="112.0" text-anchor="middle">Validar</text><text class="demo-small" x="282.5" y="134.0" text-anchor="middle">Reglas del negocio</text></g><path class="demo-route" d="M349 115 H400"/><path class="demo-transfer" d="M349 115 H400"/><g class="demo-node step-two"><rect x="400" y="82" width="133" height="66" rx="5"/><text x="466.5" y="112.0" text-anchor="middle">Ejecutar</text><text class="demo-small" x="466.5" y="134.0" text-anchor="middle">Acción conectada</text></g><path class="demo-route" d="M466 148 V198 H370 V225"/><path class="demo-transfer" d="M466 148 V198 H370 V225"/><g class="demo-node step-three"><rect x="245" y="225" width="250" height="46" rx="5"/><text x="370.0" y="253.0" text-anchor="middle">✓  Flujo completado</text></g><text class="demo-small" x="25" y="265">Entrada manual</text><text class="demo-small" x="216" y="55">FLUJO AUTOMATIZADO</text></svg><svg class="demo-mobile" viewBox="0 0 320 300" role="img" aria-label="Tareas manuales → flujo automatizado" xmlns="http://www.w3.org/2000/svg"><g class="demo-node source"><rect x="50" y="15" width="220" height="50" rx="5"/><text x="160.0" y="37.0" text-anchor="middle">Tareas manuales</text><text class="demo-small" x="160.0" y="59.0" text-anchor="middle">Solicitudes · documentos</text></g><path class="demo-route" d="M160 65 V103"/><path class="demo-transfer" d="M160 65 V103"/><g class="demo-node step-one"><rect x="50" y="103" width="220" height="62" rx="5"/><text x="160.0" y="131.0" text-anchor="middle">Validar → ejecutar</text><text class="demo-small" x="160.0" y="153.0" text-anchor="middle">Reglas y acciones conectadas</text></g><path class="demo-route" d="M160 165 V203"/><path class="demo-transfer" d="M160 165 V203"/><g class="demo-node step-three"><rect x="50" y="203" width="220" height="62" rx="5"/><text x="160.0" y="231.0" text-anchor="middle">✓ Flujo completado</text><text class="demo-small" x="160.0" y="253.0" text-anchor="middle">Estado visible para el equipo</text></g></svg><figcaption>Tareas manuales → flujo automatizado</figcaption></figure>
+ <div class="solution-outcome"><div><span class="eyebrow">El resultado</span><h4>De tareas pendientes a un flujo que avanza solo.</h4><p>Validaciones y acciones conectadas, con seguimiento de cada tarea.</p></div><a class="button button-primary solution-cta" href="https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20de%20automatizaci%C3%B3n%20de%20procesos.%20Tu%20equipo%20repite%20las%20mismas%20tareas%20todos%20los%20d%C3%ADas." aria-label="Solicitar evaluación: Automatización de procesos">Evaluar mi operación <span aria-hidden="true">↗</span></a></div>
+ </article><article class="solution-panel solution-information" id="solution-information" aria-labelledby="solution-title-information">
+ <div class="solution-problem"><span>El desafío</span><h3 id="solution-title-information">La información está repartida entre archivos y sistemas.</h3></div>
+ <figure class="solution-demo" data-reactive><div class="demo-topline"><span>02 / Gestión e integración de información</span><span class="demo-status">Demostración conceptual</span></div><svg class="demo-desktop" viewBox="0 0 585 310" role="img" aria-label="Fuentes dispersas → información organizada" xmlns="http://www.w3.org/2000/svg"><g class="demo-node source source-0"><rect x="22" y="30" width="125" height="53" rx="5"/><text x="84.5" y="61.5" text-anchor="middle">Planillas</text></g><g class="demo-node source source-1"><rect x="22" y="114" width="125" height="53" rx="5"/><text x="84.5" y="145.5" text-anchor="middle">Sistemas</text></g><g class="demo-node source source-2"><rect x="22" y="198" width="125" height="53" rx="5"/><text x="84.5" y="229.5" text-anchor="middle">Documentos</text></g><path class="demo-route" d="M147 56 H181 V140 H228 M147 140 H228 M147 224 H181 V140 H228"/><path class="demo-transfer" d="M147 56 H181 V140 H228 M147 140 H228 M147 224 H181 V140 H228"/><g class="demo-node step-one"><rect x="228" y="104" width="135" height="72" rx="5"/><text x="295.5" y="137.0" text-anchor="middle">Integrar</text><text class="demo-small" x="295.5" y="159.0" text-anchor="middle">Unificar · ordenar</text></g><path class="demo-route" d="M363 140 H413"/><path class="demo-transfer" d="M363 140 H413"/><g class="demo-node step-two"><rect x="413" y="39" width="149" height="204" rx="5"/><text x="487.5" y="146.0" text-anchor="middle"></text></g><text x="487" y="70" text-anchor="middle">Base común</text><g class="demo-node record record-0"><rect x="427" y="88" width="121" height="33" rx="5"/><text x="487.5" y="109.5" text-anchor="middle">Clientes</text></g><g class="demo-node record record-1"><rect x="427" y="134" width="121" height="33" rx="5"/><text x="487.5" y="155.5" text-anchor="middle">Operaciones</text></g><g class="demo-node record record-2"><rect x="427" y="180" width="121" height="33" rx="5"/><text x="487.5" y="201.5" text-anchor="middle">Documentos</text></g></svg><svg class="demo-mobile" viewBox="0 0 320 300" role="img" aria-label="Fuentes dispersas → información organizada" xmlns="http://www.w3.org/2000/svg"><g class="demo-node source"><rect x="8" y="15" width="96" height="44" rx="5"/><text x="56.0" y="42.0" text-anchor="middle">Archivos</text></g><g class="demo-node source"><rect x="112" y="15" width="96" height="44" rx="5"/><text x="160.0" y="42.0" text-anchor="middle">Sistemas</text></g><g class="demo-node source"><rect x="216" y="15" width="96" height="44" rx="5"/><text x="264.0" y="42.0" text-anchor="middle">Registros</text></g><path class="demo-route" d="M56 59 V80 H160 V109 M160 59 V109 M264 59 V80 H160"/><path class="demo-transfer" d="M56 59 V80 H160 V109 M160 59 V109 M264 59 V80 H160"/><g class="demo-node step-one"><rect x="50" y="109" width="220" height="60" rx="5"/><text x="160.0" y="144.0" text-anchor="middle">Integrar y organizar</text></g><path class="demo-route" d="M160 169 V207"/><path class="demo-transfer" d="M160 169 V207"/><g class="demo-node record"><rect x="50" y="207" width="220" height="60" rx="5"/><text x="160.0" y="234.0" text-anchor="middle">Base común</text><text class="demo-small" x="160.0" y="256.0" text-anchor="middle">Información disponible</text></g></svg><figcaption>Fuentes dispersas → información organizada</figcaption></figure>
+ <div class="solution-outcome"><div><span class="eyebrow">El resultado</span><h4>Una estructura común para conectar tu operación.</h4><p>Fuentes integradas y registros organizados para consultar y compartir.</p></div><a class="button button-primary solution-cta" href="https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20de%20gesti%C3%B3n%20e%20integraci%C3%B3n%20de%20informaci%C3%B3n.%20La%20informaci%C3%B3n%20est%C3%A1%20repartida%20entre%20archivos%20y%20sistemas." aria-label="Solicitar evaluación: Gestión e integración de información">Evaluar mi operación <span aria-hidden="true">↗</span></a></div>
+ </article><article class="solution-panel solution-analytics" id="solution-analytics" aria-labelledby="solution-title-analytics">
+ <div class="solution-problem"><span>El desafío</span><h3 id="solution-title-analytics">Preparar reportes retrasa las decisiones de tu negocio.</h3></div>
+ <figure class="solution-demo" data-reactive><div class="demo-topline"><span>03 / Inteligencia de Negocios</span><span class="demo-status">Demostración conceptual</span></div><svg class="demo-desktop" viewBox="0 0 585 310" role="img" aria-label="Datos → indicadores → decisiones" xmlns="http://www.w3.org/2000/svg"><g class="demo-node source"><rect x="20" y="102" width="124" height="72" rx="5"/><text x="82.0" y="135.0" text-anchor="middle">Registros</text><text class="demo-small" x="82.0" y="157.0" text-anchor="middle">Datos de operación</text></g><path class="demo-route" d="M144 138 H202"/><path class="demo-transfer" d="M144 138 H202"/><g class="demo-node step-one"><rect x="202" y="35" width="361" height="229" rx="5"/><text x="382.5" y="154.5" text-anchor="middle"></text></g><text x="224" y="65">Vista de gestión</text><g class="demo-node record record-0"><rect x="223" y="82" width="98" height="48" rx="5"/><text x="272.0" y="111.0" text-anchor="middle">Ventas</text></g><g class="demo-node record record-1"><rect x="331" y="82" width="98" height="48" rx="5"/><text x="380.0" y="111.0" text-anchor="middle">Operación</text></g><g class="demo-node record record-2"><rect x="439" y="82" width="98" height="48" rx="5"/><text x="488.0" y="111.0" text-anchor="middle">Gestión</text></g><path class="demo-guide" d="M224 155 H540 M224 195 H540 M224 236 H540"/><rect class="demo-bar" style="--i:0" x="228" y="201" width="15" height="35" rx="2"/><rect class="demo-bar" style="--i:1" x="255" y="180" width="15" height="56" rx="2"/><rect class="demo-bar" style="--i:2" x="282" y="193" width="15" height="43" rx="2"/><rect class="demo-bar" style="--i:3" x="309" y="157" width="15" height="79" rx="2"/><rect class="demo-bar" style="--i:4" x="336" y="172" width="15" height="64" rx="2"/><path class="demo-chart" d="M395 222 L425 203 L452 210 L483 170 L510 181 L540 150"/><text class="demo-small" x="222" y="289">Indicadores conceptuales · sin datos reales</text></svg><svg class="demo-mobile" viewBox="0 0 320 300" role="img" aria-label="Datos → indicadores → decisiones" xmlns="http://www.w3.org/2000/svg"><g class="demo-node source"><rect x="50" y="15" width="220" height="50" rx="5"/><text x="160.0" y="45.0" text-anchor="middle">Datos de la operación</text></g><path class="demo-route" d="M160 65 V97"/><path class="demo-transfer" d="M160 65 V97"/><g class="demo-node step-one"><rect x="30" y="97" width="260" height="182" rx="5"/><text x="160.0" y="193.0" text-anchor="middle"></text></g><text x="50" y="125">Vista de gestión</text><text class="demo-small" x="50" y="146">Indicadores · reportes</text><rect class="demo-bar" style="--i:0" x="55" y="211" width="24" height="35" rx="2"/><rect class="demo-bar" style="--i:1" x="97" y="182" width="24" height="64" rx="2"/><rect class="demo-bar" style="--i:2" x="139" y="198" width="24" height="48" rx="2"/><rect class="demo-bar" style="--i:3" x="181" y="166" width="24" height="80" rx="2"/><rect class="demo-bar" style="--i:4" x="223" y="178" width="24" height="68" rx="2"/><text class="demo-small" x="50" y="268">Sin datos reales</text></svg><figcaption>Datos → indicadores → decisiones</figcaption></figure>
+ <div class="solution-outcome"><div><span class="eyebrow">El resultado</span><h4>De registros aislados a una vista clara del negocio.</h4><p>Indicadores y reportes centralizados para comprender la operación.</p></div><a class="button button-primary solution-cta" href="https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20de%20inteligencia%20de%20negocios.%20Preparar%20reportes%20retrasa%20las%20decisiones%20de%20tu%20negocio." aria-label="Solicitar evaluación: Inteligencia de Negocios">Evaluar mi operación <span aria-hidden="true">↗</span></a></div>
+ </article><article class="solution-panel solution-digital" id="solution-digital" aria-labelledby="solution-title-digital">
+ <div class="solution-problem"><span>El desafío</span><h3 id="solution-title-digital">Tu operación necesita más que planillas y correos.</h3></div>
+ <figure class="solution-demo" data-reactive><div class="demo-topline"><span>04 / Soluciones digitales</span><span class="demo-status">Demostración conceptual</span></div><svg class="demo-desktop" viewBox="0 0 585 310" role="img" aria-label="Necesidad operativa → plataforma conectada" xmlns="http://www.w3.org/2000/svg"><g class="demo-node source"><rect x="20" y="110" width="128" height="70" rx="5"/><text x="84.0" y="142.0" text-anchor="middle">Necesidad</text><text class="demo-small" x="84.0" y="164.0" text-anchor="middle">Control de solicitudes</text></g><path class="demo-route" d="M148 145 H204"/><path class="demo-transfer" d="M148 145 H204"/><g class="demo-node platform"><rect x="204" y="30" width="359" height="244" rx="5"/><text x="383.5" y="157.0" text-anchor="middle"></text></g><path class="demo-guide" d="M204 70 H563"/><circle cx="222" cy="50" r="3" fill="#77edce"/><text x="238" y="55">Mi operación</text><g class="demo-node step-one"><rect x="222" y="90" width="143" height="65" rx="5"/><text x="293.5" y="119.5" text-anchor="middle">Solicitudes</text><text class="demo-small" x="293.5" y="141.5" text-anchor="middle">Ingreso y revisión</text></g><g class="demo-node step-two"><rect x="400" y="90" width="143" height="65" rx="5"/><text x="471.5" y="119.5" text-anchor="middle">Equipo</text><text class="demo-small" x="471.5" y="141.5" text-anchor="middle">Responsables</text></g><path class="demo-route" d="M365 122 H400 M294 155 V198 H400 M471 155 V198"/><path class="demo-transfer" d="M365 122 H400 M294 155 V198 H400 M471 155 V198"/><g class="demo-node step-three"><rect x="400" y="180" width="143" height="65" rx="5"/><text x="471.5" y="209.5" text-anchor="middle">Seguimiento</text><text class="demo-small" x="471.5" y="231.5" text-anchor="middle">Estados visibles</text></g><text class="demo-small" x="225" y="246">Módulos conectados</text></svg><svg class="demo-mobile" viewBox="0 0 320 300" role="img" aria-label="Necesidad operativa → plataforma conectada" xmlns="http://www.w3.org/2000/svg"><g class="demo-node source"><rect x="50" y="15" width="220" height="50" rx="5"/><text x="160.0" y="45.0" text-anchor="middle">Necesidad operativa</text></g><path class="demo-route" d="M160 65 V97"/><path class="demo-transfer" d="M160 65 V97"/><g class="demo-node platform"><rect x="15" y="97" width="290" height="183" rx="5"/><text x="160.0" y="193.5" text-anchor="middle"></text></g><text x="35" y="123">Mi operación</text><g class="demo-node step-one"><rect x="32" y="140" width="115" height="48" rx="5"/><text x="89.5" y="169.0" text-anchor="middle">Solicitudes</text></g><g class="demo-node step-two"><rect x="174" y="140" width="115" height="48" rx="5"/><text x="231.5" y="169.0" text-anchor="middle">Equipo</text></g><path class="demo-route" d="M147 164 H174 M90 188 V215 H160 V229 M232 188 V215 H160"/><path class="demo-transfer" d="M147 164 H174 M90 188 V215 H160 V229 M232 188 V215 H160"/><g class="demo-node step-three"><rect x="72" y="229" width="176" height="34" rx="5"/><text x="160.0" y="251.0" text-anchor="middle">Seguimiento</text></g></svg><figcaption>Necesidad operativa → plataforma conectada</figcaption></figure>
+ <div class="solution-outcome"><div><span class="eyebrow">El resultado</span><h4>Una herramienta diseñada para tu forma de trabajar.</h4><p>Solicitudes, responsables y estados conectados en una plataforma.</p></div><a class="button button-primary solution-cta" href="https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20de%20soluciones%20digitales.%20Tu%20operaci%C3%B3n%20necesita%20m%C3%A1s%20que%20planillas%20y%20correos." aria-label="Solicitar evaluación: Soluciones digitales">Evaluar mi operación <span aria-hidden="true">↗</span></a></div>
+ </article></div>
             </div>
           </div>
         </section>
 
-        <section class="section" id="impacto">
-          <div class="container impact-grid">
-            <div class="impact-copy">
-              <div class="section-heading" data-reveal>
-                <p class="eyebrow">Impacto</p>
-                <h2>Menos trabajo manual. Mas control operativo.</h2>
-                <p>
-                  Diseñado para gerencias, operaciones, ventas y administracion que necesitan datos confiables sin esperar reportes manuales.
-                </p>
-              </div>
+<section class="section experience-section" id="experiencia" aria-labelledby="experience-title"><div class="container"><div class="trust-heading"><div class="section-heading"><p class="eyebrow">Trayectoria / Experiencia profesional</p><h2 id="experience-title">Experiencia que entiende<br>la escala empresarial.</h2></div><p>Experiencia profesional en proyectos y soluciones desarrolladas para entornos empresariales relevantes.</p></div><div class="logo-showcase" role="region" aria-label="Experiencia profesional del fundador: logotipos" aria-roledescription="carrusel">
+<a class="logo-viewport" data-logo-art href="https://www.metlife.cl/" target="_blank" rel="noopener noreferrer" aria-label="Visitar sitio oficial de MetLife"><img class="logo-still" src="img/experience/brands/metlife.png" alt="MetLife" width="640" height="200" /></a>
+<div class="logo-controls"><a data-logo-link href="https://www.metlife.cl/" target="_blank" rel="noopener noreferrer">MetLife ↗</a><output aria-label="Marca actual">1 / 4</output><button type="button" data-logo-pause aria-pressed="false" disabled>Pausar</button><button type="button" data-logo-prev aria-label="Marca anterior" disabled>←</button><button type="button" data-logo-next aria-label="Marca siguiente" disabled>→</button></div>
+</div><div class="trust-wall" aria-label="Referencias y sitios oficiales"><a class="trust-brand trust-metlife" href="https://www.metlife.cl/" target="_blank" rel="noopener noreferrer"><img src="img/experience/brands/metlife.png" alt="MetLife" loading="lazy" width="320" height="100" hidden /><span class="trust-brand-caption">MetLife</span></a><a class="trust-brand trust-bancoestado" href="https://www.bancoestado.cl/" target="_blank" rel="noopener noreferrer"><img src="img/experience/brands/bancoestado.png" alt="BancoEstado Corredores de Seguros" loading="lazy" width="320" height="100" hidden /><span class="trust-brand-caption">BancoEstado Corredores de Seguros</span></a><a class="trust-brand trust-bancochile" href="https://www.bancochile.cl/" target="_blank" rel="noopener noreferrer"><img src="img/experience/brands/bancochile.svg" alt="Banco de Chile" loading="lazy" width="320" height="100" hidden /><span class="trust-brand-caption">Banco de Chile</span></a><a class="trust-brand trust-scotiabank" href="https://www.scotiabankchile.cl/" target="_blank" rel="noopener noreferrer"><img src="img/experience/brands/scotiabank.svg" alt="Scotiabank" loading="lazy" width="320" height="100" hidden /><span class="trust-brand-caption">Scotiabank</span></a></div><div class="trust-footnote"><span>TRAYECTORIA APLICADA A PRODUCTIVIDAD DIGITAL</span><p>Referencias de la experiencia del fundador en otros contextos laborales. No implican contratos directos con iWave, alianza ni patrocinio.</p></div></div></section>
 
-              <div class="benefit-highlight" data-reveal>
-                <p class="benefit-number">Resultado esperado</p>
-                <h3>Ahorra horas cada semana con automatizacion inteligente</h3>
-                <p>
-                  Simplificamos procesos, aceleramos respuestas y dejamos la informacion lista para actuar.
-                </p>
-              </div>
-            </div>
+<section class="section capabilities-section" id="capacidades" aria-labelledby="capabilities-title"><div class="container"><div class="section-heading"><p class="eyebrow">Capacidades / Ecosistema tecnológico</p><h2 id="capabilities-title">Tecnología aplicada a desafíos reales.</h2><p>Explora las tecnologías detrás de cada solución.</p></div><div class="capability-explorer"><nav class="capability-map" aria-label="Explorar capacidades"><svg class="capability-connections" viewBox="0 0 500 470" preserveAspectRatio="none" fill="none" aria-hidden="true"><path data-path="python" d="M85 235 C150 235 125 83 205 83"/><path data-path="sql" d="M85 235 C150 235 125 159 205 159"/><path data-path="bi" d="M85 235 C150 235 125 235 205 235"/><path data-path="apps" d="M85 235 C150 235 125 311 205 311"/><path data-path="infra" d="M85 235 C150 235 125 387 205 387"/></svg><div class="capability-core" aria-hidden="true">iWave<small>PRODUCTIVIDAD DIGITAL</small></div><a href="#capability-python" class="capability-choice" style="--slot:0" data-capability="python"><span>01</span>Python y automatización<b aria-hidden="true">↗</b></a><a href="#capability-sql" class="capability-choice" style="--slot:1" data-capability="sql"><span>02</span>SQL Server y datos<b aria-hidden="true">↗</b></a><a href="#capability-bi" class="capability-choice" style="--slot:2" data-capability="bi"><span>03</span>Business Intelligence<b aria-hidden="true">↗</b></a><a href="#capability-apps" class="capability-choice" style="--slot:3" data-capability="apps"><span>04</span>Plataformas y aplicaciones<b aria-hidden="true">↗</b></a><a href="#capability-infra" class="capability-choice" style="--slot:4" data-capability="infra"><span>05</span>Infraestructura e integraciones<b aria-hidden="true">↗</b></a></nav><div class="capability-details"><article id="capability-python" class="capability-panel"><p class="eyebrow">Python · APIs · ETL</p><h3>Python y automatización</h3><p>Automatizamos validaciones, transformamos información y programamos tareas, scripts y notificaciones.</p><div class="capability-pipeline" aria-label="Ejemplo conceptual"><span>Archivos</span><span>Validación</span><span>Ejecución programada</span><span>Alertas</span></div><a href="#contacto" class="capability-link">Conversemos sobre tu operación ↗</a></article><article id="capability-sql" class="capability-panel"><p class="eyebrow">SQL Server · T-SQL · Stored Procedures</p><h3>SQL Server y datos</h3><p>Diseñamos modelos de datos, consolidamos fuentes y optimizamos consultas para preparar información confiable.</p><div class="capability-pipeline" aria-label="Ejemplo conceptual"><span>Fuentes</span><span>Consolidación</span><span>Modelo de datos</span><span>Consulta</span></div><a href="#contacto" class="capability-link">Conversemos sobre tu operación ↗</a></article><article id="capability-bi" class="capability-panel"><p class="eyebrow">Power BI · KPI · Visualización analítica</p><h3>Business Intelligence</h3><p>Construimos dashboards, reportes automatizados y seguimiento operativo para apoyar decisiones.</p><div class="capability-pipeline" aria-label="Ejemplo conceptual"><span>Datos</span><span>Indicadores</span><span>Dashboard</span><span>Decisiones</span></div><a href="#contacto" class="capability-link">Conversemos sobre tu operación ↗</a></article><article id="capability-apps" class="capability-panel"><p class="eyebrow">Python · Streamlit · Servicios web</p><h3>Plataformas y aplicaciones</h3><p>Desarrollamos aplicaciones internas, plataformas de gestión y herramientas de monitoreo y control.</p><div class="capability-pipeline" aria-label="Ejemplo conceptual"><span>Usuario</span><span>Aplicación</span><span>Flujo empresarial</span><span>Seguimiento</span></div><a href="#contacto" class="capability-link">Conversemos sobre tu operación ↗</a></article><article id="capability-infra" class="capability-panel"><p class="eyebrow">Docker · Linux · APIs REST · SFTP</p><h3>Infraestructura e integraciones</h3><p>Conectamos sistemas y automatizamos transferencias y procesamiento de archivos entre plataformas.</p><div class="capability-pipeline" aria-label="Ejemplo conceptual"><span>Sistema</span><span>Transferencia segura</span><span>Procesamiento</span><span>Destino</span></div><a href="#contacto" class="capability-link">Conversemos sobre tu operación ↗</a></article></div></div></div></section>
 
-            <div class="cards-grid benefits-grid">
-              <article class="info-card impact-card impact-card-error" data-reveal>
-                <span class="impact-icon" aria-hidden="true"></span>
-                <h3>Menos errores operativos</h3>
-                <p>Reduce omisiones, retrabajo y diferencias de informacion.</p>
-              </article>
-              <article class="info-card impact-card impact-card-speed" data-reveal>
-                <span class="impact-icon" aria-hidden="true"></span>
-                <h3>Mas productividad</h3>
-                <p>Libera al equipo para tareas de mayor valor.</p>
-              </article>
-              <article class="info-card impact-card impact-card-live" data-reveal>
-                <span class="impact-icon" aria-hidden="true"></span>
-                <h3>Informacion disponible en tiempo real</h3>
-                <p>Indicadores visibles sin consolidaciones de ultima hora.</p>
-              </article>
-              <article class="info-card impact-card impact-card-decision" data-reveal>
-                <span class="impact-icon" aria-hidden="true"></span>
-                <h3>Mejor toma de decisiones</h3>
-                <p>Datos utiles para responder rapido y con certeza.</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section-glow" id="proceso">
+<section class="section" id="proceso">
           <div class="container">
             <div class="section-heading" data-reveal>
-              <p class="eyebrow">Como trabajamos</p>
-              <h2>De problema operativo a solucion funcionando</h2>
+              <p class="eyebrow">Cómo trabajamos / Un ciclo de mejora</p>
+              <h2>De una necesidad a una solución funcionando</h2>
             </div>
 
+            <div class="lifecycle-controls"><output aria-label="Progreso del ciclo">0%</output><button type="button" data-lifecycle-resume disabled>Pausar ciclo</button></div>
+            <div class="lifecycle-track" role="progressbar" aria-label="Ciclo de vida de la solución" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
             <div class="timeline">
               <article class="timeline-step" data-reveal>
                 <span>1</span>
-                <h3>Revisamos tu proceso</h3>
-                <p>Ubicamos tareas repetidas, errores y cuellos de botella.</p>
+                <h3><button type="button" class="lifecycle-select" aria-pressed="false" disabled>Evaluación</button></h3>
+                <p>Comprendemos tu operación, tus fuentes de información y las decisiones que necesitas mejorar.</p>
               </article>
               <article class="timeline-step" data-reveal>
                 <span>2</span>
-                <h3>Proponemos una solucion</h3>
+                <h3><button type="button" class="lifecycle-select" aria-pressed="false" disabled>Diseño</button></h3>
                 <p>Definimos una mejora concreta y medible.</p>
               </article>
               <article class="timeline-step" data-reveal>
                 <span>3</span>
-                <h3>Desarrollamos y entregamos</h3>
-                <p>Construimos y dejamos la solucion operativa.</p>
+                <h3><button type="button" class="lifecycle-select" aria-pressed="false" disabled>Implementación</button></h3>
+                <p>Construimos y dejamos la solución operativa.</p>
               </article>
               <article class="timeline-step" data-reveal>
                 <span>4</span>
-                <h3>Ajustamos y acompanamos</h3>
-                <p>Ajustamos, medimos y acompanamos la adopcion.</p>
+                <h3><button type="button" class="lifecycle-select" aria-pressed="false" disabled>Optimización</button></h3>
+                <p>Ajustamos, medimos y acompañamos la adopción.</p>
               </article>
             </div>
           </div>
         </section>
 
-        <section class="section contact-section" id="contacto">
+<section class="section contact-section" id="contacto">
           <div class="container contact-panel" data-reveal>
             <div class="contact-copy">
-              <p class="eyebrow">Contacto</p>
-              <h2>Cuentanos que proceso quieres automatizar</h2>
+              <p class="eyebrow">Contacto / Tu próximo paso</p>
+              <h2>Conversemos sobre tu próximo paso digital.</h2>
               <p>
-                Revisamos tu caso y te mostramos oportunidades concretas para ahorrar tiempo y reducir errores.
+                Cuéntanos qué necesitas optimizar, conectar o desarrollar. Transformemos esa necesidad en una solución.
               </p>
+              <div class="contact-direct"><a href="mailto:contacto@iwave.cl">contacto@iwave.cl ↗</a><a href="https://wa.me/56953442563">Conversar por WhatsApp ↗</a><span>+56 9 5344 2563</span></div>
             </div>
 
-            <div class="contact-actions">
-              <a class="button button-primary" href="https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20evaluar%20una%20automatizacion%20para%20mi%20negocio."
-                >Hablar por WhatsApp</a
-              >
-              <a class="button button-secondary" href="mailto:contacto@iwave.cl"
-                >Escribir por correo</a
-              >
-              <div class="contact-data">
-                <p>contacto@iwave.cl</p>
-                <p>+56 9 5344 2563</p>
+            <form id="contact-form" class="contact-form" action="mailto:contacto@iwave.cl" method="post" enctype="text/plain" aria-describedby="contact-help">
+              <p id="contact-help">Este formulario abre tu aplicación de correo. Debes completar el envío desde allí.</p>
+              <div class="form-grid">
+                <div class="form-field"><label for="full-name">Nombre completo <span>(obligatorio)</span></label><input id="full-name" name="nombre" autocomplete="name" required maxlength="120" aria-describedby="name-error" /><small class="field-error" id="name-error"></small></div>
+                <div class="form-field"><label for="company">Empresa <span>(opcional)</span></label><input id="company" name="empresa" autocomplete="organization" maxlength="160" /></div>
+                <div class="form-field"><label for="email">Correo electrónico <span>(obligatorio)</span></label><input id="email" name="correo" type="email" autocomplete="email" required maxlength="254" aria-describedby="email-error" /><small class="field-error" id="email-error"></small></div>
+                <div class="form-field"><label for="solution">Tipo de solución <span>(obligatorio)</span></label><select id="solution" name="solucion" required aria-describedby="solution-error"><option value="">Selecciona una solución</option><option>Automatización de procesos</option><option>Gestión de información</option><option>Inteligencia de Negocios</option><option>Soluciones digitales</option><option>Optimización operativa</option><option>Integración de servicios</option><option>Alertas y monitoreo</option><option>Plataformas de apoyo a la operación</option><option>Otra consulta</option></select><small class="field-error" id="solution-error"></small></div>
+                <div class="form-field field-wide"><label for="message">Mensaje <span>(obligatorio)</span></label><textarea id="message" name="mensaje" rows="4" required maxlength="1500" aria-describedby="message-error"></textarea><small class="field-error" id="message-error"></small></div>
               </div>
-            </div>
+              <button class="button button-primary" type="submit">Preparar correo <span aria-hidden="true">↗</span></button>
+              <p id="contact-status" role="status" aria-live="polite"></p>
+              <p class="form-privacy">No guardamos los datos del formulario en este sitio. Evita incluir información sensible.</p>
+            </form>
           </div>
         </section>
       </main>
     </div>
-    <a class="whatsapp-float" href="https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20evaluar%20una%20automatizacion%20para%20mi%20negocio." aria-label="Contactar a iWave por WhatsApp">
+    <footer class="site-footer"><div class="container footer-content"><a class="brand-text" href="#inicio">iWave<span> / Productividad digital</span></a><a href="https://iwave.cl/">iwave.cl</a></div></footer>
+    <a class="whatsapp-float" href="https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital." aria-label="Contactar a iWave por WhatsApp">
       <span class="whatsapp-icon" aria-hidden="true">WA</span>
       <span>WhatsApp</span>
     </a>
 
 
-    <script src="script.js"></script>
+    <script src="img/experience/vendor/gsap.min.js"></script>
+    <script src="img/experience/vendor/ScrollTrigger.min.js"></script>
+    <script src="script.js?v=ux014"></script>
+    <script type="module" src="img/experience/journey.js?v=ux014"></script>
+    <script type="module" src="img/experience/lifecycle.js?v=exp009"></script>
+    <script type="module" src="img/experience/contact.js"></script>
+    <script type="module" src="img/experience/enterprise.js?v=ux014"></script>
   </body>
 </html>

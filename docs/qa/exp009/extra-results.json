@@ -1,0 +1,112 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "errors": [],
+    "lifecycle": [
+      {
+        "label": 0,
+        "progress": "0.000"
+      },
+      {
+        "label": 25,
+        "progress": "0.250"
+      },
+      {
+        "label": 50,
+        "progress": "0.500"
+      },
+      {
+        "label": 75,
+        "progress": "0.750"
+      },
+      {
+        "label": 100,
+        "progress": "1.000"
+      },
+      {
+        "label": "restart",
+        "progress": "0.012"
+      }
+    ],
+    "trailCaptureMs": 3909.300000011921,
+    "inertiaCaptureMs": 3458.2999999821186,
+    "overflowSections": [],
+    "dynamicReduced": true,
+    "overflow": false
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "errors": [],
+    "lifecycle": [
+      {
+        "label": 0,
+        "progress": "0.000"
+      },
+      {
+        "label": 25,
+        "progress": "0.250"
+      },
+      {
+        "label": 50,
+        "progress": "0.500"
+      },
+      {
+        "label": 75,
+        "progress": "0.750"
+      },
+      {
+        "label": 100,
+        "progress": "1.000"
+      },
+      {
+        "label": "restart",
+        "progress": "0.013"
+      }
+    ],
+    "overflowSections": [],
+    "dynamicReduced": true,
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "errors": [],
+    "lifecycle": [
+      {
+        "label": 0,
+        "progress": "0.000",
+        "durationMs": 2428
+      },
+      {
+        "label": 25,
+        "progress": "0.250",
+        "durationMs": 384
+      },
+      {
+        "label": 50,
+        "progress": "0.500",
+        "durationMs": 653
+      },
+      {
+        "label": 75,
+        "progress": "0.750",
+        "durationMs": 790
+      },
+      {
+        "label": 100,
+        "progress": "1.000",
+        "durationMs": 850
+      },
+      {
+        "label": "restart",
+        "progress": "0.016",
+        "durationMs": 553
+      }
+    ],
+    "overflowSections": [],
+    "dynamicReduced": true,
+    "overflow": false
+  }
+]

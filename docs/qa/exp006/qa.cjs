@@ -1,0 +1,24 @@
+const {chromium}=require('playwright');const fs=require('fs');const assert=require('assert');
+(async()=>{const server=require('child_process').spawn('python3',['-m','http.server','8765','--bind','127.0.0.1'],{cwd:'/opt/iwave/proyectos/landing-iwave',stdio:'ignore'});process.on('exit',()=>server.kill());await new Promise(r=>setTimeout(r,500));const b=await chromium.launch({args:['--no-sandbox']});const results=[];
+for(const [w,h] of [[1440,900],[768,1024],[390,844]]){
+ const p=await b.newPage({viewport:{width:w,height:h}});const errors=[];const failures=[];p.on('pageerror',e=>errors.push(e.message));p.on('console',m=>{if(m.type()==='error')errors.push(m.text())});p.on('response',r=>{if(r.status()>=400)failures.push([r.status(),r.url()])});
+ await p.goto('http://127.0.0.1:8765',{waitUntil:'domcontentloaded'});await p.evaluate(()=>document.fonts.ready);await p.waitForTimeout(600);
+ for(const id of ['inicio','informacion','transformacion','servicios','capacidades','experiencia','proceso','contacto']){
+ await p.evaluate(id=>window.scrollTo({top:document.getElementById(id).getBoundingClientRect().top+scrollY-100,behavior:'instant'}),id);await p.waitForTimeout(650);
+ await p.screenshot({path:`/opt/iwave/proyectos/landing-iwave/docs/qa/exp006/${w}-${id}.png`});
+ const overflow=await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth);assert(!overflow,`${w} ${id} overflow`);
+ if(id==='transformacion'){
+  const measurements=await p.evaluate(()=>{const nodes=[...document.querySelectorAll('.operation-source,.operation-hub,.operation-output')];return {progress:getComputedStyle(document.querySelector('[data-transformation]')).getPropertyValue('--connect'),overlap:nodes.some((n,i)=>nodes.slice(i+1).some(m=>{const a=n.getBoundingClientRect(),b=m.getBoundingClientRect();return a.left<b.right&&a.right>b.left&&a.top<b.bottom&&a.bottom>b.top})),fill:getComputedStyle(document.querySelector('.operation-wires path')).fill}});assert(!measurements.overlap);assert.equal(measurements.fill,'none');
+  await p.evaluate(()=>scrollBy({top:300,behavior:'instant'}));await p.waitForTimeout(500);await p.screenshot({path:`/opt/iwave/proyectos/landing-iwave/docs/qa/exp006/${w}-transformacion-mid.png`});
+  results.push({w,measurements});
+ }
+ }
+ for(let i=0;i<4;i++){await p.locator('.solution-tab').nth(i).click();await p.waitForTimeout(1000);assert.equal(await p.locator('.solution-panel:visible').count(),1);await p.locator('.solution-panel:visible').screenshot({path:`/opt/iwave/proyectos/landing-iwave/docs/qa/exp006/${w}-solution-${i}.png`});}
+ for(let i=0;i<5;i++){await p.locator('[data-capability]').nth(i).click();assert.equal(await p.locator('.capability-panel:visible').count(),1)}
+ for(let i=0;i<3;i++){await p.locator('[data-enterprise-next]').click();await p.waitForTimeout(800);await p.locator('.enterprise-carousel').screenshot({path:`/opt/iwave/proyectos/landing-iwave/docs/qa/exp006/${w}-enterprise-${i}.png`});}
+ if(w<761){await p.locator('.menu-toggle').click();assert.equal(await p.locator('.menu-toggle').getAttribute('aria-expanded'),'true');await p.locator('.site-nav a[href="#servicios"]').click();assert.equal(await p.locator('.menu-toggle').getAttribute('aria-expanded'),'false')}
+ await p.locator('#contacto').scrollIntoViewIfNeeded();await p.locator('form button[type="submit"]').click();assert(await p.locator('input:invalid').count()>0);await p.locator('form button[type="submit"]').scrollIntoViewIfNeeded();await p.screenshot({path:`/opt/iwave/proyectos/landing-iwave/docs/qa/exp006/${w}-form.png`});
+ results.push({w,errors,failures,webgl:await p.locator('.journey-scene').getAttribute('class')});await p.close();
+}
+for(const mode of ['reduced','no-webgl','no-js']){const ctx=await b.newContext({viewport:{width:390,height:844},reducedMotion:mode==='reduced'?'reduce':'no-preference',javaScriptEnabled:mode!=='no-js'});if(mode==='no-webgl')await ctx.addInitScript(()=>{const original=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=function(type,...args){return /webgl/.test(type)?null:original.call(this,type,...args)}});const p=await ctx.newPage();await p.goto('http://127.0.0.1:8765',{waitUntil:'domcontentloaded'});await p.waitForTimeout(700);await p.screenshot({path:`/opt/iwave/proyectos/landing-iwave/docs/qa/exp006/${mode}-hero.png`});await p.locator('[data-transformation]').screenshot({path:`/opt/iwave/proyectos/landing-iwave/docs/qa/exp006/${mode}-transformacion.png`});assert(await p.locator('.operation-output').isVisible());results.push({mode,ready:await p.locator('.journey-scene').getAttribute('class')});await ctx.close()}
+fs.writeFileSync('/opt/iwave/proyectos/landing-iwave/docs/qa/exp006/results.json',JSON.stringify(results,null,2));console.log(JSON.stringify(results,null,2));await b.close();server.kill()})();

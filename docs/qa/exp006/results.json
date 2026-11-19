@@ -1,0 +1,56 @@
+[
+  {
+    "w": 1440,
+    "measurements": {
+      "progress": "0.6090",
+      "overlap": false,
+      "fill": "none"
+    }
+  },
+  {
+    "w": 1440,
+    "errors": [],
+    "failures": [],
+    "webgl": "journey-scene is-ready"
+  },
+  {
+    "w": 768,
+    "measurements": {
+      "progress": "0.5919",
+      "overlap": false,
+      "fill": "none"
+    }
+  },
+  {
+    "w": 768,
+    "errors": [],
+    "failures": [],
+    "webgl": "journey-scene is-ready"
+  },
+  {
+    "w": 390,
+    "measurements": {
+      "progress": "0.3382",
+      "overlap": false,
+      "fill": "none"
+    }
+  },
+  {
+    "w": 390,
+    "errors": [],
+    "failures": [],
+    "webgl": "journey-scene is-ready"
+  },
+  {
+    "mode": "reduced",
+    "ready": "journey-scene"
+  },
+  {
+    "mode": "no-webgl",
+    "ready": "journey-scene"
+  },
+  {
+    "mode": "no-js",
+    "ready": "journey-scene"
+  }
+]

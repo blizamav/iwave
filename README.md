@@ -1,6 +1,6 @@
 # iWave Landing
 
-Landing page corporativa para iWave, marca enfocada en automatizacion de procesos, datos, reporterias, inteligencia artificial y soluciones tecnologicas para negocios.
+Landing corporativa de iWave, enfocada en productividad digital: automatización, Inteligencia de Negocios, gestión de información y desarrollo de soluciones digitales.
 
 ## Objetivo
 
@@ -82,3 +82,18 @@ docker run -d --name iwave-landing -p 80:80 iwave-landing:latest
 
 - WhatsApp: `+56 9 5344 2563`
 - Correo: `contacto@iwave.cl`
+
+## Reconstrucción local
+
+La página conserva la identidad oscura, con acentos cian y animaciones moderadas.
+La sección Antes / Después representa la transformación con nodos conectados:
+horizontal en escritorio y vertical hasta 820 px. No muestra métricas reales.
+
+El contenido y la navegación permanecen disponibles sin JavaScript. El menú móvil
+se mejora progresivamente; incluye cierre con Escape y al cambiar de breakpoint.
+Las animaciones respetan `prefers-reduced-motion`.
+
+Validación estática: `node --check script.js` y `git diff --check`.
+Antes de publicar, revisar en navegador desktop, tablet y móvil: desbordamientos,
+textos, flujo animado, navegación por teclado y comportamiento sin JavaScript.
+La reconstrucción no modifica Docker ni Nginx y no implica un despliegue.

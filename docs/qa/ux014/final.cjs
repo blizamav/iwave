@@ -1,0 +1,10 @@
+const {chromium}=require('/tmp/iwave-qa001/node_modules/playwright');const fs=require('fs'),assert=require('assert/strict');
+const server=require('child_process').spawn('python3',['-m','http.server','9655'],{stdio:'ignore'});process.on('exit',()=>server.kill());
+(async()=>{await new Promise(r=>setTimeout(r,400));const b=await chromium.launch({env:{...process.env,LD_LIBRARY_PATH:'/tmp/iwave-qa001/libs/root/usr/lib/x86_64-linux-gnu'},args:['--no-sandbox','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});let errors=[];
+try{for(const [w,h,ids] of [[1440,900,['inicio','capacidades','contacto']],[768,1024,['inicio']],[390,844,['inicio','experiencia']]].filter(([w])=>!process.argv[2] || w===1440)){
+const p=await b.newPage({viewport:{width:w,height:h},hasTouch:w===390,isMobile:w===390});p.on('pageerror',e=>errors.push(e.message));await p.goto('http://127.0.0.1:9655',{waitUntil:'load'});await p.waitForSelector('body.exp009-ready');
+for(const id of ids.filter(id=>!process.argv[2] || id===process.argv[2])){await p.locator('#'+id).evaluate(e=>scrollTo({top:e.getBoundingClientRect().top+scrollY-100,behavior:'instant'}));await p.waitForTimeout(id==='contacto'?4500:700);assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+if(id==='experiencia'||id==='contacto')assert.equal(await p.locator('.whatsapp-float').evaluate(e=>getComputedStyle(e).visibility),'hidden');
+if(id==='capacidades'){await p.locator('[data-capability=bi]').click();assert.equal(await p.locator('.capability-map').getAttribute('data-active'),'bi');await p.waitForTimeout(1200);}
+console.log('FINAL',id,w);await p.screenshot({path:__dirname+'/'+id+'-final-'+w+'.png',animations:'allow'});}
+await p.close();}assert.deepEqual(errors,[]);fs.writeFileSync(__dirname+'/final-results.json',JSON.stringify({errors,checks:['final responsive captures','no overflow','floating WhatsApp clear of controls','capability active connections']},null,2));}finally{await b.close();server.kill();}})().catch(e=>{console.error(e);process.exitCode=1});

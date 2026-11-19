@@ -1,0 +1,242 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "bounds": [
+      {
+        "class": "transform-file file-0",
+        "inside": true
+      },
+      {
+        "class": "transform-file file-1",
+        "inside": true
+      },
+      {
+        "class": "transform-file file-2",
+        "inside": true
+      },
+      {
+        "class": "transform-file file-3",
+        "inside": true
+      },
+      {
+        "class": "transform-file file-4",
+        "inside": true
+      },
+      {
+        "class": "transform-file file-5",
+        "inside": true
+      },
+      {
+        "class": "transform-core",
+        "inside": true
+      },
+      {
+        "class": "control-room",
+        "inside": true
+      }
+    ],
+    "logos": [
+      {
+        "alt": "MetLife",
+        "loaded": true,
+        "natural": [
+          354,
+          80
+        ]
+      },
+      {
+        "alt": "BancoEstado Corredores de Seguros",
+        "loaded": true,
+        "natural": [
+          1280,
+          249
+        ]
+      },
+      {
+        "alt": "Banco de Chile",
+        "loaded": true,
+        "natural": [
+          1000,
+          199
+        ]
+      },
+      {
+        "alt": "Scotiabank",
+        "loaded": true,
+        "natural": [
+          303,
+          44
+        ]
+      }
+    ],
+    "errors": [],
+    "http": [],
+    "overflow": []
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "bounds": [
+      {
+        "class": "transform-file file-0",
+        "inside": true
+      },
+      {
+        "class": "transform-file file-1",
+        "inside": true
+      },
+      {
+        "class": "transform-file file-2",
+        "inside": true
+      },
+      {
+        "class": "transform-file file-3",
+        "inside": true
+      },
+      {
+        "class": "transform-file file-4",
+        "inside": true
+      },
+      {
+        "class": "transform-file file-5",
+        "inside": true
+      },
+      {
+        "class": "transform-core",
+        "inside": true
+      },
+      {
+        "class": "control-room",
+        "inside": true
+      }
+    ],
+    "logos": [
+      {
+        "alt": "MetLife",
+        "loaded": true,
+        "natural": [
+          354,
+          80
+        ]
+      },
+      {
+        "alt": "BancoEstado Corredores de Seguros",
+        "loaded": true,
+        "natural": [
+          1280,
+          249
+        ]
+      },
+      {
+        "alt": "Banco de Chile",
+        "loaded": true,
+        "natural": [
+          1000,
+          199
+        ]
+      },
+      {
+        "alt": "Scotiabank",
+        "loaded": true,
+        "natural": [
+          303,
+          44
+        ]
+      }
+    ],
+    "errors": [],
+    "http": [],
+    "overflow": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "bounds": [
+      {
+        "class": "transform-file file-0",
+        "inside": true
+      },
+      {
+        "class": "transform-file file-1",
+        "inside": true
+      },
+      {
+        "class": "transform-file file-2",
+        "inside": true
+      },
+      {
+        "class": "transform-file file-3",
+        "inside": true
+      },
+      {
+        "class": "transform-file file-4",
+        "inside": true
+      },
+      {
+        "class": "transform-file file-5",
+        "inside": true
+      },
+      {
+        "class": "transform-core",
+        "inside": true
+      },
+      {
+        "class": "control-room",
+        "inside": true
+      }
+    ],
+    "logos": [
+      {
+        "alt": "MetLife",
+        "loaded": true,
+        "natural": [
+          354,
+          80
+        ]
+      },
+      {
+        "alt": "BancoEstado Corredores de Seguros",
+        "loaded": true,
+        "natural": [
+          1280,
+          249
+        ]
+      },
+      {
+        "alt": "Banco de Chile",
+        "loaded": true,
+        "natural": [
+          1000,
+          199
+        ]
+      },
+      {
+        "alt": "Scotiabank",
+        "loaded": true,
+        "natural": [
+          303,
+          44
+        ]
+      }
+    ],
+    "errors": [],
+    "http": [],
+    "overflow": []
+  },
+  {
+    "mode": "no-js",
+    "state": "after",
+    "overflow": false
+  },
+  {
+    "mode": "reduced",
+    "state": "after",
+    "overflow": false
+  },
+  {
+    "mode": "no-webgl",
+    "state": "after",
+    "overflow": false
+  }
+]

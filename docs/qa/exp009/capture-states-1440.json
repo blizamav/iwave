@@ -1,0 +1,339 @@
+[
+  {
+    "name": "1440-cursor-initial",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "fragmented"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "1440-cursor-trail",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "fragmented"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "1440-cursor-inertia",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "fragmented"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "1440-cursor-dissipated",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "fragmented"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "1440-morph-fragmented",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "1.000"
+    },
+    "lifecycle": "0.000",
+    "luminousPixels": 10841
+  },
+  {
+    "name": "1440-morph-integrated-intermediate",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "integrated",
+      "progress": "0.216"
+    },
+    "lifecycle": "0.000",
+    "luminousPixels": 12338
+  },
+  {
+    "name": "1440-morph-integrated",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "integrated",
+      "progress": "1.000"
+    },
+    "lifecycle": "0.000",
+    "luminousPixels": 4933
+  },
+  {
+    "name": "1440-morph-automated-intermediate",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "automated",
+      "progress": "0.206"
+    },
+    "lifecycle": "0.000",
+    "luminousPixels": 11283
+  },
+  {
+    "name": "1440-morph-automated",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "automated",
+      "progress": "1.000"
+    },
+    "lifecycle": "0.000",
+    "luminousPixels": 4270
+  },
+  {
+    "name": "1440-morph-analytics-intermediate",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "analytics",
+      "progress": "0.216"
+    },
+    "lifecycle": "0.000",
+    "luminousPixels": 11039
+  },
+  {
+    "name": "1440-morph-analytics",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "analytics",
+      "progress": "1.000"
+    },
+    "lifecycle": "0.000",
+    "luminousPixels": 8527
+  },
+  {
+    "name": "1440-morph-platforms-intermediate",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "platforms",
+      "progress": "0.228"
+    },
+    "lifecycle": "0.000",
+    "luminousPixels": 10938
+  },
+  {
+    "name": "1440-morph-platforms",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "platforms",
+      "progress": "1.000"
+    },
+    "lifecycle": "0.000",
+    "luminousPixels": 10737
+  },
+  {
+    "name": "1440-energy-idle",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "platforms",
+      "progress": "1.000"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "1440-morph-automatic",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "1.000"
+    },
+    "lifecycle": "0.000",
+    "luminousPixels": 9874
+  },
+  {
+    "name": "1440-logo-complete",
+    "logo": {
+      "logo": "0",
+      "progress": "0.000"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "1440-logo-disintegration",
+    "logo": {
+      "logo": "0",
+      "progress": "0.407",
+      "transition": "running",
+      "phase": "outgoing"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "1440-logo-reconstruction",
+    "logo": {
+      "logo": "1",
+      "progress": "0.516",
+      "transition": "running",
+      "phase": "incoming"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "1440-logo-next-complete",
+    "logo": {
+      "logo": "1",
+      "progress": "0.000",
+      "transition": "complete",
+      "phase": "incoming"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "1440-logo-2-complete",
+    "logo": {
+      "logo": "2",
+      "progress": "0.000",
+      "transition": "complete",
+      "phase": "incoming"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "1440-logo-3-complete",
+    "logo": {
+      "logo": "3",
+      "progress": "0.000",
+      "transition": "complete",
+      "phase": "incoming"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "1440-lifecycle-0",
+    "logo": {
+      "logo": "3",
+      "progress": "0.998",
+      "transition": "running",
+      "phase": "incoming"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "1440-lifecycle-25",
+    "logo": {
+      "logo": "3",
+      "progress": "0.998",
+      "transition": "running",
+      "phase": "incoming"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.250"
+  },
+  {
+    "name": "1440-lifecycle-50",
+    "logo": {
+      "logo": "3",
+      "progress": "0.998",
+      "transition": "running",
+      "phase": "incoming"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.500"
+  },
+  {
+    "name": "1440-lifecycle-75",
+    "logo": {
+      "logo": "3",
+      "progress": "0.998",
+      "transition": "running",
+      "phase": "incoming"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.750"
+  },
+  {
+    "name": "1440-lifecycle-100",
+    "logo": {
+      "logo": "3",
+      "progress": "0.998",
+      "transition": "running",
+      "phase": "incoming"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "1.000"
+  },
+  {
+    "name": "1440-lifecycle-restart",
+    "logo": {
+      "logo": "3",
+      "progress": "0.998",
+      "transition": "running",
+      "phase": "incoming"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.016"
+  }
+]

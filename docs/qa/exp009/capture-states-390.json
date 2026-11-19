@@ -1,0 +1,355 @@
+[
+  {
+    "name": "390-cursor-initial",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "fragmented"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "390-morph-fragmented",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "1.000"
+    },
+    "lifecycle": "0.000",
+    "luminousPixels": 2222
+  },
+  {
+    "name": "390-morph-integrated-intermediate",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "integrated",
+      "progress": "0.206"
+    },
+    "lifecycle": "0.000",
+    "luminousPixels": 2265
+  },
+  {
+    "name": "390-morph-integrated",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "integrated",
+      "progress": "1.000"
+    },
+    "lifecycle": "0.000",
+    "luminousPixels": 1938
+  },
+  {
+    "name": "390-morph-automated-intermediate",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "automated",
+      "progress": "0.216"
+    },
+    "lifecycle": "0.000",
+    "luminousPixels": 2364
+  },
+  {
+    "name": "390-morph-automated",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "automated",
+      "progress": "1.000"
+    },
+    "lifecycle": "0.000",
+    "luminousPixels": 1847
+  },
+  {
+    "name": "390-morph-analytics-intermediate",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "analytics",
+      "progress": "0.216"
+    },
+    "lifecycle": "0.000",
+    "luminousPixels": 2480
+  },
+  {
+    "name": "390-morph-analytics",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "analytics",
+      "progress": "1.000"
+    },
+    "lifecycle": "0.000",
+    "luminousPixels": 2181
+  },
+  {
+    "name": "390-morph-platforms-intermediate",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "platforms",
+      "progress": "0.206"
+    },
+    "lifecycle": "0.000",
+    "luminousPixels": 2237
+  },
+  {
+    "name": "390-morph-platforms",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "platforms",
+      "progress": "1.000"
+    },
+    "lifecycle": "0.000",
+    "luminousPixels": 2179
+  },
+  {
+    "name": "390-energy-idle",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "platforms",
+      "progress": "1.000"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "390-morph-automatic",
+    "logo": {
+      "logo": "0"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "1.000"
+    },
+    "lifecycle": "0.000",
+    "luminousPixels": 2191
+  },
+  {
+    "name": "390-logo-complete",
+    "logo": {
+      "logo": "0",
+      "progress": "0.000"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "390-logo-disintegration",
+    "logo": {
+      "logo": "0",
+      "progress": "0.341",
+      "transition": "running",
+      "phase": "outgoing"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "390-logo-reconstruction",
+    "logo": {
+      "logo": "1",
+      "progress": "0.547",
+      "transition": "running",
+      "phase": "incoming"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "390-logo-next-complete",
+    "logo": {
+      "logo": "1",
+      "progress": "0.000",
+      "transition": "complete",
+      "phase": "incoming"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "390-logo-2-complete",
+    "logo": {
+      "logo": "2",
+      "progress": "0.000",
+      "transition": "complete",
+      "phase": "incoming"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "390-logo-3-complete",
+    "logo": {
+      "logo": "3",
+      "progress": "0.000",
+      "transition": "complete",
+      "phase": "incoming"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "390-lifecycle-0",
+    "logo": {
+      "logo": "0",
+      "progress": "0.999",
+      "transition": "running",
+      "phase": "incoming"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "390-lifecycle-25",
+    "logo": {
+      "logo": "0",
+      "progress": "0.999",
+      "transition": "running",
+      "phase": "incoming"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.250"
+  },
+  {
+    "name": "390-lifecycle-50",
+    "logo": {
+      "logo": "0",
+      "progress": "0.999",
+      "transition": "running",
+      "phase": "incoming"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.500"
+  },
+  {
+    "name": "390-lifecycle-75",
+    "logo": {
+      "logo": "0",
+      "progress": "0.999",
+      "transition": "running",
+      "phase": "incoming"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.750"
+  },
+  {
+    "name": "390-lifecycle-100",
+    "logo": {
+      "logo": "0",
+      "progress": "0.999",
+      "transition": "running",
+      "phase": "incoming"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "1.000"
+  },
+  {
+    "name": "390-lifecycle-restart",
+    "logo": {
+      "logo": "0",
+      "progress": "0.999",
+      "transition": "running",
+      "phase": "incoming"
+    },
+    "morph": {
+      "shape": "fragmented",
+      "progress": "0.000"
+    },
+    "lifecycle": "0.018"
+  },
+  {
+    "name": "reduced-morph",
+    "logo": {},
+    "morph": {
+      "shape": "fragmented"
+    },
+    "lifecycle": "1.000"
+  },
+  {
+    "name": "reduced-logos",
+    "logo": {},
+    "morph": {
+      "shape": "fragmented"
+    },
+    "lifecycle": "1.000"
+  },
+  {
+    "name": "no-webgl-morph",
+    "logo": {},
+    "morph": {
+      "shape": "fragmented"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "no-webgl-logos",
+    "logo": {},
+    "morph": {
+      "shape": "fragmented"
+    },
+    "lifecycle": "0.000"
+  },
+  {
+    "name": "no-js-morph",
+    "logo": {},
+    "morph": {
+      "shape": "fragmented"
+    }
+  },
+  {
+    "name": "no-js-logos",
+    "logo": {},
+    "morph": {
+      "shape": "fragmented"
+    }
+  }
+]
