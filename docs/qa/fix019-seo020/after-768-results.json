@@ -1,0 +1,51 @@
+{
+  "phase": "after",
+  "browser": "159.0.8154.6",
+  "matrices": [
+    {
+      "width": 768,
+      "states": [
+        {
+          "brand": "metlife",
+          "progress": "0.000",
+          "image": "http://127.0.0.1:8765/img/experience/brands/metlife.png",
+          "filter": "none",
+          "blend": "normal",
+          "opacity": "1",
+          "plate": "rgb(255, 255, 255)"
+        },
+        {
+          "brand": "bancoestado",
+          "progress": "0.000",
+          "image": "http://127.0.0.1:8765/img/experience/brands/bancoestado.png",
+          "filter": "none",
+          "blend": "normal",
+          "opacity": "1",
+          "plate": "rgb(255, 255, 255)",
+          "transition": "complete"
+        },
+        {
+          "brand": "bancochile",
+          "progress": "0.000",
+          "image": "http://127.0.0.1:8765/img/experience/brands/bancochile.svg",
+          "filter": "none",
+          "blend": "normal",
+          "opacity": "1",
+          "plate": "rgb(255, 255, 255)",
+          "transition": "complete"
+        },
+        {
+          "brand": "scotiabank",
+          "progress": "0.000",
+          "image": "http://127.0.0.1:8765/img/experience/brands/scotiabank.svg",
+          "filter": "none",
+          "blend": "normal",
+          "opacity": "1",
+          "plate": "rgb(255, 255, 255)",
+          "transition": "complete"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

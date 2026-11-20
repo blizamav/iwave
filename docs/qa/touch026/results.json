@@ -1,0 +1,207 @@
+{
+  "errors": [],
+  "viewports": [
+    {
+      "width": 360,
+      "height": 800,
+      "mobile": true,
+      "visual": {
+        "count": 323,
+        "minX": 157,
+        "minY": 575,
+        "maxX": 202,
+        "maxY": 620,
+        "seeded": false,
+        "display": "block",
+        "canvasCount": 1
+      },
+      "centerVisual": {
+        "count": 308,
+        "minX": 157,
+        "minY": 225,
+        "maxX": 202,
+        "maxY": 270,
+        "seeded": false,
+        "display": "block",
+        "canvasCount": 1
+      },
+      "overflow": false,
+      "externalActions": [
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://www.bancoestado.cl/",
+          "prevented": true,
+          "card": true
+        },
+        {
+          "href": "https://www.metlife.cl/",
+          "prevented": true,
+          "card": true
+        },
+        {
+          "href": "https://www.metlife.cl/",
+          "prevented": false,
+          "card": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "visual": {
+        "count": 329,
+        "minX": 172,
+        "minY": 553,
+        "maxX": 217,
+        "maxY": 597,
+        "seeded": false,
+        "display": "block",
+        "canvasCount": 1
+      },
+      "centerVisual": {
+        "count": 317,
+        "minX": 172,
+        "minY": 247,
+        "maxX": 217,
+        "maxY": 292,
+        "seeded": false,
+        "display": "block",
+        "canvasCount": 1
+      },
+      "cleanup": {
+        "nonzero": false,
+        "frame": 0,
+        "ripples": 0
+      },
+      "render": {
+        "samples": 120,
+        "meanMs": 0.06083333343267441,
+        "maxMs": 0.2999999523162842
+      },
+      "overflow": false,
+      "externalActions": [
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://www.bancoestado.cl/",
+          "prevented": true,
+          "card": true
+        },
+        {
+          "href": "https://www.metlife.cl/",
+          "prevented": true,
+          "card": true
+        },
+        {
+          "href": "https://www.metlife.cl/",
+          "prevented": false,
+          "card": true
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        }
+      ]
+    }
+  ],
+  "checks": []
+}

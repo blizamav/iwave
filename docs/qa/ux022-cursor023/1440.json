@@ -1,0 +1,474 @@
+{
+  "mode": "1440",
+  "errors": [],
+  "checks": [
+    "Four brands, circular next, three positions, loaded assets and no horizontal overflow",
+    "Circular previous",
+    "Both lateral cards navigate",
+    "Arrow keyboard navigation",
+    "Touch horizontal swipe",
+    "Vertical gesture does not navigate",
+    "Mouse movement produces visible changing spline pixels in seven frames with >95% connected pixels",
+    "Cursor overlay preserves real button click",
+    "Trail remains visible while scrolling",
+    "Progressive trail decay sampled before reaching zero",
+    "Idle pixels clear and cursor RAF stops",
+    "Live reduced motion disables trail"
+  ],
+  "metrics": {
+    "cursorFrames": 336,
+    "cursorGapMedianMs": 33.400000000001455,
+    "cursorGapP95Ms": 316.8000000000029,
+    "longTasks": [
+      {
+        "start": 144.80000001192093,
+        "duration": 133
+      },
+      {
+        "start": 290,
+        "duration": 52
+      },
+      {
+        "start": 439.80000001192093,
+        "duration": 906
+      },
+      {
+        "start": 1346.3999999761581,
+        "duration": 113
+      },
+      {
+        "start": 15194.300000011921,
+        "duration": 151
+      }
+    ],
+    "cls": 0.00366162109375,
+    "steadyCls": 7.309941520467836e-7,
+    "overflow": 0
+  },
+  "states": [
+    {
+      "index": 0,
+      "cards": [
+        {
+          "name": "MetLife",
+          "pos": 0,
+          "w": 480,
+          "h": 200,
+          "image": {
+            "w": 430.56005859375,
+            "h": 150.19537353515625
+          },
+          "contained": true,
+          "opacity": "1",
+          "naturalWidth": 354
+        },
+        {
+          "name": "BancoEstado Corredores de Seguros",
+          "pos": 1,
+          "w": 342.49212646484375,
+          "h": 151.14694213867188,
+          "image": {
+            "w": 306.381591796875,
+            "h": 112.28176879882812
+          },
+          "contained": true,
+          "opacity": "0.72",
+          "naturalWidth": 1280
+        },
+        {
+          "name": "Banco de Chile",
+          "pos": 2,
+          "w": 299.4747314453125,
+          "h": 117.6358642578125,
+          "image": {
+            "w": 267.946533203125,
+            "h": 87.4447021484375
+          },
+          "contained": true,
+          "opacity": "0",
+          "naturalWidth": 1000
+        },
+        {
+          "name": "Scotiabank",
+          "pos": -1,
+          "w": 342.4922180175781,
+          "h": 151.14694213867188,
+          "image": {
+            "w": 306.38165283203125,
+            "h": 112.28176879882812
+          },
+          "contained": true,
+          "opacity": "0.72",
+          "naturalWidth": 303
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "index": 1,
+      "cards": [
+        {
+          "name": "MetLife",
+          "pos": -1,
+          "w": 342.4922180175781,
+          "h": 151.14694213867188,
+          "image": {
+            "w": 306.38165283203125,
+            "h": 112.28176879882812
+          },
+          "contained": true,
+          "opacity": "0.72",
+          "naturalWidth": 354
+        },
+        {
+          "name": "BancoEstado Corredores de Seguros",
+          "pos": 0,
+          "w": 480,
+          "h": 200,
+          "image": {
+            "w": 430,
+            "h": 150
+          },
+          "contained": true,
+          "opacity": "1",
+          "naturalWidth": 1280
+        },
+        {
+          "name": "Banco de Chile",
+          "pos": 1,
+          "w": 342.49212646484375,
+          "h": 151.14694213867188,
+          "image": {
+            "w": 306.381591796875,
+            "h": 112.28176879882812
+          },
+          "contained": true,
+          "opacity": "0.72",
+          "naturalWidth": 1000
+        },
+        {
+          "name": "Scotiabank",
+          "pos": -2,
+          "w": 299.47479248046875,
+          "h": 117.6358642578125,
+          "image": {
+            "w": 267.9465026855469,
+            "h": 87.4447021484375
+          },
+          "contained": true,
+          "opacity": "0",
+          "naturalWidth": 303
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "index": 2,
+      "cards": [
+        {
+          "name": "MetLife",
+          "pos": -2,
+          "w": 299.47479248046875,
+          "h": 117.6358642578125,
+          "image": {
+            "w": 267.9465026855469,
+            "h": 87.4447021484375
+          },
+          "contained": true,
+          "opacity": "0",
+          "naturalWidth": 354
+        },
+        {
+          "name": "BancoEstado Corredores de Seguros",
+          "pos": -1,
+          "w": 342.4922180175781,
+          "h": 151.14694213867188,
+          "image": {
+            "w": 306.38165283203125,
+            "h": 112.28176879882812
+          },
+          "contained": true,
+          "opacity": "0.72",
+          "naturalWidth": 1280
+        },
+        {
+          "name": "Banco de Chile",
+          "pos": 0,
+          "w": 480,
+          "h": 200,
+          "image": {
+            "w": 430,
+            "h": 150
+          },
+          "contained": true,
+          "opacity": "1",
+          "naturalWidth": 1000
+        },
+        {
+          "name": "Scotiabank",
+          "pos": 1,
+          "w": 342.49212646484375,
+          "h": 151.14694213867188,
+          "image": {
+            "w": 306.381591796875,
+            "h": 112.28176879882812
+          },
+          "contained": true,
+          "opacity": "0.72",
+          "naturalWidth": 303
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "index": 3,
+      "cards": [
+        {
+          "name": "MetLife",
+          "pos": 1,
+          "w": 342.49212646484375,
+          "h": 151.14694213867188,
+          "image": {
+            "w": 306.381591796875,
+            "h": 112.28176879882812
+          },
+          "contained": true,
+          "opacity": "0.72",
+          "naturalWidth": 354
+        },
+        {
+          "name": "BancoEstado Corredores de Seguros",
+          "pos": -2,
+          "w": 299.47479248046875,
+          "h": 117.6358642578125,
+          "image": {
+            "w": 267.9465026855469,
+            "h": 87.4447021484375
+          },
+          "contained": true,
+          "opacity": "0",
+          "naturalWidth": 1280
+        },
+        {
+          "name": "Banco de Chile",
+          "pos": -1,
+          "w": 342.4922180175781,
+          "h": 151.14694213867188,
+          "image": {
+            "w": 306.38165283203125,
+            "h": 112.28176879882812
+          },
+          "contained": true,
+          "opacity": "0.72",
+          "naturalWidth": 1000
+        },
+        {
+          "name": "Scotiabank",
+          "pos": 0,
+          "w": 480,
+          "h": 200,
+          "image": {
+            "w": 430,
+            "h": 150
+          },
+          "contained": true,
+          "opacity": "1",
+          "naturalWidth": 303
+        }
+      ],
+      "overflow": 0
+    }
+  ],
+  "cursor": [
+    {
+      "count": 801,
+      "alphaSum": 66137,
+      "hash": 762728078,
+      "components": 1,
+      "connectedFraction": 1,
+      "bounds": {
+        "minX": 290,
+        "minY": 360,
+        "maxX": 387,
+        "maxY": 423
+      },
+      "dpr": 1
+    },
+    {
+      "count": 705,
+      "alphaSum": 56484,
+      "hash": 626757371,
+      "components": 1,
+      "connectedFraction": 1,
+      "bounds": {
+        "minX": 402,
+        "minY": 426,
+        "maxX": 499,
+        "maxY": 449
+      },
+      "dpr": 1
+    },
+    {
+      "count": 760,
+      "alphaSum": 62363,
+      "hash": 246942016,
+      "components": 1,
+      "connectedFraction": 1,
+      "bounds": {
+        "minX": 517,
+        "minY": 401,
+        "maxX": 619,
+        "maxY": 443
+      },
+      "dpr": 1
+    },
+    {
+      "count": 771,
+      "alphaSum": 64106,
+      "hash": 22303447,
+      "components": 1,
+      "connectedFraction": 1,
+      "bounds": {
+        "minX": 644,
+        "minY": 325,
+        "maxX": 738,
+        "maxY": 385
+      },
+      "dpr": 1
+    },
+    {
+      "count": 554,
+      "alphaSum": 45689,
+      "hash": 823036450,
+      "components": 1,
+      "connectedFraction": 1,
+      "bounds": {
+        "minX": 766,
+        "minY": 276,
+        "maxX": 852,
+        "maxY": 308
+      },
+      "dpr": 1
+    },
+    {
+      "count": 552,
+      "alphaSum": 44797,
+      "hash": 463138388,
+      "components": 1,
+      "connectedFraction": 1,
+      "bounds": {
+        "minX": 881,
+        "minY": 274,
+        "maxX": 967,
+        "maxY": 297
+      },
+      "dpr": 1
+    },
+    {
+      "count": 803,
+      "alphaSum": 66425,
+      "hash": 222549448,
+      "components": 1,
+      "connectedFraction": 1,
+      "bounds": {
+        "minX": 984,
+        "minY": 300,
+        "maxX": 1082,
+        "maxY": 364
+      },
+      "dpr": 1
+    }
+  ],
+  "nearButton": {
+    "count": 1397,
+    "alphaSum": 115086,
+    "hash": 315474170,
+    "components": 1,
+    "connectedFraction": 1,
+    "bounds": {
+      "minX": 1199,
+      "minY": 483,
+      "maxX": 1339,
+      "maxY": 631
+    },
+    "dpr": 1
+  },
+  "fade": [
+    {
+      "count": 1322,
+      "alphaSum": 111256,
+      "hash": 595689919,
+      "components": 1,
+      "connectedFraction": 1,
+      "bounds": {
+        "minX": 825,
+        "minY": 411,
+        "maxX": 1009,
+        "maxY": 454
+      },
+      "dpr": 1
+    },
+    {
+      "count": 1200,
+      "alphaSum": 100792,
+      "hash": 344373458,
+      "components": 1,
+      "connectedFraction": 1,
+      "bounds": {
+        "minX": 845,
+        "minY": 415,
+        "maxX": 1011,
+        "maxY": 455
+      },
+      "dpr": 1
+    },
+    {
+      "count": 954,
+      "alphaSum": 64601,
+      "hash": 955741018,
+      "components": 1,
+      "connectedFraction": 1,
+      "bounds": {
+        "minX": 875,
+        "minY": 421,
+        "maxX": 1011,
+        "maxY": 455
+      },
+      "dpr": 1
+    },
+    {
+      "count": 168,
+      "alphaSum": 3944,
+      "hash": 184491494,
+      "components": 1,
+      "connectedFraction": 1,
+      "bounds": {
+        "minX": 973,
+        "minY": 442,
+        "maxX": 1010,
+        "maxY": 454
+      },
+      "dpr": 1
+    },
+    {
+      "count": 0,
+      "alphaSum": 0,
+      "hash": 0,
+      "components": 0,
+      "connectedFraction": 0,
+      "bounds": {
+        "minX": 1440,
+        "minY": 950,
+        "maxX": 0,
+        "maxY": 0
+      },
+      "dpr": 1
+    }
+  ],
+  "bounds": {
+    "vertices": 310272,
+    "progressSteps": 101,
+    "worstRatio": 0.9999999823048709,
+    "contained": true
+  }
+}

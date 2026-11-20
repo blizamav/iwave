@@ -1,3 +1,21 @@
+# FIX-024 — sincronización y limpieza visual
+
+El Coverflow conserva dimensiones, posiciones, perspectiva, tarjetas y respiración de UX-022. Movimiento y fragmentación comparten 800 ms; ambas marcas se estabilizan al terminar. Se conserva el anillo CSS del escenario. Se desactiva el grupo WebGL ambiental de contornos de cajas y conexiones que cruzaba las marcas; partículas e iluminación permanecen. WhatsApp permanece visible durante todo el recorrido con su capa y tamaño existentes.
+
+# UX-022 / CURSOR-023 — presentación vigente de marcas y cursor
+
+Sustituye únicamente la composición de carrusel y cursor de las entradas históricas. Escenario de altura estable; placa central de hasta 480px / 52% en escritorio, 62% en tablet y 72% en móvil, con alto 200px o 170px hasta 540px. Anterior y siguiente se muestran como placas reales con perspectiva, escala .78 y opacidad .72; en móvil las previsualizaciones son parciales. Cuarta tarjeta oculta e inert. Las laterales tienen semántica de botón y centran la marca anterior/siguiente; la central conserva semántica de enlace y abre su sitio oficial en pestaña nueva. Enter y Space activan las tres posiciones sin scroll por Space; las tarjetas conservan aspecto, perspectiva y dimensiones. Mantiene el anillo discreto y el halo ambiental del escenario.
+
+La marca central conserva opacidad 1 y los assets oficiales sin filtros. Logos con object-fit:contain y 24px de resguardo; respiración exclusiva de la imagen, escala 1–1,008 / 5 segundos, suspendida durante desplazamiento, reconstrucción, pausa y fuera de vista. Las placas no animan dimensiones. Fragmentación/reconstrucción GPU con la contención de FIX-021, coordinada durante el movimiento de las placas (FIX-024).
+
+Cursor nativo más estela estrecha Electric Cyan / Royal Blue, curva continua con capas de profundidad visual, sin círculos ni puntos independientes durante el movimiento. CLICK-025 y TOUCH-026 muestran en clic real de mouse o tap válido sobre un control dos ondas circulares concéntricas: borde principal de 1px y secundario de 0,65px al 25% de intensidad, gradiente Electric Cyan `#35D6FF` → Digital Mint `#67E8C8`, radio de 3 a 39px y desaparición en 640ms. Expansión cúbica suave, sin alterar estilos de controles. Capa fija a z-index 102 sin interacción, sobre WhatsApp (101); desaparece progresivamente en reposo. La estela se suprime en touch y puntero no preciso; las ondas táctiles nacen en el punto presionado al confirmar el tap (hasta 10px y 500ms), sin cursor artificial. Movimiento reducido suprime ambos efectos. Canvas 2D también sirve como alternativa sin WebGL; no añade contexto GPU.
+
+# FIX-019 / SEO-020 — ajustes de legibilidad
+
+Prevalece sobre la placa fija UX-014: cada marca utiliza blanco puro, tamaño ajustado a sus proporciones y 16px de margen local. El escenario oscuro, órbita, luz cian y fragmentación se conservan. En reposo se presenta el asset original sin filtros, mezcla ni transparencia; la geometría aparece durante la reconstrucción. No se recolorean assets.
+
+La composición social exclusiva de iWave usa Midnight, iluminación Electric Cyan, Space Grotesk y Plus Jakarta Sans, con el logo original del Hero completo y el mensaje aprobado. Archivo JPG de 1200×630; no incluye marcas de terceros.
+
 # UX-014 — ecosistema corporativo continuo
 
 Esta identidad prevalece sobre las paletas, tamaños y efectos de los experimentos históricos inferiores. Aplica el recorrido UX-014 documentado en ARCHITECTURE.md. Fuente ejecutable: `styles.css`, la capa final UX-014 de `img/experience/refinement.css` y `journey.js`.
@@ -45,7 +63,7 @@ Atmósferas interpoladas con smoothstep entre los siete capítulos DOM de UX-014
 
 `journey.js` lee los tokens cian/azul desde CSS al iniciar. Publica `--space-glow`, `--space-x` y `--space-y` en `.journey-scene` para interpolar el ambiente CSS; `data-atmosphere` identifica el hito más próximo para inspección. Las luces locales de secciones se desvanecen dentro de sus límites y complementan la atmósfera continua.
 
-El escenario de marcas es oscuro con placa clara local de tamaño proporcionado; no una superficie blanca a todo el ancho. Su placa y luz reaccionan a la fragmentación; el logo conserva colores/proporciones al reconstruirse. Los cuatro enlaces textuales forman un índice discreto sin tarjetas duplicadas. Metodología añade un punto luminoso de progreso y estados cian/menta. Transformación conserva la comparación documental y amplía el morph con productividad y control operativo. Soluciones repite autónomamente cada diagrama sin cambiar la selección.
+El escenario de marcas es oscuro con placa clara local de tamaño proporcionado; no una superficie blanca a todo el ancho. FIX-021 mantiene la placa inmóvil y con dimensiones comunes a las cuatro marcas: 84% del escenario hasta 680px de ancho, 200px de alto (170px hasta 540px). El logo dispone de 24px de resguardo interior y conserva colores/proporciones; la fragmentación 3D permanece dentro de la placa mediante envolvente proyectada y scissor GPU. La iluminación ambiental es estática y suave. Los cuatro enlaces textuales forman un índice discreto sin tarjetas duplicadas. Metodología añade un punto luminoso de progreso y estados cian/menta. Transformación conserva la comparación documental y amplía el morph con productividad y control operativo. Soluciones repite autónomamente cada diagrama sin cambiar la selección.
 
 ## Holograma y microinteracciones
 

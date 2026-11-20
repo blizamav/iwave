@@ -1,0 +1,52 @@
+[
+  {
+    "width": 360,
+    "height": 800,
+    "bounds": {
+      "vertices": 310272,
+      "progressSteps": 101,
+      "worstRatio": 0.9999999823048711,
+      "contained": true
+    }
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "bounds": {
+      "vertices": 310272,
+      "progressSteps": 101,
+      "worstRatio": 0.9999999823048711,
+      "contained": true
+    }
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "bounds": {
+      "vertices": 310272,
+      "progressSteps": 101,
+      "worstRatio": 0.9999999823048709,
+      "contained": true
+    }
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "bounds": {
+      "vertices": 310272,
+      "progressSteps": 101,
+      "worstRatio": 0.9999999823048711,
+      "contained": true
+    }
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "bounds": {
+      "vertices": 310272,
+      "progressSteps": 101,
+      "worstRatio": 0.9999999823048709,
+      "contained": true
+    }
+  }
+]

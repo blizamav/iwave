@@ -1,0 +1,34 @@
+[
+  {
+    "index": 1,
+    "motionStart": 65,
+    "fragmentStart": 821.6999999880791,
+    "moveEnd": 821.6999999880791,
+    "fragmentEnd": 4049.300000011921,
+    "deltaMs": 756.6999999880791
+  },
+  {
+    "index": 2,
+    "motionStart": 609.5,
+    "fragmentStart": 822.3999999761581,
+    "moveEnd": 822.3999999761581,
+    "fragmentEnd": 2542.099999964237,
+    "deltaMs": 212.89999997615814
+  },
+  {
+    "index": 3,
+    "motionStart": 285.9000000357628,
+    "fragmentStart": 821.2000000476837,
+    "moveEnd": 821.2000000476837,
+    "fragmentEnd": 1909.1000000238419,
+    "deltaMs": 535.3000000119209
+  },
+  {
+    "index": 0,
+    "motionStart": 244.19999998807907,
+    "fragmentStart": 824.3000000119209,
+    "moveEnd": 824.3000000119209,
+    "fragmentEnd": 1685.3999999761581,
+    "deltaMs": 580.1000000238419
+  }
+]

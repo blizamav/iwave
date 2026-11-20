@@ -1,0 +1,257 @@
+{
+  "errors": [],
+  "checks": [
+    "Real mouse clicks on controls, both laterals, navigation, both CTAs and contact; exact viewport origins and unblocked handlers",
+    "Two visible concentric rings; complete transparent cleanup and RAF idle",
+    "Right click, keyboard, scripted clicks and movement ignored",
+    "Rapid clicks bounded to eight; resize and live reduced-motion clear and stop",
+    "Fixed ripple canvas; document and main dimensions unchanged; overall page CLS recorded separately",
+    "Initial reduced-motion and mobile touch: no artificial cursor; mobile scroll available",
+    "No WebGL: ripple available; 120 draw samples with eight rings measured"
+  ],
+  "clicks": [
+    {
+      "name": "carousel next",
+      "x": 1337.9453125,
+      "y": 498.03125,
+      "r": {
+        "x": 1337,
+        "y": 498,
+        "born": 8302.599999964237
+      },
+      "count": 1,
+      "pointerEvents": "none",
+      "event": {
+        "trusted": true,
+        "prevented": false
+      }
+    },
+    {
+      "name": "carousel previous",
+      "x": 1284.2421875,
+      "y": 498.03125,
+      "r": {
+        "x": 1284,
+        "y": 498,
+        "born": 13228.799999952316
+      },
+      "count": 1,
+      "pointerEvents": "none",
+      "event": {
+        "trusted": true,
+        "prevented": false
+      }
+    },
+    {
+      "name": "right lateral",
+      "x": 1117.6824035644531,
+      "y": 249.23436737060547,
+      "r": {
+        "x": 1117,
+        "y": 249,
+        "born": 15856.699999988079
+      },
+      "count": 1,
+      "pointerEvents": "none",
+      "event": {
+        "trusted": true,
+        "prevented": false,
+        "href": "https://www.bancoestado.cl/"
+      }
+    },
+    {
+      "name": "left lateral",
+      "x": 322.3175811767578,
+      "y": 249.23436737060547,
+      "r": {
+        "x": 322,
+        "y": 249,
+        "born": 18444.5
+      },
+      "count": 1,
+      "pointerEvents": "none",
+      "event": {
+        "trusted": true,
+        "prevented": false,
+        "href": "https://www.metlife.cl/"
+      }
+    },
+    {
+      "name": "primary CTA",
+      "x": 163.7578125,
+      "y": 498.2265625,
+      "r": {
+        "x": 163,
+        "y": 498,
+        "born": 21096.799999952316
+      },
+      "count": 1,
+      "pointerEvents": "none",
+      "event": {
+        "trusted": true,
+        "prevented": false,
+        "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital."
+      }
+    },
+    {
+      "name": "secondary CTA",
+      "x": 384.703125,
+      "y": 498.2265625,
+      "r": {
+        "x": 384,
+        "y": 498,
+        "born": 23876.299999952316
+      },
+      "count": 1,
+      "pointerEvents": "none",
+      "event": {
+        "trusted": true,
+        "prevented": false,
+        "href": "#servicios"
+      }
+    },
+    {
+      "name": "navigation open",
+      "x": 1358,
+      "y": 40,
+      "r": {
+        "x": 1358,
+        "y": 40,
+        "born": 28172.5
+      },
+      "count": 1,
+      "pointerEvents": "none",
+      "event": {
+        "trusted": true,
+        "prevented": false
+      }
+    },
+    {
+      "name": "navigation contact",
+      "x": 213.5,
+      "y": 644.9921875,
+      "r": {
+        "x": 213,
+        "y": 644,
+        "born": 31670.799999952316
+      },
+      "count": 1,
+      "pointerEvents": "none",
+      "event": {
+        "trusted": true,
+        "prevented": false,
+        "href": "#contacto"
+      }
+    },
+    {
+      "name": "contact email",
+      "x": 345.3984375,
+      "y": 509.65625,
+      "r": {
+        "x": 345,
+        "y": 509,
+        "born": 35027
+      },
+      "count": 1,
+      "pointerEvents": "none",
+      "event": {
+        "trusted": true,
+        "prevented": false,
+        "href": "mailto:contacto@iwave.cl"
+      }
+    },
+    {
+      "name": "contact WhatsApp",
+      "x": 345.3984375,
+      "y": 746.453125,
+      "r": {
+        "x": 345,
+        "y": 746,
+        "born": 37670.299999952316
+      },
+      "count": 1,
+      "pointerEvents": "none",
+      "event": {
+        "trusted": true,
+        "prevented": false,
+        "href": "https://wa.me/56953442563"
+      }
+    },
+    {
+      "name": "floating WhatsApp",
+      "x": 1356.625,
+      "y": 856.8125,
+      "r": {
+        "x": 1356,
+        "y": 856,
+        "born": 39675.69999998808
+      },
+      "count": 1,
+      "pointerEvents": "none",
+      "event": {
+        "trusted": true,
+        "prevented": false,
+        "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital."
+      }
+    }
+  ],
+  "cleanup": {
+    "count": 0,
+    "minX": null,
+    "maxX": 0,
+    "minY": null,
+    "maxY": 0,
+    "maxAlpha": 0,
+    "frame": 0,
+    "rings": 0,
+    "dimensions": [
+      1440,
+      900,
+      1440,
+      900
+    ],
+    "transform": "matrix(1, 0, 0, 1, 0, 0)"
+  },
+  "visual": {
+    "arcs": [
+      [
+        600,
+        450,
+        21.8338623046875,
+        0,
+        6.283185307179586
+      ],
+      [
+        600,
+        450,
+        16.5937353515625,
+        0,
+        6.283185307179586
+      ]
+    ],
+    "count": 316,
+    "minX": 577,
+    "maxX": 622,
+    "minY": 427,
+    "maxY": 472
+  },
+  "layoutShift": 0.0004269914708183299,
+  "rippleLayout": {
+    "before": [
+      1440,
+      7701,
+      1440
+    ],
+    "after": [
+      1440,
+      7701,
+      1440
+    ],
+    "position": "fixed"
+  },
+  "cursorRender": {
+    "samples": 120,
+    "meanMs": 0.08250000129143396,
+    "maxMs": 0.40000003576278687
+  }
+}

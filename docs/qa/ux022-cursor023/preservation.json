@@ -1,0 +1,24 @@
+{
+  "htmlOnlyResourceVersionsAndTwoComponentModules": true,
+  "morphAndEnergyImplementationUnchanged": true,
+  "existingDocumentationPreserved": true,
+  "preexistingModified": [
+    "Dockerfile",
+    "docs/ARCHITECTURE.md",
+    "docs/CHANGELOG.md",
+    "docs/DESIGN_SYSTEM.md",
+    "img/experience/exp009.js",
+    "img/experience/journey.js",
+    "img/experience/refinement.css",
+    "index.html",
+    "nginx.conf"
+  ],
+  "newlyModifiedTracked": [
+    "script.js"
+  ],
+  "newApplicationModules": [
+    "img/experience/coverflow.js",
+    "img/experience/cursor.js"
+  ],
+  "noInfrastructureWritesOrGitMutations": true
+}

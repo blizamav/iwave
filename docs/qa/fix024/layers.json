@@ -1,0 +1,442 @@
+[
+  {
+    "width": 360,
+    "height": 800,
+    "sections": [
+      {
+        "id": "inicio",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "transformacion",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "servicios",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "experiencia",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "capacidades",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "proceso",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "contacto",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      }
+    ],
+    "menu": {
+      "hit": true,
+      "visible": true,
+      "fixed": true,
+      "parent": "BODY",
+      "z": "101",
+      "header": "100",
+      "canvas": "12"
+    },
+    "original": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+    "clickedURL": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "sections": [
+      {
+        "id": "inicio",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "transformacion",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "servicios",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "experiencia",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "capacidades",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "proceso",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "contacto",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      }
+    ],
+    "menu": {
+      "hit": true,
+      "visible": true,
+      "fixed": true,
+      "parent": "BODY",
+      "z": "101",
+      "header": "100",
+      "canvas": "12"
+    },
+    "original": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+    "clickedURL": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+    "errors": []
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "sections": [
+      {
+        "id": "inicio",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "transformacion",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "servicios",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "experiencia",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "capacidades",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "proceso",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "contacto",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      }
+    ],
+    "menu": {
+      "hit": true,
+      "visible": true,
+      "fixed": true,
+      "parent": "BODY",
+      "z": "101",
+      "header": "100",
+      "canvas": "12"
+    },
+    "original": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+    "clickedURL": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+    "errors": []
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "sections": [
+      {
+        "id": "inicio",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "transformacion",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "servicios",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "experiencia",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "capacidades",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "proceso",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "contacto",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      }
+    ],
+    "menu": {
+      "hit": true,
+      "visible": true,
+      "fixed": true,
+      "parent": "BODY",
+      "z": "101",
+      "header": "100",
+      "canvas": "12"
+    },
+    "original": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+    "clickedURL": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "sections": [
+      {
+        "id": "inicio",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "transformacion",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "servicios",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "experiencia",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "capacidades",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "proceso",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      },
+      {
+        "id": "contacto",
+        "hit": true,
+        "visible": true,
+        "fixed": true,
+        "parent": "BODY",
+        "z": "101",
+        "header": "100",
+        "canvas": "12"
+      }
+    ],
+    "menu": {
+      "hit": true,
+      "visible": true,
+      "fixed": true,
+      "parent": "BODY",
+      "z": "101",
+      "header": "100",
+      "canvas": "12"
+    },
+    "original": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+    "clickedURL": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+    "errors": []
+  }
+]

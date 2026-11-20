@@ -110,36 +110,22 @@ document.querySelectorAll('[data-problem]').forEach(button => {
   });
 });
 
-/* Halo interpolado por CSS: sin otro loop RAF ni captura de interacción. */
+/* Existing reactive surfaces; the cursor now lives in cursor.js. */
 const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
-const halo = document.querySelector('.pointer-halo');
-if (halo) {
+{
   let activeSurface = null;
   const resetSurface = () => {
     if (!activeSurface) return;
     ['--light-x', '--light-y', '--tilt-x', '--tilt-y'].forEach(name => activeSurface.style.removeProperty(name));
     activeSurface = null;
   };
-  const stopHalo = () => {
-    halo.classList.remove('is-visible');
+  const clearSurface = () => {
     resetSurface();
   };
   document.addEventListener('pointermove', event => {
     if (!finePointer.matches || motionQuery.matches || event.pointerType !== 'mouse') return;
     const targetX = event.clientX;
     const targetY = event.clientY;
-    // The first sample appears at the pointer, without flying in from (0,0).
-    if (!halo.classList.contains('is-visible')) {
-      halo.getAnimations().forEach(animation => animation.cancel());
-      halo.style.transition = 'none';
-      halo.style.transform = `translate3d(${targetX}px, ${targetY}px, 0)`;
-      void halo.offsetWidth;
-      halo.style.removeProperty('transition');
-    }
-    halo.style.transform = `translate3d(${targetX}px, ${targetY}px, 0)`;
-    if (event.target.closest('input,textarea,select')) { stopHalo(); return; }
-    halo.classList.add('is-visible');
-    halo.classList.toggle('is-interactive', !!event.target.closest('a,button,[data-reactive]'));
     const surface = event.target.closest('[data-reactive]');
     if (surface !== activeSurface) { resetSurface(); activeSurface = surface; }
     if (surface) {
@@ -152,12 +138,12 @@ if (halo) {
       surface.style.setProperty('--tilt-y', `${(.5 - py) * 4}deg`);
     }
   }, { passive: true });
-  document.documentElement.addEventListener('pointerleave', stopHalo);
-  window.addEventListener('blur', stopHalo);
-  window.addEventListener('pagehide', stopHalo);
-  document.addEventListener('visibilitychange', () => { if (document.hidden) stopHalo(); });
-  finePointer.addEventListener('change', stopHalo);
-  motionQuery.addEventListener('change', stopHalo);
+  document.documentElement.addEventListener('pointerleave', clearSurface);
+  window.addEventListener('blur', clearSurface);
+  window.addEventListener('pagehide', clearSurface);
+  document.addEventListener('visibilitychange', () => { if (document.hidden) clearSurface(); });
+  finePointer.addEventListener('change', clearSurface);
+  motionQuery.addEventListener('change', clearSurface);
 }
 
 /* UI-003 — mejora progresiva: enlaces y cuatro vistas disponibles sin JS. */
@@ -262,13 +248,3 @@ if (hologramStage) {
 document.addEventListener('visibilitychange', () => {
   document.documentElement.toggleAttribute('data-page-hidden', document.hidden);
 });
-
-/* Keep floating contact access clear of the showcase controls and contact form. */
-if ('IntersectionObserver' in window) {
-  const activeRegions = new Set();
-  const contactVisibility = new IntersectionObserver(entries => {
-    entries.forEach(entry => entry.isIntersecting ? activeRegions.add(entry.target) : activeRegions.delete(entry.target));
-    document.body.classList.toggle('is-contact-context', activeRegions.size > 0);
-  });
-  document.querySelectorAll('.logo-showcase,#contacto').forEach(region => contactVisibility.observe(region));
-}

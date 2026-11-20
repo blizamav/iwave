@@ -1,0 +1,147 @@
+{
+  "renderer": "Chromium/SwiftShader",
+  "certifies60FPS": false,
+  "matrix": [
+    {
+      "mode": "360",
+      "checks": [
+        "WhatsApp fixed, visible, >=44px and hit-testable in seven sections; original href",
+        "All four manual transitions: shared progress, no temporal difference in CSS/GPU updates, fragments cleared atomically",
+        "Real autoplay timer, all four brands, synchronous start and end",
+        "Previous, both laterals, keyboard, touch swipe, short lock, pause/resume",
+        "Scroll-bound geometric group disabled; separate particle field retained",
+        "No horizontal overflow, missing resources or console/page errors; four original logos restored"
+      ],
+      "manualDurationMs": [
+        2246.2,
+        805.9,
+        792.6,
+        802.6
+      ],
+      "autoplayDurationMs": [
+        807.1,
+        812.5,
+        810.8,
+        818.1
+      ],
+      "sharedClockOffsetMs": 0
+    },
+    {
+      "mode": "390",
+      "checks": [
+        "WhatsApp fixed, visible, >=44px and hit-testable in seven sections; original href",
+        "All four manual transitions: shared progress, no temporal difference in CSS/GPU updates, fragments cleared atomically",
+        "Real autoplay timer, all four brands, synchronous start and end",
+        "Previous, both laterals, keyboard, touch swipe, short lock, pause/resume",
+        "Scroll-bound geometric group disabled; separate particle field retained",
+        "No horizontal overflow, missing resources or console/page errors; four original logos restored"
+      ],
+      "manualDurationMs": [
+        3006.0,
+        811.4,
+        798.0,
+        813.6
+      ],
+      "autoplayDurationMs": [
+        815.5,
+        812.4,
+        813.6,
+        862.2
+      ],
+      "sharedClockOffsetMs": 0
+    },
+    {
+      "mode": "430",
+      "checks": [
+        "WhatsApp fixed, visible, >=44px and hit-testable in seven sections; original href",
+        "All four manual transitions: shared progress, no temporal difference in CSS/GPU updates, fragments cleared atomically",
+        "Real autoplay timer, all four brands, synchronous start and end",
+        "Previous, both laterals, keyboard, touch swipe, short lock, pause/resume",
+        "Scroll-bound geometric group disabled; separate particle field retained",
+        "No horizontal overflow, missing resources or console/page errors; four original logos restored"
+      ],
+      "manualDurationMs": [
+        8334.0,
+        748.3,
+        812.0,
+        798.1
+      ],
+      "autoplayDurationMs": [
+        808.5,
+        811.3,
+        815.0,
+        805.2
+      ],
+      "sharedClockOffsetMs": 0
+    },
+    {
+      "mode": "768",
+      "checks": [
+        "WhatsApp fixed, visible, >=44px and hit-testable in seven sections; original href",
+        "All four manual transitions: shared progress, no temporal difference in CSS/GPU updates, fragments cleared atomically",
+        "Real autoplay timer, all four brands, synchronous start and end",
+        "Previous, both laterals, keyboard, touch swipe, short lock, pause/resume",
+        "Scroll-bound geometric group disabled; separate particle field retained",
+        "Approved cursor produces visible canvas pixels",
+        "No horizontal overflow, missing resources or console/page errors; four original logos restored"
+      ],
+      "manualDurationMs": [
+        12557.4,
+        836.6,
+        785.6,
+        811.9
+      ],
+      "autoplayDurationMs": [
+        819.0,
+        839.1,
+        816.0,
+        814.9
+      ],
+      "sharedClockOffsetMs": 0
+    },
+    {
+      "mode": "1440",
+      "checks": [
+        "WhatsApp fixed, visible, >=44px and hit-testable in seven sections; original href",
+        "All four manual transitions: shared progress, no temporal difference in CSS/GPU updates, fragments cleared atomically",
+        "Real autoplay timer, all four brands, synchronous start and end",
+        "Previous, both laterals, keyboard, touch swipe, short lock, pause/resume",
+        "Scroll-bound geometric group disabled; separate particle field retained",
+        "Approved cursor produces visible canvas pixels",
+        "No horizontal overflow, missing resources or console/page errors; four original logos restored"
+      ],
+      "manualDurationMs": [
+        8855.4,
+        705.7,
+        847.4,
+        787.6
+      ],
+      "autoplayDurationMs": [
+        820.9,
+        803.2,
+        808.3,
+        814.1
+      ],
+      "sharedClockOffsetMs": 0
+    },
+    {
+      "mode": "no-webgl",
+      "checks": [
+        "WhatsApp fixed, visible, >=44px and hit-testable in seven sections; original href",
+        "Previous, both laterals, keyboard, touch swipe, short lock, pause/resume",
+        "Approved cursor produces visible canvas pixels",
+        "No WebGL: DOM 3D navigation, pause and cursor remain functional",
+        "No horizontal overflow, missing resources or console/page errors; four original logos restored"
+      ]
+    },
+    {
+      "mode": "reduced",
+      "checks": [
+        "WhatsApp fixed, visible, >=44px and hit-testable in seven sections; original href",
+        "Previous, both laterals, keyboard, touch swipe, short lock, pause/resume",
+        "Reduced motion: instant navigation, no autoplay/trail",
+        "No horizontal overflow, missing resources or console/page errors; four original logos restored"
+      ]
+    }
+  ]
+}

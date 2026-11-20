@@ -1,4 +1,4 @@
-import { createEffects } from './exp009.js?v=ux014';
+import { createEffects } from './exp009.js?v=fix024';
 /* EXP-002 — motor visual aislado. El HTML no depende de WebGL. */
 const canvas = document.querySelector('#journey-canvas');
 const host = canvas?.parentElement;
@@ -18,7 +18,11 @@ if (canvas && !reduced.matches && !constrained) {
 function startJourney(T) {
   let renderer;
   try {
-    renderer = new T.WebGLRenderer({ canvas, alpha: true, antialias: true, powerPreference: 'low-power' });
+    // Test the same context first: unavailable WebGL is an expected fallback, not a renderer error.
+    const attributes = { alpha: true, antialias: true, powerPreference: 'low-power' };
+    const context = canvas.getContext('webgl2', attributes);
+    if (!context) return;
+    renderer = new T.WebGLRenderer({ canvas, context, ...attributes });
   } catch {
     return; // WebGL desactivado: el esquema CSS permanece visible.
   }
@@ -150,7 +154,7 @@ function startJourney(T) {
       }`
   });
   const dust = new T.Points(dustGeometry,dustMaterial); dust.frustumCulled=false; scene.add(dust);
-  system.visible=!compact.matches;
+  system.visible=false; // FIX-024: retire scroll-bound box contours; retain particle field.
   surface.visible=false;
   ink.opacity=.22;
   // Sparse local links breathe in and out: data relationships, not a dense star mesh.
@@ -209,7 +213,7 @@ function startJourney(T) {
     target = Math.max(0, Math.min(anchors.length - 1, stage + (position - offsets[stage]) / span));
   };
   const resize = () => {
-    system.visible = !compact.matches;
+    system.visible = false;
     renderer.setPixelRatio(resolution());
     renderer.setSize(document.documentElement.clientWidth, document.documentElement.clientHeight, false);
     effects.resize();
@@ -335,7 +339,6 @@ function startJourney(T) {
   listen(window, 'resize', resize, { passive: true });
   listen(document, 'pointermove', event => {
     if (event.pointerType !== 'mouse' || !finePointer.matches) return;
-    effects.pointerMove(event);
     paint(event);
     pointer.x = event.clientX / innerWidth - .5;
     pointer.y = event.clientY / innerHeight - .5;
@@ -349,9 +352,8 @@ function startJourney(T) {
     brush.fillStyle = gradient; brush.fillRect(x * 128 - 12, (1-y) * 128 - 12, 24, 24);
     previousX = x; previousY = y;
   }
-  listen(document, 'pointerdown', event => { effects.pointerDown(event); if (event.pointerType !== 'mouse') paint(event); }, { passive: true });
-  listen(document.documentElement, 'pointerleave' , () => { effects.clearPointer(); pointer.x = 0; pointer.y = 0; wake(); });
-  listen(window, 'blur', effects.clearPointer);
+  listen(document, 'pointerdown', event => { if (event.pointerType !== 'mouse') paint(event); }, { passive: true });
+  listen(document.documentElement, 'pointerleave' , () => { pointer.x = 0; pointer.y = 0; wake(); });
   listen(document, 'visibilitychange', () => { if (document.hidden) pause(); else wake(); });
   const observer = 'IntersectionObserver' in window ? new IntersectionObserver(entries => {
     inView = entries[0].isIntersecting;

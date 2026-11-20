@@ -1,0 +1,6217 @@
+{
+  "mode": "768",
+  "viewport": {
+    "width": 768,
+    "height": 1024
+  },
+  "errors": [],
+  "checks": [
+    "WhatsApp fixed, visible, >=44px and hit-testable in seven sections; original href",
+    "All four manual transitions: shared progress, no temporal difference in CSS/GPU updates, fragments cleared atomically",
+    "Real autoplay timer, all four brands, synchronous start and end",
+    "Previous, both laterals, keyboard, touch swipe, short lock, pause/resume",
+    "Scroll-bound geometric group disabled; separate particle field retained",
+    "Approved cursor produces visible canvas pixels",
+    "No horizontal overflow, missing resources or console/page errors; four original logos restored"
+  ],
+  "transitions": [],
+  "whatsapp": [
+    {
+      "id": "inicio",
+      "visible": true,
+      "fixed": true,
+      "hit": true,
+      "w": 128.375,
+      "h": 48,
+      "parent": "BODY",
+      "z": "101"
+    },
+    {
+      "id": "transformacion",
+      "visible": true,
+      "fixed": true,
+      "hit": true,
+      "w": 128.375,
+      "h": 48,
+      "parent": "BODY",
+      "z": "101"
+    },
+    {
+      "id": "servicios",
+      "visible": true,
+      "fixed": true,
+      "hit": true,
+      "w": 128.375,
+      "h": 48,
+      "parent": "BODY",
+      "z": "101"
+    },
+    {
+      "id": "experiencia",
+      "visible": true,
+      "fixed": true,
+      "hit": true,
+      "w": 128.375,
+      "h": 48,
+      "parent": "BODY",
+      "z": "101"
+    },
+    {
+      "id": "capacidades",
+      "visible": true,
+      "fixed": true,
+      "hit": true,
+      "w": 128.375,
+      "h": 48,
+      "parent": "BODY",
+      "z": "101"
+    },
+    {
+      "id": "proceso",
+      "visible": true,
+      "fixed": true,
+      "hit": true,
+      "w": 128.375,
+      "h": 48,
+      "parent": "BODY",
+      "z": "101"
+    },
+    {
+      "id": "contacto",
+      "visible": true,
+      "fixed": true,
+      "hit": true,
+      "w": 128.375,
+      "h": 48,
+      "parent": "BODY",
+      "z": "101"
+    }
+  ],
+  "manualRuns": [
+    {
+      "index": 1,
+      "start": 12995,
+      "frames": [
+        {
+          "time": 12995.5,
+          "phase": "start",
+          "p": 0,
+          "trackTimes": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0,
+              "opacity": 1
+            },
+            {
+              "p": 0.48,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 15612.199999988079,
+          "phase": "progress",
+          "p": 0.04125,
+          "trackTimes": [
+            33,
+            33,
+            33,
+            33
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.0839983836090215,
+              "opacity": 1
+            },
+            {
+              "p": 0.4602,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 16129.199999988079,
+          "phase": "progress",
+          "p": 0.0825,
+          "trackTimes": [
+            66,
+            66,
+            66,
+            66
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.16658809253644782,
+              "opacity": 1
+            },
+            {
+              "p": 0.44039999999999996,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 16140.699999988079,
+          "phase": "progress",
+          "p": 0.0975,
+          "trackTimes": [
+            78,
+            78,
+            78,
+            78
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.1959996739639222,
+              "opacity": 1
+            },
+            {
+              "p": 0.4332,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 16818.5,
+          "phase": "progress",
+          "p": 0.13875,
+          "trackTimes": [
+            111.00000000000001,
+            111.00000000000001,
+            111.00000000000001,
+            111.00000000000001
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.27444480059747756,
+              "opacity": 1
+            },
+            {
+              "p": 0.4134,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 17674,
+          "phase": "progress",
+          "p": 0.18,
+          "trackTimes": [
+            144,
+            144,
+            144,
+            144
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.34828741673634783,
+              "opacity": 1
+            },
+            {
+              "p": 0.3936,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 17683.69999998808,
+          "phase": "progress",
+          "p": 0.1925,
+          "trackTimes": [
+            154,
+            154,
+            154,
+            154
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.3695652029772716,
+              "opacity": 1
+            },
+            {
+              "p": 0.3876,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 18894.19999998808,
+          "phase": "progress",
+          "p": 0.23375,
+          "trackTimes": [
+            187,
+            187,
+            187,
+            187
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.4355668246243,
+              "opacity": 1
+            },
+            {
+              "p": 0.36779999999999996,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 19542.69999998808,
+          "phase": "progress",
+          "p": 0.275,
+          "trackTimes": [
+            220.00000000000003,
+            220.00000000000003,
+            220.00000000000003,
+            220.00000000000003
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.4942638776400202,
+              "opacity": 1
+            },
+            {
+              "p": 0.348,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 19558.299999952316,
+          "phase": "progress",
+          "p": 0.30375,
+          "trackTimes": [
+            243.00000000000003,
+            243.00000000000003,
+            243.00000000000003,
+            243.00000000000003
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.5303254933884644,
+              "opacity": 1
+            },
+            {
+              "p": 0.3342,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 20139.399999976158,
+          "phase": "progress",
+          "p": 0.345,
+          "trackTimes": [
+            276,
+            276,
+            276,
+            276
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.5744476595576506,
+              "opacity": 1
+            },
+            {
+              "p": 0.3144,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 21564.599999964237,
+          "phase": "progress",
+          "p": 0.38625,
+          "trackTimes": [
+            309,
+            309,
+            309,
+            309
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.6089361894691799,
+              "opacity": 1
+            },
+            {
+              "p": 0.2946,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 22867.399999976158,
+          "phase": "progress",
+          "p": 0.4325,
+          "trackTimes": [
+            346,
+            346,
+            346,
+            346
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.635439959547114,
+              "opacity": 1
+            },
+            {
+              "p": 0.2724,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 22872.69999998808,
+          "phase": "progress",
+          "p": 0.43875,
+          "trackTimes": [
+            351,
+            351,
+            351,
+            351
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.6380034920194211,
+              "opacity": 1
+            },
+            {
+              "p": 0.26940000000000003,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 23703.899999976158,
+          "phase": "progress",
+          "p": 0.48,
+          "trackTimes": [
+            384,
+            384,
+            384,
+            384
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.6487173734783765,
+              "opacity": 1
+            },
+            {
+              "p": 0.2496,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 24006,
+          "phase": "progress",
+          "p": 0.85625,
+          "trackTimes": [
+            685,
+            685,
+            685,
+            685
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.2836660064376726,
+              "opacity": 1
+            },
+            {
+              "p": 0.06900000000000002,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 24037.899999976158,
+          "phase": "progress",
+          "p": 0.89625,
+          "trackTimes": [
+            717,
+            717,
+            717,
+            717
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.20812978005775284,
+              "opacity": 1
+            },
+            {
+              "p": 0.049800000000000004,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 24623.69999998808,
+          "phase": "progress",
+          "p": 0.9375,
+          "trackTimes": [
+            750,
+            750,
+            750,
+            750
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.1268087093104836,
+              "opacity": 1
+            },
+            {
+              "p": 0.03,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 25500.19999998808,
+          "phase": "progress",
+          "p": 0.97875,
+          "trackTimes": [
+            783,
+            783,
+            783,
+            783
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.04336102361496814,
+              "opacity": 1
+            },
+            {
+              "p": 0.010199999999999996,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 25550.599999964237,
+          "phase": "progress",
+          "p": 1,
+          "trackTimes": [
+            800,
+            800,
+            800,
+            800
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 25552.399999976158,
+          "phase": "complete",
+          "p": 0,
+          "trackTimes": [],
+          "fragment": null,
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        }
+      ],
+      "end": 25552.399999976158
+    },
+    {
+      "index": 2,
+      "start": 30008.19999998808,
+      "frames": [
+        {
+          "time": 30008.599999964237,
+          "phase": "start",
+          "p": 0,
+          "trackTimes": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 1
+            },
+            {
+              "p": 0.48,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 30133.599999964237,
+          "phase": "progress",
+          "p": 0.20375,
+          "trackTimes": [
+            163,
+            163,
+            163,
+            163
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.38822891215911853,
+              "opacity": 1
+            },
+            {
+              "p": 0.3822,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 30147.899999976158,
+          "phase": "progress",
+          "p": 0.22125,
+          "trackTimes": [
+            177,
+            177,
+            177,
+            177
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.41628916255373266,
+              "opacity": 1
+            },
+            {
+              "p": 0.3738,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 30176,
+          "phase": "progress",
+          "p": 0.2525,
+          "trackTimes": [
+            202,
+            202,
+            202,
+            202
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.46321503730138347,
+              "opacity": 1
+            },
+            {
+              "p": 0.3588,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 30257.899999976158,
+          "phase": "progress",
+          "p": 0.35375,
+          "trackTimes": [
+            283,
+            283,
+            283,
+            283
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5825904622023711,
+              "opacity": 1
+            },
+            {
+              "p": 0.3102,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 30268,
+          "phase": "progress",
+          "p": 0.3725,
+          "trackTimes": [
+            298,
+            298,
+            298,
+            298
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5985495620916671,
+              "opacity": 1
+            },
+            {
+              "p": 0.30119999999999997,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 30284.099999964237,
+          "phase": "progress",
+          "p": 0.39125,
+          "trackTimes": [
+            313,
+            313,
+            313,
+            313
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6124324254520939,
+              "opacity": 1
+            },
+            {
+              "p": 0.2922,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 30306.19999998808,
+          "phase": "progress",
+          "p": 0.42,
+          "trackTimes": [
+            336,
+            336,
+            336,
+            336
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6295790547336102,
+              "opacity": 1
+            },
+            {
+              "p": 0.27840000000000004,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 30318.5,
+          "phase": "progress",
+          "p": 0.435,
+          "trackTimes": [
+            348,
+            348,
+            348,
+            348
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6364948269041477,
+              "opacity": 1
+            },
+            {
+              "p": 0.27119999999999994,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 30334.19999998808,
+          "phase": "progress",
+          "p": 0.455,
+          "trackTimes": [
+            364,
+            364,
+            364,
+            364
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6435153775157624,
+              "opacity": 1
+            },
+            {
+              "p": 0.26159999999999994,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 30408.69999998808,
+          "phase": "progress",
+          "p": 0.54625,
+          "trackTimes": [
+            437,
+            437,
+            437,
+            437
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.643150759940012,
+              "opacity": 1
+            },
+            {
+              "p": 0.2178,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 30418,
+          "phase": "progress",
+          "p": 0.55875,
+          "trackTimes": [
+            447,
+            447,
+            447,
+            447
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6389600876729146,
+              "opacity": 1
+            },
+            {
+              "p": 0.21180000000000002,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 30454.299999952316,
+          "phase": "progress",
+          "p": 0.605,
+          "trackTimes": [
+            484,
+            484,
+            484,
+            484
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6149554832379045,
+              "opacity": 1
+            },
+            {
+              "p": 0.1896,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 30550.5,
+          "phase": "progress",
+          "p": 0.72,
+          "trackTimes": [
+            576,
+            576,
+            576,
+            576
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.500833607804263,
+              "opacity": 1
+            },
+            {
+              "p": 0.13440000000000002,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 30614.099999964237,
+          "phase": "progress",
+          "p": 0.80375,
+          "trackTimes": [
+            643,
+            643,
+            643,
+            643
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.3758388897683182,
+              "opacity": 1
+            },
+            {
+              "p": 0.09420000000000002,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 30844.099999964237,
+          "phase": "progress",
+          "p": 1,
+          "trackTimes": [
+            800,
+            800,
+            800,
+            800
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 30844.799999952316,
+          "phase": "complete",
+          "p": 0,
+          "trackTimes": [],
+          "fragment": null,
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        }
+      ],
+      "end": 30844.799999952316
+    },
+    {
+      "index": 3,
+      "start": 33821.39999997616,
+      "frames": [
+        {
+          "time": 33823,
+          "phase": "start",
+          "p": 0,
+          "trackTimes": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 1
+            },
+            {
+              "p": 0.48,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 33827.59999996424,
+          "phase": "progress",
+          "p": 0.03625,
+          "trackTimes": [
+            28.999999999999996,
+            28.999999999999996,
+            28.999999999999996,
+            28.999999999999996
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.07386387481454874,
+              "opacity": 1
+            },
+            {
+              "p": 0.46259999999999996,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 33840.299999952316,
+          "phase": "progress",
+          "p": 0.055,
+          "trackTimes": [
+            44,
+            44,
+            44,
+            44
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.11175391518161619,
+              "opacity": 1
+            },
+            {
+              "p": 0.45359999999999995,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 33850.39999997616,
+          "phase": "progress",
+          "p": 0.0675,
+          "trackTimes": [
+            54,
+            54,
+            54,
+            54
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.1368066438838487,
+              "opacity": 1
+            },
+            {
+              "p": 0.4476,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34150.59999996424,
+          "phase": "progress",
+          "p": 0.4425,
+          "trackTimes": [
+            354,
+            354,
+            354,
+            354
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6394236088171983,
+              "opacity": 1
+            },
+            {
+              "p": 0.2676,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34169.89999997616,
+          "phase": "progress",
+          "p": 0.46625,
+          "trackTimes": [
+            373,
+            373,
+            373,
+            373
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.646349740351779,
+              "opacity": 1
+            },
+            {
+              "p": 0.2562,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34191.299999952316,
+          "phase": "progress",
+          "p": 0.49375,
+          "trackTimes": [
+            395,
+            395,
+            395,
+            395
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6498747063133421,
+              "opacity": 1
+            },
+            {
+              "p": 0.243,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34204.299999952316,
+          "phase": "progress",
+          "p": 0.50875,
+          "trackTimes": [
+            407,
+            407,
+            407,
+            407
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6497544319482754,
+              "opacity": 1
+            },
+            {
+              "p": 0.23579999999999998,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34220.69999998808,
+          "phase": "progress",
+          "p": 0.53,
+          "trackTimes": [
+            424,
+            424,
+            424,
+            424
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.647115276992002,
+              "opacity": 1
+            },
+            {
+              "p": 0.22559999999999997,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34255.09999996424,
+          "phase": "progress",
+          "p": 0.5675,
+          "trackTimes": [
+            454,
+            454,
+            454,
+            454
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.635439959547114,
+              "opacity": 1
+            },
+            {
+              "p": 0.20759999999999998,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34267.5,
+          "phase": "progress",
+          "p": 0.5875,
+          "trackTimes": [
+            470,
+            470,
+            470,
+            470
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6255959036948707,
+              "opacity": 1
+            },
+            {
+              "p": 0.19799999999999998,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34292.299999952316,
+          "phase": "progress",
+          "p": 0.62,
+          "trackTimes": [
+            496,
+            496,
+            496,
+            496
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6043547158273634,
+              "opacity": 1
+            },
+            {
+              "p": 0.1824,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34301.19999998808,
+          "phase": "progress",
+          "p": 0.62875,
+          "trackTimes": [
+            503,
+            503,
+            503,
+            503
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5975496418704682,
+              "opacity": 1
+            },
+            {
+              "p": 0.17819999999999997,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34318,
+          "phase": "progress",
+          "p": 0.6525,
+          "trackTimes": [
+            522,
+            522,
+            522,
+            522
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5768187405885341,
+              "opacity": 1
+            },
+            {
+              "p": 0.1668,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34342,
+          "phase": "progress",
+          "p": 0.6825,
+          "trackTimes": [
+            546,
+            546,
+            546,
+            546
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5460608100343123,
+              "opacity": 1
+            },
+            {
+              "p": 0.1524,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34352,
+          "phase": "progress",
+          "p": 0.695,
+          "trackTimes": [
+            556,
+            556,
+            556,
+            556
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5317973163262655,
+              "opacity": 1
+            },
+            {
+              "p": 0.14640000000000003,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34376,
+          "phase": "progress",
+          "p": 0.725,
+          "trackTimes": [
+            580,
+            580,
+            580,
+            580
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.4942638776400202,
+              "opacity": 1
+            },
+            {
+              "p": 0.132,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34384.799999952316,
+          "phase": "progress",
+          "p": 0.735,
+          "trackTimes": [
+            588,
+            588,
+            588,
+            588
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.48076021173609645,
+              "opacity": 1
+            },
+            {
+              "p": 0.1272,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34402.19999998808,
+          "phase": "progress",
+          "p": 0.7575,
+          "trackTimes": [
+            606,
+            606,
+            606,
+            606
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.44866330615238426,
+              "opacity": 1
+            },
+            {
+              "p": 0.11640000000000002,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34471.69999998808,
+          "phase": "progress",
+          "p": 0.84375,
+          "trackTimes": [
+            675,
+            675,
+            675,
+            675
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.30640787893689864,
+              "opacity": 1
+            },
+            {
+              "p": 0.075,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34486,
+          "phase": "progress",
+          "p": 0.8625,
+          "trackTimes": [
+            690,
+            690,
+            690,
+            690
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.2721288293993282,
+              "opacity": 1
+            },
+            {
+              "p": 0.06599999999999998,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34511.69999998808,
+          "phase": "progress",
+          "p": 0.89375,
+          "trackTimes": [
+            715,
+            715,
+            715,
+            715
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.21295961671510066,
+              "opacity": 1
+            },
+            {
+              "p": 0.050999999999999976,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34578.799999952316,
+          "phase": "progress",
+          "p": 0.9775,
+          "trackTimes": [
+            782,
+            782,
+            782,
+            782
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.04590754085525845,
+              "opacity": 1
+            },
+            {
+              "p": 0.010799999999999983,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34584.19999998808,
+          "phase": "progress",
+          "p": 0.985,
+          "trackTimes": [
+            788,
+            788,
+            788,
+            788
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.030619192961267923,
+              "opacity": 1
+            },
+            {
+              "p": 0.007200000000000006,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34606.299999952316,
+          "phase": "progress",
+          "p": 1,
+          "trackTimes": [
+            800,
+            800,
+            800,
+            800
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 34607,
+          "phase": "complete",
+          "p": 0,
+          "trackTimes": [],
+          "fragment": null,
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        }
+      ],
+      "end": 34607
+    },
+    {
+      "index": 0,
+      "start": 38035.19999998808,
+      "frames": [
+        {
+          "time": 38037.59999996424,
+          "phase": "start",
+          "p": 0,
+          "trackTimes": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.48,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38040.69999998808,
+          "phase": "progress",
+          "p": 0.01375,
+          "trackTimes": [
+            11,
+            11,
+            11,
+            11
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.4734,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.02806925303363371,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38057,
+          "phase": "progress",
+          "p": 0.0275,
+          "trackTimes": [
+            22,
+            22,
+            22,
+            22
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.4668,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.05608613776865019,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38067.299999952316,
+          "phase": "progress",
+          "p": 0.0475,
+          "trackTimes": [
+            38,
+            38,
+            38,
+            38
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.4572,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.09663708203299994,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38088.59999996424,
+          "phase": "progress",
+          "p": 0.07125,
+          "trackTimes": [
+            56.99999999999999,
+            56.99999999999999,
+            56.99999999999999,
+            56.99999999999999
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.4458,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.1442830776981074,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38099.5,
+          "phase": "progress",
+          "p": 0.0875,
+          "trackTimes": [
+            70,
+            70,
+            70,
+            70
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.438,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.17643629241229827,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38120.39999997616,
+          "phase": "progress",
+          "p": 0.11375,
+          "trackTimes": [
+            91,
+            91,
+            91,
+            91
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.4254,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.22736912093500072,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38133.09999996424,
+          "phase": "progress",
+          "p": 0.13,
+          "trackTimes": [
+            104,
+            104,
+            104,
+            104
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.41759999999999997,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.2581461289126074,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38150.59999996424,
+          "phase": "progress",
+          "p": 0.15125,
+          "trackTimes": [
+            121,
+            121,
+            121,
+            121
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.4074,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.29736587701421924,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38173.39999997616,
+          "phase": "progress",
+          "p": 0.18,
+          "trackTimes": [
+            144,
+            144,
+            144,
+            144
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.3936,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.34828741673634783,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38187.59999996424,
+          "phase": "progress",
+          "p": 0.1975,
+          "trackTimes": [
+            158,
+            158,
+            158,
+            158
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.3852,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.3779185698078899,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38200.69999998808,
+          "phase": "progress",
+          "p": 0.21375,
+          "trackTimes": [
+            171,
+            171,
+            171,
+            171
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.3774,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.40441251510543275,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38230.89999997616,
+          "phase": "progress",
+          "p": 0.25125,
+          "trackTimes": [
+            200.99999999999997,
+            200.99999999999997,
+            200.99999999999997,
+            200.99999999999997
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.3594,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.46142078037593864,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38254.5,
+          "phase": "progress",
+          "p": 0.28125,
+          "trackTimes": [
+            225,
+            225,
+            225,
+            225
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.345,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5024567946857791,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38266.39999997616,
+          "phase": "progress",
+          "p": 0.29625,
+          "trackTimes": [
+            237,
+            237,
+            237,
+            237
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.3378,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.521323615198609,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38288.799999952316,
+          "phase": "progress",
+          "p": 0.32375,
+          "trackTimes": [
+            259,
+            259,
+            259,
+            259
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.3246,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5528781363164711,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38304.09999996424,
+          "phase": "progress",
+          "p": 0.34375,
+          "trackTimes": [
+            275,
+            275,
+            275,
+            275
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.315,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5732488218264308,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38321.59999996424,
+          "phase": "progress",
+          "p": 0.365,
+          "trackTimes": [
+            292,
+            292,
+            292,
+            292
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.3048,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5924121298130394,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38339.19999998808,
+          "phase": "progress",
+          "p": 0.3875,
+          "trackTimes": [
+            310,
+            310,
+            310,
+            310
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.294,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6098243683496147,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38351.299999952316,
+          "phase": "progress",
+          "p": 0.4025,
+          "trackTimes": [
+            322,
+            322,
+            322,
+            322
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.28679999999999994,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6197452120073509,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38368,
+          "phase": "progress",
+          "p": 0.42375,
+          "trackTimes": [
+            339,
+            339,
+            339,
+            339
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.27659999999999996,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6314396967971475,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38385.19999998808,
+          "phase": "progress",
+          "p": 0.445,
+          "trackTimes": [
+            356,
+            356,
+            356,
+            356
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.26639999999999997,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6403210620006031,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38402.799999952316,
+          "phase": "progress",
+          "p": 0.46625,
+          "trackTimes": [
+            373,
+            373,
+            373,
+            373
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.2562,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.646349740351779,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38417.09999996424,
+          "phase": "progress",
+          "p": 0.485,
+          "trackTimes": [
+            388,
+            388,
+            388,
+            388
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.2472,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6492784187252806,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38432.89999997616,
+          "phase": "progress",
+          "p": 0.50375,
+          "trackTimes": [
+            403,
+            403,
+            403,
+            403
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.23819999999999997,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6499548933453403,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38458.39999997616,
+          "phase": "progress",
+          "p": 0.53625,
+          "trackTimes": [
+            429,
+            429,
+            429,
+            429
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.2226,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6457895384700659,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38467.69999998808,
+          "phase": "progress",
+          "p": 0.5475,
+          "trackTimes": [
+            438,
+            438,
+            438,
+            438
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.2172,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.642776224183928,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38512.09999996424,
+          "phase": "progress",
+          "p": 0.60375,
+          "trackTimes": [
+            483,
+            483,
+            483,
+            483
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.19019999999999998,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6157775528980507,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38522.59999996424,
+          "phase": "progress",
+          "p": 0.61,
+          "trackTimes": [
+            488,
+            488,
+            488,
+            488
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.1872,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6115724998202465,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38537.5,
+          "phase": "progress",
+          "p": 0.63375,
+          "trackTimes": [
+            507,
+            507,
+            507,
+            507
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.17579999999999998,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5934579677690718,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38566.59999996424,
+          "phase": "progress",
+          "p": 0.67125,
+          "trackTimes": [
+            537,
+            537,
+            537,
+            537
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.1578,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.558178656310113,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38585.69999998808,
+          "phase": "progress",
+          "p": 0.6925,
+          "trackTimes": [
+            554,
+            554,
+            554,
+            554
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.14759999999999998,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5347163367135589,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38599.5,
+          "phase": "progress",
+          "p": 0.7125,
+          "trackTimes": [
+            570,
+            570,
+            570,
+            570
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.13799999999999998,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5104560050724841,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38635.39999997616,
+          "phase": "progress",
+          "p": 0.7575,
+          "trackTimes": [
+            606,
+            606,
+            606,
+            606
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.11640000000000002,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.44866330615238426,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38649.5,
+          "phase": "progress",
+          "p": 0.775,
+          "trackTimes": [
+            620,
+            620,
+            620,
+            620
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.10799999999999998,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.42214123141461946,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38666.89999997616,
+          "phase": "progress",
+          "p": 0.79625,
+          "trackTimes": [
+            637,
+            637,
+            637,
+            637
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.09779999999999998,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.3882289121591187,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38704,
+          "phase": "progress",
+          "p": 0.84,
+          "trackTimes": [
+            672,
+            672,
+            672,
+            672
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.07680000000000001,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.31313988816611515,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38718,
+          "phase": "progress",
+          "p": 0.86125,
+          "trackTimes": [
+            689,
+            689,
+            689,
+            689
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.06660000000000002,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.2744448005974776,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38734.89999997616,
+          "phase": "progress",
+          "p": 0.88125,
+          "trackTimes": [
+            705,
+            705,
+            705,
+            705
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.05700000000000001,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.23690582492144727,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38751.69999998808,
+          "phase": "progress",
+          "p": 0.9025,
+          "trackTimes": [
+            722,
+            722,
+            722,
+            722
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.046800000000000015,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.1959996739639223,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38767.09999996424,
+          "phase": "progress",
+          "p": 0.9225,
+          "trackTimes": [
+            738,
+            738,
+            738,
+            738
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.037200000000000004,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.15669878954147518,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38783.59999996424,
+          "phase": "progress",
+          "p": 0.9425,
+          "trackTimes": [
+            754,
+            754,
+            754,
+            754
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.027599999999999996,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.11677948658557515,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38840.89999997616,
+          "phase": "progress",
+          "p": 1,
+          "trackTimes": [
+            800,
+            800,
+            800,
+            800
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 38847,
+          "phase": "complete",
+          "p": 0,
+          "trackTimes": [],
+          "fragment": null,
+          "marks": [
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        }
+      ],
+      "end": 38847.09999996424
+    }
+  ],
+  "autoplayRuns": [
+    {
+      "index": 1,
+      "start": 50421.09999996424,
+      "frames": [
+        {
+          "time": 50421.59999996424,
+          "phase": "start",
+          "p": 0,
+          "trackTimes": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0,
+              "opacity": 1
+            },
+            {
+              "p": 0.48,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 50463.299999952316,
+          "phase": "progress",
+          "p": 0.045,
+          "trackTimes": [
+            36,
+            36,
+            36,
+            36
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.09158580075942874,
+              "opacity": 1
+            },
+            {
+              "p": 0.4584,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 50554.299999952316,
+          "phase": "progress",
+          "p": 0.16625,
+          "trackTimes": [
+            133,
+            133,
+            133,
+            133
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.32426286577938984,
+              "opacity": 1
+            },
+            {
+              "p": 0.4002,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 50708.19999998808,
+          "phase": "progress",
+          "p": 0.35875,
+          "trackTimes": [
+            287,
+            287,
+            287,
+            287
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.5870462316024873,
+              "opacity": 1
+            },
+            {
+              "p": 0.30779999999999996,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 50866.69999998808,
+          "phase": "progress",
+          "p": 0.55625,
+          "trackTimes": [
+            445,
+            445,
+            445,
+            445
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.6398772692584296,
+              "opacity": 1
+            },
+            {
+              "p": 0.213,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 50949.59999996424,
+          "phase": "progress",
+          "p": 0.66,
+          "trackTimes": [
+            528,
+            528,
+            528,
+            528
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.5695993420285113,
+              "opacity": 1
+            },
+            {
+              "p": 0.16319999999999998,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 51046,
+          "phase": "progress",
+          "p": 0.78125,
+          "trackTimes": [
+            625,
+            625,
+            625,
+            625
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.4123556347063696,
+              "opacity": 1
+            },
+            {
+              "p": 0.105,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 51135.69999998808,
+          "phase": "progress",
+          "p": 0.8925,
+          "trackTimes": [
+            714,
+            714,
+            714,
+            714
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.2153696275006714,
+              "opacity": 1
+            },
+            {
+              "p": 0.051600000000000014,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 51237.59999996424,
+          "phase": "progress",
+          "p": 1,
+          "trackTimes": [
+            800,
+            800,
+            800,
+            800
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 51240.09999996424,
+          "phase": "complete",
+          "p": 0,
+          "trackTimes": [],
+          "fragment": null,
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        }
+      ],
+      "end": 51240.09999996424
+    },
+    {
+      "index": 2,
+      "start": 58749.5,
+      "frames": [
+        {
+          "time": 58749.89999997616,
+          "phase": "start",
+          "p": 0,
+          "trackTimes": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 1
+            },
+            {
+              "p": 0.48,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 58854.19999998808,
+          "phase": "progress",
+          "p": 0.1325,
+          "trackTimes": [
+            106,
+            106,
+            106,
+            106
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.2628233370936843,
+              "opacity": 1
+            },
+            {
+              "p": 0.41639999999999994,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 58893.89999997616,
+          "phase": "progress",
+          "p": 0.185,
+          "trackTimes": [
+            148,
+            148,
+            148,
+            148
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.3568648316987857,
+              "opacity": 1
+            },
+            {
+              "p": 0.39119999999999994,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 58949,
+          "phase": "progress",
+          "p": 0.255,
+          "trackTimes": [
+            204,
+            204,
+            204,
+            204
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.46678209354607275,
+              "opacity": 1
+            },
+            {
+              "p": 0.3576,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 59008.89999997616,
+          "phase": "progress",
+          "p": 0.32875,
+          "trackTimes": [
+            263,
+            263,
+            263,
+            263
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5581786563101129,
+              "opacity": 1
+            },
+            {
+              "p": 0.3222,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 59033.5,
+          "phase": "progress",
+          "p": 0.36,
+          "trackTimes": [
+            288,
+            288,
+            288,
+            288
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5881375841029127,
+              "opacity": 1
+            },
+            {
+              "p": 0.3072,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 59149.69999998808,
+          "phase": "progress",
+          "p": 0.5,
+          "trackTimes": [
+            400,
+            400,
+            400,
+            400
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.65,
+              "opacity": 1
+            },
+            {
+              "p": 0.24,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 59223.799999952316,
+          "phase": "progress",
+          "p": 0.5975,
+          "trackTimes": [
+            478,
+            478,
+            478,
+            478
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6197452120073508,
+              "opacity": 1
+            },
+            {
+              "p": 0.19319999999999998,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 59259.799999952316,
+          "phase": "progress",
+          "p": 0.6425,
+          "trackTimes": [
+            514,
+            514,
+            514,
+            514
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5859458261229599,
+              "opacity": 1
+            },
+            {
+              "p": 0.1716,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 59360.59999996424,
+          "phase": "progress",
+          "p": 0.76875,
+          "trackTimes": [
+            615,
+            615,
+            615,
+            615
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.431764084642333,
+              "opacity": 1
+            },
+            {
+              "p": 0.11099999999999997,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 59456.59999996424,
+          "phase": "progress",
+          "p": 0.88875,
+          "trackTimes": [
+            711,
+            711,
+            711,
+            711
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.22257958385616855,
+              "opacity": 1
+            },
+            {
+              "p": 0.05339999999999998,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 59492.5,
+          "phase": "progress",
+          "p": 0.93375,
+          "trackTimes": [
+            747,
+            747,
+            747,
+            747
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.13431022854772787,
+              "opacity": 1
+            },
+            {
+              "p": 0.031800000000000016,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 59581.59999996424,
+          "phase": "progress",
+          "p": 1,
+          "trackTimes": [
+            800,
+            800,
+            800,
+            800
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 59588.5,
+          "phase": "complete",
+          "p": 0,
+          "trackTimes": [],
+          "fragment": null,
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        }
+      ],
+      "end": 59588.59999996424
+    },
+    {
+      "index": 3,
+      "start": 67097.59999996424,
+      "frames": [
+        {
+          "time": 67097.89999997616,
+          "phase": "start",
+          "p": 0,
+          "trackTimes": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 1
+            },
+            {
+              "p": 0.48,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 67109.19999998808,
+          "phase": "progress",
+          "p": 0.01375,
+          "trackTimes": [
+            11,
+            11,
+            11,
+            11
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.02806925303363371,
+              "opacity": 1
+            },
+            {
+              "p": 0.4734,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 67118.89999997616,
+          "phase": "progress",
+          "p": 0.02625,
+          "trackTimes": [
+            21,
+            21,
+            21,
+            21
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.0535426878431157,
+              "opacity": 1
+            },
+            {
+              "p": 0.4674,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 67156.79999995232,
+          "phase": "progress",
+          "p": 0.0725,
+          "trackTimes": [
+            57.99999999999999,
+            57.99999999999999,
+            57.99999999999999,
+            57.99999999999999
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.1467708234649174,
+              "opacity": 1
+            },
+            {
+              "p": 0.4452,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 67263.19999998808,
+          "phase": "progress",
+          "p": 0.20625,
+          "trackTimes": [
+            165,
+            165,
+            165,
+            165
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.39231136226982144,
+              "opacity": 1
+            },
+            {
+              "p": 0.38099999999999995,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 67339.89999997616,
+          "phase": "progress",
+          "p": 0.3025,
+          "trackTimes": [
+            242,
+            242,
+            242,
+            242
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5288454921755115,
+              "opacity": 1
+            },
+            {
+              "p": 0.3348,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 67407.89999997616,
+          "phase": "progress",
+          "p": 0.38625,
+          "trackTimes": [
+            309,
+            309,
+            309,
+            309
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6089361894691799,
+              "opacity": 1
+            },
+            {
+              "p": 0.2946,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 67559.89999997616,
+          "phase": "progress",
+          "p": 0.5775,
+          "trackTimes": [
+            462,
+            462,
+            462,
+            462
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6308292077545526,
+              "opacity": 1
+            },
+            {
+              "p": 0.20279999999999998,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 67683.69999998808,
+          "phase": "progress",
+          "p": 0.72875,
+          "trackTimes": [
+            583,
+            583,
+            583,
+            583
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.48925645909250315,
+              "opacity": 1
+            },
+            {
+              "p": 0.13019999999999998,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 67736.89999997616,
+          "phase": "progress",
+          "p": 0.79875,
+          "trackTimes": [
+            639,
+            639,
+            639,
+            639
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.38412251426039246,
+              "opacity": 1
+            },
+            {
+              "p": 0.09660000000000002,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 67789.19999998808,
+          "phase": "progress",
+          "p": 0.86375,
+          "trackTimes": [
+            691,
+            691,
+            691,
+            691
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.2698086616379904,
+              "opacity": 1
+            },
+            {
+              "p": 0.06539999999999999,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 67869.29999995232,
+          "phase": "progress",
+          "p": 0.96375,
+          "trackTimes": [
+            771,
+            771,
+            771,
+            771
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.07386387481454884,
+              "opacity": 1
+            },
+            {
+              "p": 0.017400000000000002,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 67910.69999998808,
+          "phase": "progress",
+          "p": 1,
+          "trackTimes": [
+            800,
+            800,
+            800,
+            800
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 1
+            },
+            {
+              "p": 0,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 67913.59999996424,
+          "phase": "complete",
+          "p": 0,
+          "trackTimes": [],
+          "fragment": null,
+          "marks": [
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        }
+      ],
+      "end": 67913.59999996424
+    },
+    {
+      "index": 0,
+      "start": 75417.19999998808,
+      "frames": [
+        {
+          "time": 75420.5,
+          "phase": "start",
+          "p": 0,
+          "trackTimes": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.48,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75431.39999997616,
+          "phase": "progress",
+          "p": 0.0175,
+          "trackTimes": [
+            14.000000000000002,
+            14.000000000000002,
+            14.000000000000002,
+            14.000000000000002
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.4716,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.03571761694308974,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75456.79999995232,
+          "phase": "progress",
+          "p": 0.04875,
+          "trackTimes": [
+            39,
+            39,
+            39,
+            39
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.4566,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.09916050674341567,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75465.79999995232,
+          "phase": "progress",
+          "p": 0.06,
+          "trackTimes": [
+            48,
+            48,
+            48,
+            48
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.45119999999999993,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.12179785448072099,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75484.5,
+          "phase": "progress",
+          "p": 0.08,
+          "trackTimes": [
+            64,
+            64,
+            64,
+            64
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.4416,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.16164842665715562,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75499.39999997616,
+          "phase": "progress",
+          "p": 0.1025,
+          "trackTimes": [
+            82,
+            82,
+            82,
+            82
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.43079999999999996,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.20571002866803095,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75515.69999998808,
+          "phase": "progress",
+          "p": 0.1225,
+          "trackTimes": [
+            98,
+            98,
+            98,
+            98
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.42119999999999996,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.24402012129643397,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75532.09999996424,
+          "phase": "progress",
+          "p": 0.14375,
+          "trackTimes": [
+            114.99999999999999,
+            114.99999999999999,
+            114.99999999999999,
+            114.99999999999999
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.411,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.2836660064376723,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75553.09999996424,
+          "phase": "progress",
+          "p": 0.17,
+          "trackTimes": [
+            136,
+            136,
+            136,
+            136
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.3984,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.33087692023774135,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75568.19999998808,
+          "phase": "progress",
+          "p": 0.18875,
+          "trackTimes": [
+            151,
+            151,
+            151,
+            151
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.3894,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.3632402243401176,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75581.69999998808,
+          "phase": "progress",
+          "p": 0.205,
+          "trackTimes": [
+            164,
+            164,
+            164,
+            164
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.3816,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.39027314646182454,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75599.09999996424,
+          "phase": "progress",
+          "p": 0.2275,
+          "trackTimes": [
+            182,
+            182,
+            182,
+            182
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.37079999999999996,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.42601011109266607,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75615.29999995232,
+          "phase": "progress",
+          "p": 0.2475,
+          "trackTimes": [
+            198,
+            198,
+            198,
+            198
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.36119999999999997,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.4559954267510562,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75632.29999995232,
+          "phase": "progress",
+          "p": 0.26875,
+          "trackTimes": [
+            215,
+            215,
+            215,
+            215
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.351,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.48588041246068786,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75651.29999995232,
+          "phase": "progress",
+          "p": 0.2925,
+          "trackTimes": [
+            234,
+            234,
+            234,
+            234
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.3396,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5167138297018815,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75668.59999996424,
+          "phase": "progress",
+          "p": 0.31375,
+          "trackTimes": [
+            250.99999999999994,
+            250.99999999999994,
+            250.99999999999994,
+            250.99999999999994
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.3294,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5418691945896673,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75681.5,
+          "phase": "progress",
+          "p": 0.33,
+          "trackTimes": [
+            264,
+            264,
+            264,
+            264
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.32159999999999994,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5594823175525634,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75698.89999997616,
+          "phase": "progress",
+          "p": 0.35125,
+          "trackTimes": [
+            281,
+            281,
+            281,
+            281
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.31139999999999995,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5803086028468436,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75714.69999998808,
+          "phase": "progress",
+          "p": 0.37125,
+          "trackTimes": [
+            297,
+            297,
+            297,
+            297
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.30179999999999996,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5975496418704682,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75732.5,
+          "phase": "progress",
+          "p": 0.3925,
+          "trackTimes": [
+            314,
+            314,
+            314,
+            314
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.29159999999999997,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6132829066183259,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75748.19999998808,
+          "phase": "progress",
+          "p": 0.41375,
+          "trackTimes": [
+            331,
+            331,
+            331,
+            331
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.2814,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6262839418827867,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75769.89999997616,
+          "phase": "progress",
+          "p": 0.44,
+          "trackTimes": [
+            352,
+            352,
+            352,
+            352
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.26880000000000004,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6384867129736476,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75781.79999995232,
+          "phase": "progress",
+          "p": 0.455,
+          "trackTimes": [
+            364,
+            364,
+            364,
+            364
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.26159999999999994,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6435153775157624,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75798.39999997616,
+          "phase": "progress",
+          "p": 0.47625,
+          "trackTimes": [
+            381,
+            381,
+            381,
+            381
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.25139999999999996,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6481915402562552,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75817.79999995232,
+          "phase": "progress",
+          "p": 0.5,
+          "trackTimes": [
+            400,
+            400,
+            400,
+            400
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.24,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.65,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75831.29999995232,
+          "phase": "progress",
+          "p": 0.5175,
+          "trackTimes": [
+            413.99999999999994,
+            413.99999999999994,
+            413.99999999999994,
+            413.99999999999994
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.2316,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6490179133428496,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75848.29999995232,
+          "phase": "progress",
+          "p": 0.53875,
+          "trackTimes": [
+            430.99999999999994,
+            430.99999999999994,
+            430.99999999999994,
+            430.99999999999994
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.2214,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6451895012476797,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75866.09999996424,
+          "phase": "progress",
+          "p": 0.56125,
+          "trackTimes": [
+            449,
+            449,
+            449,
+            449
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.21059999999999998,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6380034920194212,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75884.89999997616,
+          "phase": "progress",
+          "p": 0.58375,
+          "trackTimes": [
+            467,
+            467,
+            467,
+            467
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.1998,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6276310335777564,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75898.69999998808,
+          "phase": "progress",
+          "p": 0.60125,
+          "trackTimes": [
+            480.99999999999994,
+            480.99999999999994,
+            480.99999999999994,
+            480.99999999999994
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.19140000000000001,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6173931915325965,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75914.79999995232,
+          "phase": "progress",
+          "p": 0.62125,
+          "trackTimes": [
+            497,
+            497,
+            497,
+            497
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.18180000000000002,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.6034104041641642,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75933.89999997616,
+          "phase": "progress",
+          "p": 0.64625,
+          "trackTimes": [
+            517,
+            517,
+            517,
+            517
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.1698,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5825904622023712,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75950.09999996424,
+          "phase": "progress",
+          "p": 0.665,
+          "trackTimes": [
+            532,
+            532,
+            532,
+            532
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.16079999999999997,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5646104843848243,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75965.19999998808,
+          "phase": "progress",
+          "p": 0.685,
+          "trackTimes": [
+            548,
+            548,
+            548,
+            548
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.15119999999999997,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5432747848893756,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75981.69999998808,
+          "phase": "progress",
+          "p": 0.705,
+          "trackTimes": [
+            564,
+            564,
+            564,
+            564
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.1416,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.5197950280166089,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 75998.89999997616,
+          "phase": "progress",
+          "p": 0.7275,
+          "trackTimes": [
+            582,
+            582,
+            582,
+            582
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.13079999999999997,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.4909331779853694,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 76015.09999996424,
+          "phase": "progress",
+          "p": 0.7475,
+          "trackTimes": [
+            598,
+            598,
+            598,
+            598
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.12119999999999997,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.4632150373013836,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 76031.89999997616,
+          "phase": "progress",
+          "p": 0.7675,
+          "trackTimes": [
+            614,
+            614,
+            614,
+            614
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.11160000000000002,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.43366879848799,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 76049.29999995232,
+          "phase": "progress",
+          "p": 0.79,
+          "trackTimes": [
+            632,
+            632,
+            632,
+            632
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.10079999999999997,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.39838958487443465,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 76066.59999996424,
+          "phase": "progress",
+          "p": 0.81125,
+          "trackTimes": [
+            649,
+            649,
+            649,
+            649
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.09059999999999999,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.3632402243401176,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 76081.79999995232,
+          "phase": "progress",
+          "p": 0.83,
+          "trackTimes": [
+            664,
+            664,
+            664,
+            664
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.08160000000000002,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.33087692023774146,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 76098.29999995232,
+          "phase": "progress",
+          "p": 0.85125,
+          "trackTimes": [
+            681,
+            681,
+            681,
+            681
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.07140000000000002,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.29281722193536447,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 76115.59999996424,
+          "phase": "progress",
+          "p": 0.8725,
+          "trackTimes": [
+            698,
+            698,
+            698,
+            698
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.06119999999999997,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.25345299706232244,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 76131.29999995232,
+          "phase": "progress",
+          "p": 0.8925,
+          "trackTimes": [
+            714,
+            714,
+            714,
+            714
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.051600000000000014,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.2153696275006714,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 76148.29999995232,
+          "phase": "progress",
+          "p": 0.91375,
+          "trackTimes": [
+            731,
+            731,
+            731,
+            731
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.04140000000000002,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.1739782289246511,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 76165.5,
+          "phase": "progress",
+          "p": 0.935,
+          "trackTimes": [
+            748,
+            748,
+            748,
+            748
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.031199999999999974,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.131811741981733,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 76182.09999996424,
+          "phase": "progress",
+          "p": 0.95625,
+          "trackTimes": [
+            765,
+            765,
+            765,
+            765
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.020999999999999977,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.08905802209327923,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 76198.5,
+          "phase": "progress",
+          "p": 0.97625,
+          "trackTimes": [
+            781,
+            781,
+            781,
+            781
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.011400000000000023,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.04845335014447845,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 76214.89999997616,
+          "phase": "progress",
+          "p": 0.99625,
+          "trackTimes": [
+            797,
+            797,
+            797,
+            797
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0.001800000000000015,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 0.007657454958887177,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 76231.39999997616,
+          "phase": "progress",
+          "p": 1,
+          "trackTimes": [
+            800,
+            800,
+            800,
+            800
+          ],
+          "fragment": "running",
+          "marks": [
+            {
+              "p": 0,
+              "opacity": 1
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 1
+            }
+          ],
+          "wa": "visible"
+        },
+        {
+          "time": 76232.09999996424,
+          "phase": "complete",
+          "p": 0,
+          "trackTimes": [],
+          "fragment": null,
+          "marks": [
+            {
+              "p": 0,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            },
+            {
+              "p": 7.960204194457797e-17,
+              "opacity": 0
+            }
+          ],
+          "wa": "visible"
+        }
+      ],
+      "end": 76232.09999996424
+    }
+  ]
+}

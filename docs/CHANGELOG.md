@@ -1,4 +1,56 @@
+# 2026-11-20 — TOUCH-026: ondas interactivas móviles
+
+- Extendidas las ondas cian/menta de CLICK-025 a taps en controles habilitados, con el mismo Canvas/RAF, duración de 640ms y límite de ocho. Sin estela táctil ni duplicación por click de compatibilidad.
+- Pointer Events pasivos distinguen tap mediante recorrido máximo de 10px y duración de 500ms; scroll, cancelación, multitouch y contexto descartan el candidato. Acciones, foco, gestos y transición FIX-024 conservados; reduced-motion desactiva las ondas.
+- CSS permite ondas móviles y sitúa el Canvas sobre WhatsApp sin recibir eventos; URLs afectadas versionadas. QA reproducible, capturas, métricas y límites en [TOUCH-026](qa/touch026/REPORT.md). Sin dependencias nuevas, infraestructura, despliegue, commit ni push; cambios recibidos preservados.
+
+# 2026-11-20 — CLICK-025: completar interacción Coverflow
+
+- Confirmados en el código recibido los clics laterales, enlace central en pestaña nueva, touch/swipe, bloqueo de solicitudes durante transición y reinicio manual del autoplay. Se reutilizan sin duplicarlos, conservando reloj sincronizado FIX-024 y cuatro logos oficiales.
+- Añadida activación por Space sin scroll/repetición, con Enter nativo; semántica de botón en laterales y enlace en central. El filtro del clic posterior a swipe permite activaciones de teclado y se reinicia ante un nuevo pointerdown; corrige un clic de mouse perdido después de un swipe sin clic residual. Ondas y cursor preservados íntegramente.
+- Recurso Coverflow versionado; pruebas responsive, destinos, teclado, touch, autoplay y límites en [informe](qa/fix024/COVERFLOW-CLICK-025.md). Sin infraestructura, dependencias nuevas, despliegue, commit ni push.
+
+# 2026-11-20 — CLICK-025: Water Ripple de escritorio
+
+- Añadidas ondas cian/menta de 640 ms en las coordenadas del clic primario real, con borde fino, segundo anillo tenue y límite de ocho ondas. Se reutilizan Canvas 2D, RAF y cleanup del cursor; sin bloquear controles ni cambiar sus estilos.
+- Desactivadas en touch, teclado, clic derecho, eventos sintéticos y movimiento reducido. Recurso del cursor versionado; FIX-024 y cambios previos conservados.
+- Validación, capturas y límites en [CLICK-025 junto a FIX-024](qa/fix024/CLICK-025.md). Sin dependencias nuevas, infraestructura, despliegue, commit ni push.
+
+# 2026-11-20 — FIX-024: Coverflow sincronizado, WhatsApp y geometría ambiental
+
+- Sustituida la secuencia 820 ms de espera + 800 ms de reconstrucción por un único reloj GSAP de 800 ms que dirige las pistas WAAPI de tarjetas y el progreso de ambas marcas Three.js. Matriz CSS 3D por tarjeta, texturas precalentadas, contención, bloqueo breve y pausa común; sin timelines GPU independientes.
+- Retirados el observador y la regla que ocultaban WhatsApp junto a Experiencia/Contacto, conservando enlace, posición fija y tamaño; capa 101 sobre el contexto 100 del menú fullscreen. Desactivado el grupo ambiental de cajas/aristas/conexiones vinculado al scroll, conservando partículas, cursor, anillo y demás efectos.
+- Pruebas, métricas, capturas, archivos y limitaciones en [QA FIX-024](qa/fix024/REPORT.md). Cambios preexistentes preservados; sin dependencias nuevas, infraestructura, deploy, commit ni push.
+
+# UX-022 / CURSOR-023 — Coverflow y estela de escritorio
+
+Cambio local del 2026-11-20; sin deploy, commit ni push.
+
+- Carrusel de cuatro marcas con tres posiciones, previsualizaciones navegables, movimiento 3D circular, autoplay, controles, teclado y swipe. Navegación DOM disponible sin WebGL y con reduced-motion.
+- Respiración de la imagen 1–1,008 / 5s, sin modificar dimensiones de placas. Se mantienen marcas originales y contención GPU de FIX-021, con reconstrucción sincronizada tras el desplazamiento.
+- Se reemplaza el halo tenue y las funciones WebGL vacías por una estela Canvas 2D original de spline continua con profundidad visual, cian/azul, DPR limitado y RAF que se detiene en reposo. Cursor nativo, clics y scroll preservados; sin efecto en touch/reduced-motion.
+- Alcance, pruebas reales, métricas, estado Git y límites en [informe QA](qa/ux022-cursor023/REPORT.md). Se preservan cambios preexistentes, FIX-019, SEO-020 e infraestructura.
+
 # Historial de cambios
+
+## 2026-11-20 — FIX-021: estabilidad y contención del carrusel
+- Respiración localizada en la placa CSS: giro/escala/sombra durante transición y alto dependiente de la marca; contenedor exterior ya estable. Placa ahora fija por breakpoint, con 24px de margen para logos originales y controles de pausa con ancho constante.
+- Fragmentación 3D preservada con envolvente proyectada de vértices y scissor GPU dentro de la placa. Retirados giro global de malla y energía CSS escrita por cuadro; layout por invalidación, texturas/shaders precalentados y sin draw de fragmentos en reposo. Renderer/RAF, GSAP, controles, enlaces y recursos existentes conservados.
+- Chromium/SwiftShader en 360/390/430/768/1440: cuatro marcas, cuadros de transición, contención, placa estable y sin overflow. Dos vueltas de autoplay, teclado/swipe, pausa/reanudación/resize, foco/hover y tres fallbacks verificados; cero errores JavaScript en las ejecuciones finales. Métricas y límites en [informe FIX-021](qa/fix021/REPORT.md); SwiftShader no certifica fluidez Android. Sintaxis y whitespace comprobados.
+- HTML y journey solo versionan recursos afectados; SEO-020 y otras secciones intactos. Cambios preexistentes preservados, sin infraestructura, dependencias, despliegue, commit ni push.
+
+## 2026-11-20 — FIX-019 / SEO-020: marcas y vista previa social
+- Placa blanca ajustada a cada marca y asset original nítido en reposo; se mantienen fragmentación 3D, controles y escenario UX-014. Recursos originales sin recolorear. El oscurecimiento reportado no se reprodujo en Chromium local; se corrige la dependencia de textura GPU en reposo y la placa fija.
+- Imagen exclusiva iWave de 1200×630 con arte original y fuentes corporativas; Open Graph y Twitter únicos con URLs HTTPS absolutas.
+- Evidencias, scripts y limitaciones en [informe FIX-019 / SEO-020](qa/fix019-seo020/REPORT.md). Sin infraestructura, despliegue, commit ni push; cambios previos preservados.
+
+## 2026-11-19 — DEPLOY-017: HTTPS público de UX-014
+- Construida `iwave-landing:ux014-prod` desde UX-014 (`940fd73`), sin cambios al código o recursos aprobados. Contexto Docker restringido y Nginx con revalidación de caché, cabeceras HTTP y bloqueo de rutas internas.
+- Creado `iwave-prod` saludable, usuario sin privilegios, filesystem de solo lectura, healthcheck, logs limitados, red `iwave-web` y puerto exclusivo `127.0.0.1:8081`. `iwave-test` preservado.
+- Diagnóstico inicial: sin proxy en el VPS, Cloudflare devolvía 525. Con autorización expresa se instaló `iwave-caddy` en 80/443 TCP, red `iwave-web`, sin privilegios ni socket Docker y con volúmenes persistentes de renovación.
+- El usuario corrigió los A web desde una IP ajena a `37.59.109.88`, temporalmente DNS only. Let's Encrypt emitió certificados válidos para raíz y www; HTTPS público raíz responde 200, www redirige 301 al canónico, HTTP redirige a HTTPS. Recursos públicos idénticos al código aprobado y rutas internas bloqueadas. DNS de Zoho intacto.
+- Tras confirmar el usuario Proxied y Full (strict), verificado el recorrido por Cloudflare: raíz 200, www 301, TLS público y de origen válidos, recursos UX-014 y tres matrices Chromium aprobadas sin errores de consola ni contenido mixto. Contenedores saludables y Zoho preservado. El modo del panel se basa en la confirmación del usuario; no hay acceso API para leerlo.
+- Arquitectura, pruebas, certificados, operación, actualización y rollback documentados en [PRODUCTION.md](deployment/PRODUCTION.md). Sin nuevos commits ni push.
 
 ## 2026-11-19 — UX-014: experiencia corporativa continua
 - Recorrido reorganizado: Inicio, Transformación/Impacto, Soluciones, Experiencia profesional, Capacidades, Proceso, Contacto y Footer. Fusionado Qué resolvemos en un desplegable, conservando funcionalidad y anclas `#informacion`/`#impacto`. Menú y siete hitos ScrollTrigger alineados.

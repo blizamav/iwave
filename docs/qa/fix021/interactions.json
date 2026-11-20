@@ -1,0 +1,77 @@
+{
+  "checks": [
+    "Keyboard previous wraps to Scotiabank",
+    "Horizontal swipe wraps to MetLife",
+    "Vertical gesture does not change brand",
+    "Manual pause suppresses autoplay",
+    "Pause freezes a running transition",
+    "Minor resize preserves running timeline; resume finishes BancoEstado",
+    "Eight consecutive autoplay changes: two full cycles and matching official links",
+    "Focus suspends autoplay",
+    "Mouse hover suspends autoplay",
+    "Fallback reduce: complete static logo and four links",
+    "Fallback no-webgl: complete static logo and four links",
+    "Fallback no-js: complete static logo and four links"
+  ],
+  "cycles": [
+    {
+      "n": 0,
+      "brand": "2",
+      "href": "https://www.bancochile.cl/"
+    },
+    {
+      "n": 1,
+      "brand": "3",
+      "href": "https://www.scotiabankchile.cl/"
+    },
+    {
+      "n": 2,
+      "brand": "0",
+      "href": "https://www.metlife.cl/"
+    },
+    {
+      "n": 3,
+      "brand": "1",
+      "href": "https://www.bancoestado.cl/"
+    },
+    {
+      "n": 4,
+      "brand": "2",
+      "href": "https://www.bancochile.cl/"
+    },
+    {
+      "n": 5,
+      "brand": "3",
+      "href": "https://www.scotiabankchile.cl/"
+    },
+    {
+      "n": 6,
+      "brand": "0",
+      "href": "https://www.metlife.cl/"
+    },
+    {
+      "n": 7,
+      "brand": "1",
+      "href": "https://www.bancoestado.cl/"
+    }
+  ],
+  "errors": [],
+  "links": [
+    {
+      "name": "MetLife",
+      "href": "https://www.metlife.cl/"
+    },
+    {
+      "name": "BancoEstado Corredores de Seguros",
+      "href": "https://www.bancoestado.cl/"
+    },
+    {
+      "name": "Banco de Chile",
+      "href": "https://www.bancochile.cl/"
+    },
+    {
+      "name": "Scotiabank",
+      "href": "https://www.scotiabankchile.cl/"
+    }
+  ]
+}

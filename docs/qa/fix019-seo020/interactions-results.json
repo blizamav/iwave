@@ -1,0 +1,9 @@
+{
+  "checks": [
+    "keyboard previous wraps to Scotiabank",
+    "horizontal swipe wraps to MetLife",
+    "manual pause preserves brand",
+    "autoplay resumes and reconstructs BancoEstado"
+  ],
+  "errors": []
+}

@@ -1,0 +1,40 @@
+{
+  "runs": [
+    {
+      "width": 1440,
+      "gpu": true,
+      "errors": [],
+      "checks": [
+        "Mouse: left previous, right next, centered with correct roles",
+        "Four official central destinations open in new tabs (requests intercepted locally)",
+        "Touch: both laterals navigate without opening a tab",
+        "Real horizontal touch swipe advances once; native pan-y retained",
+        "Enter and Space: both laterals navigate, center opens active official tab; Space does not scroll",
+        "Ten rapid requests accepted as one transition",
+        "Pause freezes same GSAP clock; resume completes",
+        "Real autoplay advances once; max one 7500ms timer",
+        "Manual navigation resets remaining to 7500ms while paused; no timer accumulated",
+        "FIX-024 GPU: fragments start with same clock, WAAPI progress matches, both meshes cleared on completion"
+      ],
+      "opened": [
+        {
+          "index": 0,
+          "url": "https://www.metlife.cl/"
+        },
+        {
+          "index": 1,
+          "url": "https://www.bancoestado.cl/"
+        },
+        {
+          "index": 2,
+          "url": "https://www.bancochile.cl/"
+        },
+        {
+          "index": 3,
+          "url": "https://www.scotiabankchile.cl/"
+        }
+      ],
+      "maxTimers": 1
+    }
+  ]
+}

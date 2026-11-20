@@ -4,7 +4,6 @@ export function createEffects(T, renderer, canvas) {
   const abort = new AbortController();
   const on = (el, event, fn, options = {}) => el.addEventListener(event, fn, { ...options, signal: abort.signal });
   const mobile = matchMedia('(max-width: 820px)');
-  const fine = matchMedia('(hover: hover) and (pointer: fine)');
   const slots = [];
   const viewport = new T.Vector2();
   const textures = new Set();
@@ -40,30 +39,56 @@ export function createEffects(T, renderer, canvas) {
 
   // 01 — textured physical fragments, each with a home, UV cell and 3-axis rotation.
   const logoHost = document.querySelector('.logo-showcase');
-  const logoSlot = addSlot(logoHost.querySelector('.logo-viewport'));
+  const logoStage = logoHost.querySelector('.coverflow-stage');
+  const logoSlot = addSlot(logoStage || logoHost.querySelector('.logo-viewport'));
   const brands = [...document.querySelectorAll('.trust-brand')].map(a => ({
     name: a.querySelector('img').alt, url: a.href, src: a.querySelector('img').src
   }));
   const logoMaterials = [], logoMeshes = [];
-  let selectedLogo = 0, logoHold = 0, logoHover = false, logoFocus = false, logoTimeline = null, logoPaused = false;
-  const logoPause = logoHost.querySelector('[data-logo-pause]');
-  on(logoPause, 'click', () => {
-    logoPaused = !logoPaused; logoPause.setAttribute('aria-pressed', String(logoPaused));
-    logoPause.textContent = logoPaused ? 'Reanudar' : 'Pausar';
-  });
-  const link = logoHost.querySelector('[data-logo-link]');
-  const still = logoHost.querySelector('img');
-  const logoCount = logoHost.querySelector('output');
-  const updateLogoLabel = () => {
-    link.textContent = brands[selectedLogo].name; link.href = brands[selectedLogo].url;
-    const art = logoHost.querySelector('[data-logo-art]'); art.href = link.href; art.setAttribute('aria-label', 'Visitar sitio oficial de ' + brands[selectedLogo].name);
-    still.src = brands[selectedLogo].src; still.alt = brands[selectedLogo].name;
-    logoCount.value = `${selectedLogo + 1} / ${brands.length}`;
-    logoHost.dataset.logo = String(selectedLogo);
-    logoHost.dataset.brand = ['metlife','bancoestado','bancochile','scotiabank'][selectedLogo];
+  const logoSizes = [];
+  let selectedLogo = 0, outgoingLogo = 0;
+  const clearLogo = () => {
+    logoMeshes.forEach((mesh,i) => { mesh.visible=false; logoMaterials[i].uniforms.uOpacity.value=0; });
+    logoHost.querySelectorAll('[data-fragment-active]').forEach(card=>card.removeAttribute('data-fragment-active'));
+    delete logoHost.dataset.fragment;
   };
+  on(logoHost, 'coverflowchange', ({detail}) => {
+    selectedLogo = detail.index;
+    if (detail.phase === 'complete') {
+      clearLogo();
+      // Remove the last rasterized fragments before revealing the original DOM assets,
+      // even if visibility/reduced-motion has suspended the shared render loop.
+      const r=logoSlot.rect;
+      if(r && viewport.x && r.bottom>0 && r.top<viewport.y) {
+        renderer.setRenderTarget(null);renderer.setScissorTest(true);
+        renderer.setScissor(Math.max(0,r.left),Math.max(0,viewport.y-r.bottom),
+          Math.max(0,Math.min(viewport.x,r.right)-Math.max(0,r.left)),
+          Math.max(0,Math.min(viewport.y,r.bottom)-Math.max(0,r.top)));
+        renderer.clear(true,true,false);renderer.setScissorTest(false);
+      }
+      layoutDirty=true; return;
+    }
+    if (detail.phase === 'start') {
+      clearLogo(); outgoingLogo = detail.previous;
+      // A not-yet-warm GPU uses the working DOM transition; never wait for textures.
+      if (!logoHost.classList.contains('is-webgl')) return;
+      logoHost.dataset.fragment='running';
+      [outgoingLogo,selectedLogo].forEach(i=>logoHost.querySelector(`.logo-card[data-index="${i}"]`)?.setAttribute('data-fragment-active',''));
+      layoutDirty=true;
+    }
+    if (!logoHost.dataset.fragment) return;
+    const p = detail.progress;
+    // Shared clock: outgoing disintegrates while incoming reassembles in flight.
+    logoMaterials[outgoingLogo].uniforms.uProgress.value = .65 * Math.sin(Math.PI*p);
+    logoMaterials[outgoingLogo].uniforms.uOpacity.value = 1;
+    logoMaterials[selectedLogo].uniforms.uProgress.value = .48 * (1-p);
+    logoMaterials[selectedLogo].uniforms.uOpacity.value = 1;
+  });
   const logoVertex = `attribute vec3 aHome; attribute vec3 aOffset; attribute vec3 aRotation;
     attribute vec2 aUvOffset; uniform float uProgress; uniform vec2 uCell;
+    uniform vec2 uHalfSize; uniform vec2 uBounds; uniform float uRadius; uniform float uCameraZ;
+    uniform mat4 uCardMatrix; uniform vec2 uCardSize; uniform vec4 uStage;
+    uniform vec2 uViewport; uniform float uPerspective; uniform float uCardOpacity;
     varying vec2 vUv; varying float vAlpha;
     mat3 rx(float a){float c=cos(a),s=sin(a);return mat3(1.,0.,0.,0.,c,s,0.,-s,c);}
     mat3 ry(float a){float c=cos(a),s=sin(a);return mat3(c,0.,-s,0.,1.,0.,s,0.,c);}
@@ -71,8 +96,19 @@ export function createEffects(T, renderer, canvas) {
     void main(){float p=smoothstep(0.,1.,uProgress);vec3 r=aRotation*p;
       vec3 transformedPosition=rz(r.z)*ry(r.y)*rx(r.x)*position;
       transformedPosition+=aHome+aOffset*p;
-      vUv=aUvOffset+uv*uCell; vAlpha=1.-smoothstep(.4,1.,p);
-      gl_Position=projectionMatrix*modelViewMatrix*vec4(transformedPosition,1.);}`;
+      // Conservative envelope includes every rotated cell, offset and perspective Z.
+      // Scale the whole fragmented mark uniformly: no clipped fragments at the plate edge.
+      float reach=uRadius*min(2.,14.*p);
+      vec2 envelope=uHalfSize+vec2(1.25,.75)*p+vec2(reach);
+      float depth=1.-(p+reach)/uCameraZ;
+      vec2 fit=uBounds*depth/envelope;
+      transformedPosition.xy*=min(1.,min(fit.x,fit.y));
+      vUv=aUvOffset+uv*uCell; vAlpha=(1.-smoothstep(.4,1.,p))*uCardOpacity;
+      vec4 local=projectionMatrix*modelViewMatrix*vec4(transformedPosition,1.);
+      vec2 card=local.xy/local.w*uCardSize*.5;
+      vec4 moved=uCardMatrix*vec4(card.x,-card.y,0.,1.);
+      vec2 screen=uStage.xy+uStage.zw*.5+(moved.xy+uCardSize*.5)/(1.-moved.z/uPerspective);
+      gl_Position=vec4(screen.x/uViewport.x*2.-1.,1.-screen.y/uViewport.y*2.,0.,1.);}`;
   const logoFragment = `uniform sampler2D uMap; uniform float uOpacity; varying vec2 vUv; varying float vAlpha;
     void main(){vec4 c=texture2D(uMap,vUv);if(c.a<.015)discard;gl_FragColor=vec4(c.rgb,c.a*vAlpha*uOpacity);
     #include <colorspace_fragment>
@@ -84,6 +120,7 @@ export function createEffects(T, renderer, canvas) {
     texture.anisotropy = Math.min(4, renderer.capabilities.getMaxAnisotropy());
     const aspect = texture.image.width / texture.image.height;
     const width = Math.min(6.4, 2.1 * aspect), height = width / aspect;
+    logoSizes[index] = { width, height };
     const cols = mobile.matches ? 16 : 24, rows = Math.max(8, Math.round(cols / aspect));
     const n = cols * rows;
     const geometry = new T.PlaneGeometry(width / cols, height / rows);
@@ -101,8 +138,13 @@ export function createEffects(T, renderer, canvas) {
     geometry.setAttribute('aRotation', new T.InstancedBufferAttribute(rotations, 3));
     geometry.setAttribute('aUvOffset', new T.InstancedBufferAttribute(uvs, 2));
     const material = new T.ShaderMaterial({ uniforms: { uMap: { value: texture }, uProgress: { value: 0 },
-      uTime: { value: 0 }, uOpacity: { value: 1 }, uCell: { value: new T.Vector2(1 / cols, 1 / rows) } },
-      vertexShader: logoVertex, fragmentShader: logoFragment, transparent: true, side: T.DoubleSide, depthWrite: true });
+      uCardMatrix: { value: new T.Matrix4() }, uCardSize: { value: new T.Vector2() },
+      uStage: { value: new T.Vector4() }, uViewport: { value: viewport },
+      uPerspective: { value: 1100 }, uCardOpacity: { value: 1 },
+      uHalfSize: { value: new T.Vector2(width / 2, height / 2) },
+      uBounds: { value: new T.Vector2(1, 1) }, uRadius: { value: Math.hypot(width / cols, height / rows) / 2 },
+      uCameraZ: { value: 8.5 }, uOpacity: { value: 1 }, uCell: { value: new T.Vector2(1 / cols, 1 / rows) } },
+      vertexShader: logoVertex, fragmentShader: logoFragment, transparent: true, side: T.DoubleSide, depthWrite: false });
     const mesh = new T.InstancedMesh(geometry, material, n);
     const identity = new T.Matrix4();
     for (let i = 0; i < n; i++) mesh.setMatrixAt(i, identity);
@@ -110,43 +152,14 @@ export function createEffects(T, renderer, canvas) {
     logoSlot.scene.add(mesh); logoMeshes[index] = mesh; logoMaterials[index] = material;
   })).then(() => {
     if (!alive) return;
+    logoMeshes.forEach(mesh => { mesh.visible = true; });
+    renderer.compile(logoSlot.scene, logoSlot.camera);
+    textures.forEach(texture => renderer.initTexture(texture));
+    logoMeshes.forEach((mesh, index) => { mesh.visible = index === selectedLogo; });
     logoHost.classList.add('is-webgl');
-    logoHost.querySelectorAll('button').forEach(b => { b.disabled = false; });
-    updateLogoLabel();
+    layoutDirty = true;
+    logoMaterials.forEach(material => { material.uniforms.uOpacity.value = 0; });
   }).catch(() => { logoHost.dataset.textureError = 'true'; });
-  const changeLogo = direction => {
-    if (logoMeshes.length !== 4 || logoTimeline && logoTimeline.totalProgress() < 1) return;
-    const old = selectedLogo, next = (old + direction + brands.length) % brands.length;
-    logoHold = 0;
-    if (logoTimeline) { timelines.delete(logoTimeline); logoTimeline.kill(); }
-    logoMaterials[next].uniforms.uProgress.value = 1;
-    logoTimeline = tween({ onComplete: () => { logoHost.dataset.transition = 'complete'; } });
-    logoTimeline.to(logoMaterials[old].uniforms.uProgress, { value: 1, duration: 1.25, ease: 'power2.inOut' })
-      .call(() => { logoMeshes[old].visible = false; selectedLogo = next; logoMeshes[next].visible = true; logoHost.dataset.phase = 'incoming'; updateLogoLabel(); })
-      .to(logoMaterials[next].uniforms.uProgress, { value: 0, duration: 1.55, ease: 'power2.inOut' });
-    logoHost.dataset.transition = 'running'; logoHost.dataset.phase = 'outgoing';
-  };
-  on(logoHost.querySelector('[data-logo-prev]'), 'click', () => changeLogo(-1));
-  on(logoHost.querySelector('[data-logo-next]'), 'click', () => changeLogo(1));
-  on(logoHost, 'pointerenter', e => { if (e.pointerType === 'mouse') logoHover = true; });
-  on(logoHost, 'pointerleave', () => { logoHover = false; });
-  on(logoHost, 'focusin', () => { logoFocus = true; });
-  on(logoHost, 'focusout', e => { logoFocus = logoHost.contains(e.relatedTarget); });
-  on(logoHost, 'keydown', e => { if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); changeLogo(e.key === 'ArrowRight' ? 1 : -1); } });
-  let touchStart = null, swiped = false;
-  on(logoSlot.element, 'pointerdown', e => { if (e.pointerType !== 'mouse') { touchStart = [e.clientX, e.clientY]; swiped = false; } }, { passive: true });
-  on(logoSlot.element, 'pointerup', e => {
-    if (!touchStart) return;
-    const dx = e.clientX - touchStart[0], dy = e.clientY - touchStart[1]; touchStart = null;
-    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy) * 1.3) { swiped = true; changeLogo(dx < 0 ? 1 : -1); }
-  }, { passive: true });
-  on(logoSlot.element, 'click', e => { if (swiped) { e.preventDefault(); swiped = false; } });
-  on(logoSlot.element, 'pointercancel', () => { touchStart = null; });
-
-  // Cursor handled in DOM at pointer event cadence; no GPU trail or extra RAF.
-  const pointerMove = () => {};
-  const pointerDown = () => {};
-  const hideTrail = () => {};
   // 03 — five different systems; persistent CPU Bézier buffers + GLSL breathing/noise.
   const morphHost = document.querySelector('.morph-system');
   const morphSlot = addSlot(morphHost.querySelector('.morph-viewport'));
@@ -253,9 +266,13 @@ export function createEffects(T, renderer, canvas) {
     const size = renderer.getDrawingBufferSize(new T.Vector2()); target.setSize(size.x, size.y);
 
     morphUniforms.uPixel.value = renderer.getPixelRatio();
+    layoutDirty = true;
     layout();
   }
+  let layoutDirty = true;
   function layout() {
+    if (!layoutDirty) return;
+    layoutDirty = false;
     slots.forEach(slot => {
       const r = slot.element.getBoundingClientRect(); slot.rect = r;
       slot.visible = r.bottom > 0 && r.top < innerHeight && r.right > 0 && r.left < innerWidth;
@@ -263,22 +280,33 @@ export function createEffects(T, renderer, canvas) {
       // Frame all geometry on compact viewports without distorting logo/particles.
       slot.camera.position.z = Math.max(slot === logoSlot ? 8.5 : 5.8, (slot === logoSlot ? 3.8 : 3.9) / Math.tan(Math.PI / 9) / slot.camera.aspect);
       slot.camera.updateProjectionMatrix();
+      if (slot === logoSlot && logoSizes[selectedLogo]) {
+        // These CSS lengths are fixed for every brand. Read only after layout changes.
+        const card = logoHost.querySelector('.logo-card') || slot.element;
+        const plateWidth = card.clientWidth, plateHeight = card.clientHeight;
+        slot.camera.aspect=plateWidth/plateHeight; slot.camera.updateProjectionMatrix();
+        const safeWidth = plateWidth - 48, safeHeight = plateHeight - 48;
+        slot.clipRect = { left: r.left + (r.width - plateWidth) / 2 + 8, right: r.left + (r.width + plateWidth) / 2 - 8,
+          top: r.top + (r.height - plateHeight) / 2 + 8, bottom: r.top + (r.height + plateHeight) / 2 - 8 };
+        const px = plateHeight / (2 * slot.camera.position.z * Math.tan(Math.PI / 9));
+        logoSizes.forEach((size, index) => {
+          const scale = Math.min(safeWidth / (size.width * px), safeHeight / (size.height * px));
+          logoMeshes[index].scale.setScalar(scale);
+          logoMaterials[index].uniforms.uBounds.value.set(safeWidth / (2 * px * scale), safeHeight / (2 * px * scale));
+          logoMaterials[index].uniforms.uCameraZ.value = slot.camera.position.z / scale;
+        });
+        const size = logoSizes[selectedLogo], scale = logoMeshes[selectedLogo].scale.x;
+        logoHost.style.setProperty('--logo-width', `${size.width * px * scale}px`);
+        logoHost.style.setProperty('--logo-height', `${size.height * px * scale}px`);
+      }
     });
   }
-  on(window, 'scroll', layout, { passive: true });
-  const observer = new ResizeObserver(layout); slots.forEach(s => observer.observe(s.element));
+  const invalidateLayout = () => { layoutDirty = true; };
+  on(window, 'scroll', invalidateLayout, { passive: true });
+  const observer = new ResizeObserver(invalidateLayout); slots.forEach(s => observer.observe(s.element));
   function update(dt, time) {
 
-    if (logoSlot.visible && logoMaterials.length === 4 && logoHost.classList.contains('is-webgl')) {
-      if (!logoPaused) advance(logoTimeline, Math.min(dt, .1));
-      const p = logoMaterials[selectedLogo].uniforms.uProgress.value;
-      logoHost.style.setProperty('--brand-energy', String(Math.sin(p * Math.PI)));
-      logoMeshes.forEach(mesh => { mesh.rotation.y = Math.sin(time * .18) * .035; mesh.rotation.x = Math.sin(time * .13) * .015; });
-      logoHost.dataset.progress = p.toFixed(3);
-      if (!logoPaused && !logoHover && !logoFocus && (!logoTimeline || logoTimeline.totalProgress() >= 1)) {
-        logoHold += dt; if (logoHold > 7.5) changeLogo(1);
-      }
-    }
+    // Logo progress is supplied by the Coverflow controller, never a second timeline.
     if (!morphSlot.visible) return;
     if (!morphPaused) advance(morphTimeline, Math.min(dt, .1));
     manualHold = Math.max(0, manualHold - dt);
@@ -303,6 +331,7 @@ export function createEffects(T, renderer, canvas) {
   function render(scene, camera, dt, time) {
     layout();
     update(dt, time);
+    layout();
     renderer.setScissorTest(false); renderer.setViewport(0, 0, viewport.x, viewport.y);
     renderer.setRenderTarget(target); renderer.setClearColor(0x000000, 0); renderer.clear(); renderer.render(scene, camera);
     renderer.setRenderTarget(null); renderer.clear(); renderer.render(screen, screenCamera);
@@ -310,10 +339,35 @@ export function createEffects(T, renderer, canvas) {
     slots.forEach(slot => {
       if (!slot.visible || !slot.rect) return;
       const r = slot.rect;
+      if (slot === logoSlot) {
+        if (logoHost.dataset.fragment !== 'running') return;
+        renderer.setViewport(0,0,viewport.x,viewport.y);
+        // Match each persistent card's actual CSS 3D matrix, with the same stage perspective.
+        // Local vertex envelope retains FIX-021; stage + moving plate scissor is independent.
+        [outgoingLogo,selectedLogo].sort((a,b)=>a===selectedLogo?1:b===selectedLogo?-1:0).forEach(i=>{
+          const card=logoHost.querySelector(`.logo-card[data-index="${i}"]`);
+          if (!card) return;
+          const bounds=card.getBoundingClientRect(), css=getComputedStyle(card);
+          const c={left:Math.max(r.left,bounds.left+8,0),right:Math.min(r.right,bounds.right-8,viewport.x),
+            top:Math.max(r.top,bounds.top+8,0),bottom:Math.min(r.bottom,bounds.bottom-8,viewport.y)};
+          if(c.right<=c.left || c.bottom<=c.top)return;
+          const u=logoMaterials[i].uniforms;
+          const m=new DOMMatrixReadOnly(css.transform);
+          u.uCardMatrix.value.fromArray(m.toFloat32Array());
+          u.uCardSize.value.set(card.clientWidth,card.clientHeight);
+          u.uStage.value.set(r.left,r.top,r.width,r.height);u.uCardOpacity.value=Number(css.opacity);
+          logoMeshes.forEach((mesh,j)=>{mesh.visible=j===i;});
+          renderer.setScissor(c.left,viewport.y-c.bottom,c.right-c.left,c.bottom-c.top);
+          renderer.setScissorTest(true);
+          renderer.render(slot.scene,slot.camera);
+        });
+        logoMeshes.forEach(mesh=>{mesh.visible=false;});
+        return;
+      }
       renderer.setViewport(r.left, viewport.y - r.bottom, r.width, r.height);
       renderer.setScissor(Math.max(0, r.left), Math.max(0, viewport.y - r.bottom), Math.min(viewport.x, r.right) - Math.max(0, r.left), Math.min(viewport.y, r.bottom) - Math.max(0, r.top));
       renderer.setScissorTest(true); renderer.clear(true, true, false);
-      if (slot !== logoSlot || logoHost.classList.contains('is-webgl')) renderer.render(slot.scene, slot.camera);
+      renderer.render(slot.scene, slot.camera);
     });
     renderer.setScissorTest(false); renderer.setViewport(0, 0, viewport.x, viewport.y);
 
@@ -326,9 +380,9 @@ export function createEffects(T, renderer, canvas) {
     [screen, ...slots.map(s => s.scene)].forEach(s => s.traverse(o => { if (o.geometry) geometries.add(o.geometry); if (o.material) materials.add(o.material); }));
     geometries.forEach(g => g.dispose()); materials.forEach(m => m.dispose()); target.dispose();
     logoHost.classList.remove('is-webgl'); morphHost.classList.remove('is-webgl');
-    logoHost.querySelectorAll('button').forEach(b => { b.disabled = true; }); morphButtons.forEach(b => { b.disabled = true; }); morphPause.disabled = true;
+    delete logoHost.dataset.fragment; morphButtons.forEach(b => { b.disabled = true; }); morphPause.disabled = true;
     document.body.classList.remove('exp009-ready'); canvas.classList.remove('exp009-layer'); originalParent.append(canvas);
   }
   void ready;
-  return { render, resize, dispose, pointerMove, pointerDown, clearPointer: hideTrail };
+  return { render, resize, dispose };
 }

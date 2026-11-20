@@ -1,0 +1,88 @@
+{
+  "mode": "reduced",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "errors": [],
+  "checks": [
+    "WhatsApp fixed, visible, >=44px and hit-testable in seven sections; original href",
+    "Previous, both laterals, keyboard, touch swipe, short lock, pause/resume",
+    "Reduced motion: instant navigation, no autoplay/trail",
+    "No horizontal overflow, missing resources or console/page errors; four original logos restored"
+  ],
+  "transitions": [],
+  "whatsapp": [
+    {
+      "id": "inicio",
+      "visible": true,
+      "fixed": true,
+      "hit": true,
+      "w": 128.375,
+      "h": 48,
+      "parent": "BODY",
+      "z": "40"
+    },
+    {
+      "id": "transformacion",
+      "visible": true,
+      "fixed": true,
+      "hit": true,
+      "w": 128.375,
+      "h": 48,
+      "parent": "BODY",
+      "z": "40"
+    },
+    {
+      "id": "servicios",
+      "visible": true,
+      "fixed": true,
+      "hit": true,
+      "w": 128.375,
+      "h": 48,
+      "parent": "BODY",
+      "z": "40"
+    },
+    {
+      "id": "experiencia",
+      "visible": true,
+      "fixed": true,
+      "hit": true,
+      "w": 128.375,
+      "h": 48,
+      "parent": "BODY",
+      "z": "40"
+    },
+    {
+      "id": "capacidades",
+      "visible": true,
+      "fixed": true,
+      "hit": true,
+      "w": 128.375,
+      "h": 48,
+      "parent": "BODY",
+      "z": "40"
+    },
+    {
+      "id": "proceso",
+      "visible": true,
+      "fixed": true,
+      "hit": true,
+      "w": 128.375,
+      "h": 48,
+      "parent": "BODY",
+      "z": "40"
+    },
+    {
+      "id": "contacto",
+      "visible": true,
+      "fixed": true,
+      "hit": true,
+      "w": 128.375,
+      "h": 48,
+      "parent": "BODY",
+      "z": "40"
+    }
+  ],
+  "manualRuns": []
+}

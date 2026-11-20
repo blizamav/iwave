@@ -1,0 +1,67 @@
+{
+  "errors": [],
+  "viewports": [
+    {
+      "width": 430,
+      "height": 932,
+      "mobile": true,
+      "visual": {
+        "count": 329,
+        "minX": 192,
+        "minY": 539,
+        "maxX": 237,
+        "maxY": 583,
+        "seeded": false,
+        "display": "block",
+        "canvasCount": 1
+      },
+      "centerVisual": {
+        "count": 318,
+        "minX": 192,
+        "minY": 291,
+        "maxX": 237,
+        "maxY": 335,
+        "seeded": false,
+        "display": "block",
+        "canvasCount": 1
+      },
+      "overflow": false,
+      "externalActions": [
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://www.bancoestado.cl/",
+          "prevented": true,
+          "card": true
+        },
+        {
+          "href": "https://www.metlife.cl/",
+          "prevented": true,
+          "card": true
+        },
+        {
+          "href": "https://www.metlife.cl/",
+          "prevented": false,
+          "card": true
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "Real touch taps, exact pixel origins, central and lateral cards, arrows, CTA, WhatsApp, menu and input focus",
+    "Horizontal swipe navigates; vertical scroll moves; neither produces ripple",
+    "Long press, disabled controls, blank area, keyboard, synthetic click ignored",
+    "One ripple per touch including compatibility click; queue <=8; no mobile trail",
+    "Natural alpha cleanup, idle RAF, resize and live/initial reduced motion",
+    "Desktop mouse click and trail retained; no overflow in all five viewports"
+  ],
+  "pass": true
+}

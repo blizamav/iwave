@@ -1,0 +1,33 @@
+{
+  "bodyReady": true,
+  "classes": "pointer-halo is-visible",
+  "opacity": "0",
+  "display": "block",
+  "zIndex": "100",
+  "pointerEvents": "none",
+  "transform": "matrix(1, 0, 0, 1, 650, 430)",
+  "matchingOpacityRules": [
+    {
+      "selector": ".pointer-halo",
+      "opacity": "0"
+    },
+    {
+      "selector": ".pointer-halo.is-visible",
+      "opacity": "1"
+    },
+    {
+      "selector": "body.exp009-ready .pointer-halo, .pointer-halo",
+      "opacity": "0"
+    },
+    {
+      "selector": ".pointer-halo.is-visible",
+      "opacity": "0.75"
+    },
+    {
+      "selector": ".pointer-halo.is-visible",
+      "opacity": "0.65"
+    }
+  ],
+  "fine": true,
+  "reduced": false
+}

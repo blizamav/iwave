@@ -1,0 +1,62 @@
+{
+  "errors": [],
+  "viewports": [
+    {
+      "width": 768,
+      "height": 1024,
+      "mobile": true,
+      "visual": {
+        "count": 332,
+        "minX": 105,
+        "minY": 451,
+        "maxX": 149,
+        "maxY": 495,
+        "seeded": false,
+        "display": "block",
+        "canvasCount": 1
+      },
+      "centerVisual": {
+        "count": 324,
+        "minX": 361,
+        "minY": 348,
+        "maxX": 406,
+        "maxY": 392,
+        "seeded": false,
+        "display": "block",
+        "canvasCount": 1
+      },
+      "overflow": false,
+      "externalActions": [
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+          "prevented": false,
+          "card": false
+        },
+        {
+          "href": "https://www.bancoestado.cl/",
+          "prevented": true,
+          "card": true
+        },
+        {
+          "href": "https://www.metlife.cl/",
+          "prevented": true,
+          "card": true
+        },
+        {
+          "href": "https://www.metlife.cl/",
+          "prevented": false,
+          "card": true
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "PASS for selected viewport entries; detailed assertions are in qa.cjs. Gesture, form, menu, repeated tap, cleanup, resize and performance checks run at width 390; mouse checks at 1440; initial reduced motion at 390 runs on every invocation."
+  ],
+  "pass": true
+}

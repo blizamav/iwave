@@ -1,0 +1,273 @@
+{
+  "mode": "360",
+  "errors": [],
+  "checks": [
+    "Four brands, circular next, three positions, loaded assets and no horizontal overflow",
+    "Circular previous",
+    "Both lateral cards navigate",
+    "Arrow keyboard navigation",
+    "Touch horizontal swipe",
+    "Vertical gesture does not navigate",
+    "No artificial cursor for mobile/reduced motion"
+  ],
+  "metrics": {
+    "cursorFrames": 0,
+    "longTasks": [
+      {
+        "start": 115.30000001192093,
+        "duration": 96
+      },
+      {
+        "start": 325,
+        "duration": 666
+      },
+      {
+        "start": 991.3000000119209,
+        "duration": 108
+      }
+    ],
+    "cls": 0,
+    "steadyCls": 0,
+    "overflow": 0
+  },
+  "states": [
+    {
+      "index": 0,
+      "cards": [
+        {
+          "name": "MetLife",
+          "pos": 0,
+          "w": 236.15625,
+          "h": 170,
+          "image": {
+            "w": 186.3331298828125,
+            "h": 120.114013671875
+          },
+          "contained": true,
+          "opacity": "1",
+          "naturalWidth": 354
+        },
+        {
+          "name": "BancoEstado Corredores de Seguros",
+          "pos": 1,
+          "w": 151.39193725585938,
+          "h": 122.72633361816406,
+          "image": {
+            "w": 119.26055908203125,
+            "h": 85.8427734375
+          },
+          "contained": true,
+          "opacity": "0.72",
+          "naturalWidth": 1280
+        },
+        {
+          "name": "Banco de Chile",
+          "pos": 2,
+          "w": 120.5108642578125,
+          "h": 95.81097412109375,
+          "image": {
+            "w": 94.94131469726562,
+            "h": 67.0565185546875
+          },
+          "contained": true,
+          "opacity": "0",
+          "naturalWidth": 1000
+        },
+        {
+          "name": "Scotiabank",
+          "pos": -1,
+          "w": 151.39193725585938,
+          "h": 122.72633361816406,
+          "image": {
+            "w": 119.26057434082031,
+            "h": 85.8427734375
+          },
+          "contained": true,
+          "opacity": "0.72",
+          "naturalWidth": 303
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "index": 1,
+      "cards": [
+        {
+          "name": "MetLife",
+          "pos": -1,
+          "w": 151.39193725585938,
+          "h": 122.72633361816406,
+          "image": {
+            "w": 119.26057434082031,
+            "h": 85.8427734375
+          },
+          "contained": true,
+          "opacity": "0.72",
+          "naturalWidth": 354
+        },
+        {
+          "name": "BancoEstado Corredores de Seguros",
+          "pos": 0,
+          "w": 236.15625,
+          "h": 170,
+          "image": {
+            "w": 186.15625,
+            "h": 120
+          },
+          "contained": true,
+          "opacity": "1",
+          "naturalWidth": 1280
+        },
+        {
+          "name": "Banco de Chile",
+          "pos": 1,
+          "w": 151.39193725585938,
+          "h": 122.72633361816406,
+          "image": {
+            "w": 119.26055908203125,
+            "h": 85.8427734375
+          },
+          "contained": true,
+          "opacity": "0.72",
+          "naturalWidth": 1000
+        },
+        {
+          "name": "Scotiabank",
+          "pos": -2,
+          "w": 120.51087951660156,
+          "h": 95.81097412109375,
+          "image": {
+            "w": 94.94132232666016,
+            "h": 67.0565185546875
+          },
+          "contained": true,
+          "opacity": "0",
+          "naturalWidth": 303
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "index": 2,
+      "cards": [
+        {
+          "name": "MetLife",
+          "pos": -2,
+          "w": 120.51087951660156,
+          "h": 95.81097412109375,
+          "image": {
+            "w": 94.94132232666016,
+            "h": 67.0565185546875
+          },
+          "contained": true,
+          "opacity": "0",
+          "naturalWidth": 354
+        },
+        {
+          "name": "BancoEstado Corredores de Seguros",
+          "pos": -1,
+          "w": 151.39193725585938,
+          "h": 122.72633361816406,
+          "image": {
+            "w": 119.26057434082031,
+            "h": 85.8427734375
+          },
+          "contained": true,
+          "opacity": "0.72",
+          "naturalWidth": 1280
+        },
+        {
+          "name": "Banco de Chile",
+          "pos": 0,
+          "w": 236.15625,
+          "h": 170,
+          "image": {
+            "w": 186.15625,
+            "h": 120
+          },
+          "contained": true,
+          "opacity": "1",
+          "naturalWidth": 1000
+        },
+        {
+          "name": "Scotiabank",
+          "pos": 1,
+          "w": 151.39193725585938,
+          "h": 122.72633361816406,
+          "image": {
+            "w": 119.26055908203125,
+            "h": 85.8427734375
+          },
+          "contained": true,
+          "opacity": "0.72",
+          "naturalWidth": 303
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "index": 3,
+      "cards": [
+        {
+          "name": "MetLife",
+          "pos": 1,
+          "w": 151.39193725585938,
+          "h": 122.72633361816406,
+          "image": {
+            "w": 119.26055908203125,
+            "h": 85.8427734375
+          },
+          "contained": true,
+          "opacity": "0.72",
+          "naturalWidth": 354
+        },
+        {
+          "name": "BancoEstado Corredores de Seguros",
+          "pos": -2,
+          "w": 120.51087951660156,
+          "h": 95.81097412109375,
+          "image": {
+            "w": 94.94132232666016,
+            "h": 67.0565185546875
+          },
+          "contained": true,
+          "opacity": "0",
+          "naturalWidth": 1280
+        },
+        {
+          "name": "Banco de Chile",
+          "pos": -1,
+          "w": 151.39193725585938,
+          "h": 122.72633361816406,
+          "image": {
+            "w": 119.26057434082031,
+            "h": 85.8427734375
+          },
+          "contained": true,
+          "opacity": "0.72",
+          "naturalWidth": 1000
+        },
+        {
+          "name": "Scotiabank",
+          "pos": 0,
+          "w": 236.15625,
+          "h": 170,
+          "image": {
+            "w": 186.15625,
+            "h": 120
+          },
+          "contained": true,
+          "opacity": "1",
+          "naturalWidth": 303
+        }
+      ],
+      "overflow": 0
+    }
+  ],
+  "bounds": {
+    "vertices": 206848,
+    "progressSteps": 101,
+    "worstRatio": 1.0000000009313226,
+    "contained": true
+  }
+}

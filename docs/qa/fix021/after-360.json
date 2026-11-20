@@ -1,0 +1,3549 @@
+{
+  "phase": "after",
+  "width": 360,
+  "renderer": "Chromium / ANGLE SwiftShader (software; not Android)",
+  "errors": [],
+  "states": [
+    {
+      "brand": "0",
+      "plate": {
+        "x": 42.24199999999999,
+        "y": 184.96875,
+        "w": 275.516,
+        "h": 170
+      },
+      "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+      "image": {
+        "x": 66.2421875,
+        "y": 244.265625,
+        "w": 227.515625,
+        "h": 51.40625,
+        "naturalWidth": 354,
+        "naturalHeight": 80
+      },
+      "contained": true,
+      "href": "https://www.metlife.cl/",
+      "overflow": 0
+    },
+    {
+      "brand": "1",
+      "plate": {
+        "x": 42.24199999999999,
+        "y": 184.96875,
+        "w": 275.516,
+        "h": 170
+      },
+      "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+      "image": {
+        "x": 66.2421875,
+        "y": 247.84375,
+        "w": 227.515625,
+        "h": 44.25,
+        "naturalWidth": 1280,
+        "naturalHeight": 249
+      },
+      "contained": true,
+      "href": "https://www.bancoestado.cl/",
+      "overflow": 0
+    },
+    {
+      "brand": "2",
+      "plate": {
+        "x": 42.24199999999999,
+        "y": 184.96875,
+        "w": 275.516,
+        "h": 170
+      },
+      "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+      "image": {
+        "x": 66.2421875,
+        "y": 247.3359375,
+        "w": 227.515625,
+        "h": 45.265625,
+        "naturalWidth": 1000,
+        "naturalHeight": 199
+      },
+      "contained": true,
+      "href": "https://www.bancochile.cl/",
+      "overflow": 0
+    },
+    {
+      "brand": "3",
+      "plate": {
+        "x": 42.24199999999999,
+        "y": 184.96875,
+        "w": 275.516,
+        "h": 170
+      },
+      "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+      "image": {
+        "x": 66.2421875,
+        "y": 253.453125,
+        "w": 227.515625,
+        "h": 33.03125,
+        "naturalWidth": 303,
+        "naturalHeight": 44
+      },
+      "contained": true,
+      "href": "https://www.scotiabankchile.cl/",
+      "overflow": 0
+    }
+  ],
+  "transitions": [
+    {
+      "brand": "0",
+      "name": "start",
+      "plate": {
+        "x": 42.24199999999999,
+        "y": 184.96875,
+        "w": 275.516,
+        "h": 170
+      },
+      "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+      "image": {
+        "x": 66.2421875,
+        "y": 244.265625,
+        "w": 227.515625,
+        "h": 51.40625,
+        "naturalWidth": 354,
+        "naturalHeight": 80
+      },
+      "contained": true,
+      "href": "https://www.metlife.cl/",
+      "overflow": 0
+    },
+    {
+      "brand": "1",
+      "name": "middle",
+      "plate": {
+        "x": 42.24199999999999,
+        "y": 184.96875,
+        "w": 275.516,
+        "h": 170
+      },
+      "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+      "image": {
+        "x": 66.2421875,
+        "y": 247.84375,
+        "w": 227.515625,
+        "h": 44.25,
+        "naturalWidth": 1280,
+        "naturalHeight": 249
+      },
+      "contained": true,
+      "href": "https://www.bancoestado.cl/",
+      "overflow": 0
+    },
+    {
+      "brand": "1",
+      "name": "start",
+      "plate": {
+        "x": 42.24199999999999,
+        "y": 184.96875,
+        "w": 275.516,
+        "h": 170
+      },
+      "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+      "image": {
+        "x": 66.2421875,
+        "y": 247.84375,
+        "w": 227.515625,
+        "h": 44.25,
+        "naturalWidth": 1280,
+        "naturalHeight": 249
+      },
+      "contained": true,
+      "href": "https://www.bancoestado.cl/",
+      "overflow": 0
+    },
+    {
+      "brand": "2",
+      "name": "middle",
+      "plate": {
+        "x": 42.24199999999999,
+        "y": 184.96875,
+        "w": 275.516,
+        "h": 170
+      },
+      "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+      "image": {
+        "x": 66.2421875,
+        "y": 247.3359375,
+        "w": 227.515625,
+        "h": 45.265625,
+        "naturalWidth": 1000,
+        "naturalHeight": 199
+      },
+      "contained": true,
+      "href": "https://www.bancochile.cl/",
+      "overflow": 0
+    },
+    {
+      "brand": "2",
+      "name": "start",
+      "plate": {
+        "x": 42.24199999999999,
+        "y": 184.96875,
+        "w": 275.516,
+        "h": 170
+      },
+      "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+      "image": {
+        "x": 66.2421875,
+        "y": 247.3359375,
+        "w": 227.515625,
+        "h": 45.265625,
+        "naturalWidth": 1000,
+        "naturalHeight": 199
+      },
+      "contained": true,
+      "href": "https://www.bancochile.cl/",
+      "overflow": 0
+    },
+    {
+      "brand": "3",
+      "name": "middle",
+      "plate": {
+        "x": 42.24199999999999,
+        "y": 184.96875,
+        "w": 275.516,
+        "h": 170
+      },
+      "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+      "image": {
+        "x": 66.2421875,
+        "y": 253.453125,
+        "w": 227.515625,
+        "h": 33.03125,
+        "naturalWidth": 303,
+        "naturalHeight": 44
+      },
+      "contained": true,
+      "href": "https://www.scotiabankchile.cl/",
+      "overflow": 0
+    }
+  ],
+  "metrics": {
+    "durationMs": 16758.400000035763,
+    "renderFrames": 336,
+    "renderFps": 20.081404619365557,
+    "frameGapMedian": 49.89999997615814,
+    "frameGapP95": 56.69999998807907,
+    "longTasks": [
+      {
+        "start": 6576.5,
+        "duration": 71
+      }
+    ],
+    "layoutShifts": [],
+    "mutations": 293,
+    "raf": {
+      "requested": 3292,
+      "cancelled": 14,
+      "maxTickPending": 1
+    },
+    "hostWidthSpan": 0,
+    "hostHeightSpan": 0,
+    "plateWidthSpan": 0,
+    "plateHeightSpan": 0,
+    "plateTransforms": [
+      "matrix(1, 0, 0, 1, -137.758, -85)"
+    ],
+    "samples": [
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.003",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.009",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.016",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.032",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.047",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.076",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.166",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.208",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.341",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.442",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.519",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.627",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.717",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.792",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.852",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.884",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.924",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.953",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.974",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.987",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "0.995",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "1.000",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "0",
+        "progress": "1.000",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "1.000",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.999",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.997",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.995",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.989",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.980",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.966",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.931",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.913",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.879",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.852",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.768",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.768",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.768",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.768",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.768",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.768",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.658",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.577",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.484",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.396",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.319",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.273",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.214",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.163",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.134",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.098",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.053",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.034",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.025",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.014",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.007",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.003",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.001",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.000",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.000",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.001",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.003",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.016",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.026",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.047",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.076",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.101",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.101",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.101",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.101",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.101",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.148",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.208",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.283",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.373",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.480",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.593",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.659",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.744",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.813",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.869",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.899",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.953",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.974",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.987",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.995",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "0.999",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "1",
+        "progress": "1.000",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "1.000",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "1.000",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.998",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.995",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.989",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.983",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.971",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.954",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.931",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.902",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.866",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.821",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.821",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.821",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.821",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.821",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.821",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.768",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.727",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.657",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.576",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.484",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.396",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.295",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.232",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.195",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.148",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.121",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.087",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.061",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.029",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.020",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.011",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.007",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.003",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.001",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.000",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.002",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.005",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.013",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.026",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.047",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.076",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.076",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.076",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.076",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.076",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.076",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.076",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.076",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.076",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.076",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.076",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.076",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.076",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.076",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.076",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.076",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.115",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.208",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.256",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.341",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.442",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.557",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.627",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.717",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.792",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.852",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.899",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.935",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.974",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.987",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.995",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "0.999",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "2",
+        "progress": "1.000",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "1.000",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "1.000",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.999",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.997",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.993",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.980",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.966",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.954",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.931",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.902",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.852",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.805",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.748",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.748",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.748",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.748",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.748",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.748",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.748",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.682",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.605",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.516",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.424",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.295",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.232",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.179",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.134",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.098",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.069",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.046",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.029",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.020",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.011",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.007",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.003",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.001",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "hidden"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      },
+      {
+        "w": 328,
+        "h": 365.984375,
+        "plateW": 275.516,
+        "plateH": 170,
+        "transform": "matrix(1, 0, 0, 1, -137.758, -85)",
+        "brand": "3",
+        "progress": "0.000",
+        "imageVisible": "visible"
+      }
+    ]
+  },
+  "bounds": {
+    "vertices": 206848,
+    "progressSteps": 101,
+    "worstRatio": 1.0000000009313226,
+    "contained": true
+  }
+}

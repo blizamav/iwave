@@ -1,0 +1,19 @@
+{
+  "before": {
+    "index": 1,
+    "webgl": false,
+    "fragment": null
+  },
+  "after": {
+    "index": 1,
+    "visible": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "fragment": null
+  },
+  "errors": [],
+  "passed": true
+}

@@ -1,3 +1,52 @@
+# TOUCH-026 — ondas táctiles en el motor existente
+
+`cursor.js` conserva un Canvas 2D, DPR máximo 1,5, ocho ondas de 640 ms y el RAF bajo demanda de CLICK-025. Pointer Events en captura pasiva validan un único toque primario sobre controles habilitados: recorrido máximo 10px y duración máxima 500ms. Se evalúa todo el recorrido, no solo sus extremos. Scroll, pointercancel, contextmenu y multitouch descartan el candidato. Se dibuja en pointerup desde las coordenadas iniciales; ningún listener cancela eventos ni ejecuta acciones del control. El click posterior de touch queda excluido por pointerType del handler exclusivo de mouse. No se añaden listeners touchstart/touchend ni bucles.
+
+La estela exige mouse y puntero fino; touch nunca la siembra. El Canvas se crea de forma perezosa también para un tap válido y permanece transparente al terminar; su RAF se detiene al agotar ondas/estela. Movimiento reducido impide creación y animación. Se conserva limpieza por resize, blur, visibilidad, preferencias y pagehide; salida definitiva aborta listeners y elimina Canvas. CSS permite ondas en puntero grueso y usa capa 102 para verlas sobre WhatsApp (101), sin hit testing. Coverflow y reloj FIX-024 intactos. Evidencias y límites: [TOUCH-026](qa/touch026/REPORT.md). Estas reglas amplían las restricciones táctiles originales de CLICK-025/CURSOR-023 descritas debajo.
+
+# CLICK-025 — interacción de tarjetas Coverflow
+
+La inspección de `coverflow.js` confirmó navegación lateral por clic/tap, apertura central nativa en pestaña nueva, swipe, bloqueo durante transición, reloj FIX-024 y reinicio manual de autoplay a 7500ms ya existentes. Se completa Space mediante `keydown` sin repetición ni scroll; Enter conserva la activación nativa del enlace. Las tarjetas laterales anuncian rol `button` y la central `link`; la cuarta sigue inert. La supresión del clic posterior a swipe ignora activaciones de teclado (`detail === 0`) y se reinicia con cada nuevo pointerdown, incluido mouse; evita que un swipe sin clic residual consuma una interacción posterior. No se modifica la timeline, el scheduler, los cuatro assets ni el cursor/ondas. Evidencia y límites: [Coverflow CLICK-025](qa/fix024/COVERFLOW-CLICK-025.md).
+
+# CLICK-025 — reacción al clic
+
+`cursor.js` comparte el Canvas 2D y el RAF bajo demanda de CURSOR-023 con un máximo de ocho ondas de 640 ms. Escucha `click` en captura pasiva, únicamente eventos confiables de mouse primario con `detail > 0`; conserva eventos, cursor nativo y navegación. Centro fijo en `clientX/clientY`, expansión cúbica y dos bordes cian/menta sin nodos por clic. El reloj termina cuando no quedan estela ni ondas. Resize, blur, salida del puntero, preferencias, visibilidad y pagehide limpian ambos efectos; mismo AbortController. TOUCH-026 permite el mismo Canvas en taps válidos; reduced-motion sigue sin crearlo. FIX-024 y el motor WebGL permanecen intactos. Evidencia: [CLICK-025](qa/fix024/CLICK-025.md).
+
+# FIX-024 — transición compartida y capas limpias
+
+Prevalece sobre la secuencia de UX-022. `coverflow.js` controla una única timeline GSAP de 800 ms: busca el tiempo de cuatro pistas WAAPI pausadas y publica el mismo progreso mediante `coverflowchange` (`start`, `progress`, `complete`). No hay temporizador de llegada ni timeline GPU posterior. Bloqueo breve de nuevas solicitudes durante la transición; pausa, visibilidad y viewport suspenden el mismo reloj. Sin WebGL o texturas precalentadas, continúa la transición DOM sin esperar; movimiento reducido navega instantáneamente.
+
+`exp009.js` conserva InstancedMesh, texturas y envolvente FIX-021. Dos marcas se fragmentan/reconstruyen con el progreso compartido; sus vértices se proyectan mediante la matriz CSS real de cada tarjeta y la perspectiva del escenario. Scissor del escenario y placa móvil, sin render de logos en reposo ni nuevo renderer/RAF. Finalización limpia uniformes, raster previo y atributos antes de restaurar los originales. La reconstrucción entrante termina al llegar al centro; la saliente se estabiliza en el lateral.
+
+`journey.js` desactiva solamente el grupo ambiental de cajas, aristas, conexiones y pulsos que seguía el scroll; conserva el campo de partículas y las atmósferas. WhatsApp conserva su posición fija como hijo de body, z-index 101 sobre el contexto 100 del header/menú y canvas 12, enlace y tamaño; se retiran el observador y la regla que lo ocultaban junto al carrusel/contacto.
+
+Evidencias y límites: [FIX-024](qa/fix024/REPORT.md). Trabajo local sin infraestructura ni publicación.
+
+# UX-022 / CURSOR-023 — carrusel y cursor vigentes
+
+- `coverflow.js`: controlador DOM independiente de WebGL para las cuatro marcas existentes. Cuatro tarjetas persistentes, tres posiciones visibles, perspectiva CSS y movimiento circular direccional. Un temporizador de autoplay de 7,5 segundos visibles; pausa manual, hover/foco, visibilidad e IntersectionObserver. Pausa/reanudación de transiciones CSS en curso mediante Web Animations API; el mismo estado suspende la reconstrucción GPU. Navegación anterior/siguiente, laterales, flechas y swipe horizontal; movimiento reducido mantiene los controles sin animación/autoplay.
+- `exp009.js`: el evento `coverflowchange` sincroniza la marca central con la reconstrucción InstancedMesh/GSAP existente. Conserva envolvente de vértices y scissor de FIX-021; lee la placa central real después del desplazamiento. Mismo renderer/RAF GPU y recursos precalentados. El motor ya no controla el autoplay ni recibe eventos del cursor retirado.
+- `cursor.js`: estela original con spline cuadrática continua en Canvas 2D y tres capas estrechas cian/azul que sugieren profundidad. Independiente de Three.js, WebGL y ScrollTrigger. Historial persistente de 32 posiciones; relajación exponencial con subpasos hasta 120 Hz, largo máximo de 200px, DPR máximo 1,5 y un RAF bajo demanda que termina tras 1,25 segundos de reposo. Coordenadas clientX/clientY sobre canvas fijo, pointer-events:none; cursor nativo conservado. Solo mouse con hover/puntero preciso; sin crear canvas por movimiento táctil o con reduced-motion (TOUCH-026 lo permite tras un tap válido); los cambios de preferencia en vivo limpian y detienen el bucle. Resize, blur, pointerleave, preferencias, visibilidad y pagehide limpian la estela; AbortController libera listeners al abandonar la página.
+- `journey.js` comprueba el mismo contexto WebGL2 antes de entregarlo al renderer, evitando errores de inicialización en la alternativa sin WebGL. No añade contextos ni cambia la escena ambiental.
+- `script.js`: conserva las respuestas de superficies preexistentes, retirando únicamente el círculo DOM anterior. `refinement.css` oculta el halo obsoleto y contiene el estilo del Coverflow/canvas.
+- HTML comercial, metadatos SEO-020, assets oficiales e infraestructura preservados. URLs de recursos afectados versionadas. Evidencias y límites: [QA UX-022 / CURSOR-023](qa/ux022-cursor023/REPORT.md).
+
+# FIX-021 — carrusel con placa estable
+
+Sustituye únicamente las decisiones de tamaño/movimiento de la placa de FIX-019 y UX-014.
+
+- `exp009.js`: misma fragmentación InstancedMesh y timeline GSAP única; envolvente conservadora de vértices que incluye rotación, dispersión y perspectiva. Ajuste uniforme de la marca al espacio útil de la placa, 24px de margen; scissor GPU a 8px del borde como resguardo independiente del overflow DOM. Sin giro continuo de la malla completa.
+- Placa CSS fija por breakpoint (ancho máximo 680px, 84% del escenario; alto 200px, 170px en móvil), independiente de la marca activa. El asset estático y la textura comparten proyección y proporciones. El escenario mantiene sus alturas UX-014 y los recursos oficiales se conservan.
+- Layout/proyección se invalidan por scroll, resize, ResizeObserver o cambio de marca; se eliminan lecturas y escrituras de dimensiones por cuadro en reposo. Shaders/texturas precalentados una vez; la escena de logos solo dibuja fragmentos durante transiciones. Un renderer, RAF y ciclo de liberación existentes, sin dependencias nuevas.
+- Versionado de las URLs locales afectadas a `fix021`; HTML comercial y metadatos SEO-020 intactos. Verificación y límites: [FIX-021](qa/fix021/REPORT.md).
+
+# FIX-019 / SEO-020 — marcas y vista previa social
+
+- `exp009.js` conserva la fragmentación InstancedMesh y calcula el tamaño proyectado de cada marca para compartirlo con el DOM mediante `--logo-width`/`--logo-height`. En reposo muestra el asset original; durante la transición lo sustituye temporalmente por sus fragmentos. Un renderer y RAF existentes, mismos controles y enlaces.
+- `refinement.css` proporciona una placa blanca local proporcional al logo, con 16px de resguardo. Sin filtros, mezcla ni reducción de opacidad sobre el arte estático. Los fallbacks conservan MetLife y el índice de cuatro enlaces.
+- `index.html` declara una única serie Open Graph/Twitter con URLs HTTPS canónicas. Imagen local `img/social/iwave-og.jpg`, 1200×630, compuesta con el holograma original y fuentes corporativas. Fuente de composición y generador reproducible en `qa/fix019-seo020/social.html` y `social.cjs`.
+- Validación focalizada: `node docs/qa/fix019-seo020/qa.cjs after ANCHO` (360, 390, 430, 768, 1440), `interactions.cjs` y `social.cjs`. Usan Playwright externo ya disponible y servidores locales temporales. Evidencia y límites en [informe](qa/fix019-seo020/REPORT.md). Sin publicación.
+
 # UX-014 — recorrido corporativo continuo
 
 Decisión vigente del 2026-11-19; sustituye el orden UX-011/EXP-010 descrito debajo.
@@ -126,6 +175,7 @@ El bucle requestAnimationFrame dibuja como máximo a 30 fps; DPR limitado a 1.5.
 Esta sección sustituye las referencias anteriores a órbita, red Canvas 2D, servicios uniformes y animación de nodos.
 
 - `index.html`: `.journey-scene` fija, decorativa y sin eventos; canvas `#journey-canvas` y fallback `.scene-fallback` CSS. Hero con `.hero-system` y logo original sin deformar. Sección nueva `#informacion`/`#friction-title` antes de resultados. Cuatro `.service-visual` diferenciados. Antes/Después añade documentos y vista de indicadores conceptuales, sin datos reales.
+- `journey.js` comprueba el mismo contexto WebGL2 antes de entregarlo al renderer, evitando errores de inicialización en la alternativa sin WebGL. No añade contextos ni cambia la escena ambiental.
 - `script.js`: conserva menú y apariciones, retira completamente el motor UI-001 y añade `aria-current=location` al observar las secciones de navegación.
 - `img/experience/journey.js`: módulo independiente, importación dinámica de `vendor/three.module.min.js` (Three.js 0.170.0 / r170). Sin descarga de Three en movimiento reducido, ahorro de datos o memoria declarada de 2 GB o menos. La licencia está en `img/experience/vendor/LICENSE`.
 - Un `WebGLRenderer`, una escena y un bucle RAF a máximo 30 fps. 24 bloques de información (12 en móvil al iniciar), aristas y cuatro transferencias sobre canales deterministas; sin partículas aleatorias, texturas, sombras ni postprocesado. Scroll interpola fuentes dispersas, canales y matriz organizada; cámara y puntero tienen desplazamiento acotado. Los hitos son `inicio`, `informacion`, `servicios`, `transformacion`, `contacto`.
