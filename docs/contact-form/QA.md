@@ -1,5 +1,70 @@
 # FORM-027 — cierre y validación real
 
+## Cierre definitivo — producción operativa, registro 2026-11-23
+
+El usuario confirmó que el formulario ya funciona en **https://iwave.cl** y que las pruebas reales en producción llegaron a **contacto@iwave.cl**. El funcionamiento previo de Turnstile y Reply-To también fue confirmado por el usuario. Esta recepción es evidencia informada por el usuario: no se inventan fecha del envío, ID de mensaje ni encabezados, y no se enviaron correos adicionales durante el cierre.
+
+La activación fue completada fuera de las operaciones del agente; este cierre comprobó el estado resultante en modo lectura, sin modificar NPM, Cloudflare, DNS/MX, certificados ni reiniciar servicios. Se supera así el bloqueo de acceso administrativo descrito en el historial.
+
+Resultados comprobados:
+
+- HTTPS de https://iwave.cl: HTTP 200 con validación TLS normal; HTML contiene FORM-027, widget y módulo contact.js versionado. Las 19 referencias HTTP de recursos revisadas respondieron 200.
+- Navegador Chromium, 1440×950 y movimiento reducido: landing/formulario cargados, enlace mailto decodificado, 20 recursos locales observados sin errores HTTP, cero excepciones JavaScript y sin overflow horizontal. Se bloquearon posibles POST del formulario; no se ejecutó ninguno. No es una certificación visual de WebGL: ese recorrido con movimiento reducido no cargó Three.js.
+- El barrido inicial de enlaces incluyó la URL auxiliar `/cdn-cgi/l/email-protection#…`, que responde 404 como navegación directa; no es un asset. El script de Cloudflare respondió 200 y el navegador comprobó que restaura mailto:contacto@iwave.cl. No se modificó Cloudflare.
+- GET público `/api/contact/config`: HTTP 200, JSON con solo sitekey, sin imprimir el valor; GET `/api/contact`: 405; POST con `{}` y Origin https://iwave.cl: 400. Estos rechazos confirman enrutamiento hacia API antes del frontend y no alcanzan envío SMTP.
+- Proxy Host **1**, iwave.cl/www.iwave.cl: destino web **iwave-form027-web:80**. Ubicaciones reales **de prefijo** `/api/contact` y `/api/contact/config` apuntan a **iwave-form027-api:3000**; no llevan el modificador `=` de la plantilla Advanced. La coincidencia de prefijo más largo y los resultados públicos confirman prioridad sobre `/`.
+- `nginx -t` en NPM: correcto. Referencias ssl_certificate/ssl_certificate_key idénticas a las del respaldo privado previo; no se leyeron certificados o claves. Configuración productiva API: Zoho, iwave.cl, HTTPS y sin localhost.
+- Contenedores web/API FORM-027 running/healthy en iwave-web, imágenes de 12aae42, sin puertos publicados. Salud API interna HTTP 200. `node verify-smtp.mjs` dentro de API: TLS/certificado y autenticación Zoho correctos en smtp.zoho.com:465, salida 0 y sin correo.
+- iwave-prod (respaldo), iwave-test e iwave-npm conservan IDs, StartedAt y RestartCount de las comprobaciones previas; no se reiniciaron ni se modificaron en este cierre. El cambio de enrutamiento ya estaba aplicado al iniciar esta petición.
+- Respaldo recuperable del host previo preservado en el directorio privado indicado por el registro local tmpfs-backup-path; archivo npm-host-1.before.conf, permisos privados y contenedores originales conservados. Rollback funcional documentado en [FORM-027](../deployment/FORM-027.md).
+
+Se revisan para versionado únicamente la corrección tmpfs previamente autorizada y la documentación FORM-027; ninguna credencial, .env privado, SQLite o respaldo forma parte del conjunto. No se modifica diseño ni lógica de aplicación. Las siguientes secciones conservan la secuencia histórica y sus pendientes ya superados.
+
+## Corrección tmpfs y candidatos saludables — 2026-11-23
+
+Se corrigió exclusivamente el tmpfs de la API en `contact-api/compose.production.yml`:
+
+```yaml
+tmpfs:
+  - "/tmp:size=8m,noexec,nosuid"
+```
+
+Docker Compose v5.7.1 acepta la configuración; `config --quiet` y `config --format json` comprobaron, sin imprimir variables privadas, una lista de un solo elemento `/tmp:size=8m,noexec,nosuid`, sin puertos publicados. Se levantaron únicamente los dos servicios candidatos con `up -d --no-build --no-deps --wait --wait-timeout 90`, reutilizando las imágenes de 12aae42. El Compose corregido sigue como cambio local sin commit; no se reconstruyeron imágenes ni se alteró la aplicación.
+
+| Servicio candidato | ID corto | Inicio UTC | Estado |
+| --- | --- | --- | --- |
+| iwave-form027-api | `289487044b87` | 2026-11-23T18:34:02.763982Z | running / healthy |
+| iwave-form027-web | `fde3b2ef0d28` | 2026-11-23T18:34:02.580310623Z | running / healthy |
+
+Ambos están conectados solo a `iwave-web`, sin puertos publicados. Comprobaciones realizadas:
+
+- API: healthcheck aprobado; `readConfig` valida Zoho y origen/hostnames productivos sin localhost. Sitekey devuelta por config coincide internamente con la privada esperada, sin imprimir su valor. La autorización del hostname Turnstile sigue respaldada por la confirmación visual del usuario; no se repitió la prueba de token automatizada.
+- Comunicación web → API: GET `/healthz` y `/api/contact/config` correctos mediante wget dentro de la web. API → web: GET `/` con HTTP 200, HTML FORM-027 y módulo de contacto esperado. DNS de ambos nombres resuelto desde API; web resuelve y alcanza API.
+- Archivos privados `.env`, código API y documentación no accesibles desde la web: HTTP 404. Config pública solo contiene sitekey. POST con cuerpo inválido devuelve 400; origen localhost devuelve 403. Ninguna de estas pruebas alcanza el transporte de envío.
+- `/proc/mounts` confirma un solo tmpfs en `/tmp`, `size=8192k`, `noexec` y `nosuid`. Docker HostConfig confirma `/tmp: size=8m,noexec,nosuid`.
+- `nginx -t` dentro del candidato web: correcto. Aviso de la directiva user ignorada al ejecutar master sin root; no impide validación ni servicio.
+- `node verify-smtp.mjs` dentro del candidato API: TLS/certificado y autenticación Zoho correctos en smtp.zoho.com:465, salida 0, sin correo. SQLite deliveries con 0 filas durante la comprobación.
+- Comparación antes/después: IDs, StartedAt y RestartCount de iwave-prod, iwave-test e iwave-npm idénticos. Hash de `/data/nginx/proxy_host/1.conf` idéntico al respaldo privado. No se cambió ni recargó NPM; SSL, Cloudflare y DNS/MX intactos.
+
+Resultados registrados sin commit ni push. No se hicieron nuevas pruebas visuales ni envíos. El corte público y la comprobación a través del NPM público quedan pendientes de autorización; la web candidata no enruta directamente /api/contact, que corresponde al snippet NPM preparado. Las secciones inferiores son evidencia histórica de los intentos previos.
+
+## Construcción de candidatos — arranque detenido por tmpfs
+
+- Referencia remota confirmada por HTTPS de solo lectura: reconstruccion-iwave apunta a `12aae4243b9f7753e70dbe8faad812df513cd175`, que contiene `fd39c70`. La consulta SSH no heredó un agente; no se modificaron claves ni se repitió el push.
+- Árbol limpio antes de construir; configuración privada productiva validada con permisos 600, Zoho SMTP 465, orígenes HTTPS y sin localhost. Autorización de iwave.cl en Turnstile confirmada visualmente por el usuario; no se repitió la prueba automatizada de token.
+- Imágenes construidas desde 12aae42: `iwave-contact-api:form027-12aae4243b9f7753e70dbe8faad812df513cd175` (ID sha256:ba6441105b2eb218b5efb23aab80a02a119e426f4777d6eecec4f62ac3b0457e) y `iwave-landing:form027-12aae4243b9f7753e70dbe8faad812df513cd175` (ID sha256:4d0aee240af93ab1c004eaacee13b9660a04556af441fa8788d21f50d6a51276).
+- `up -d --no-build --no-deps --wait --wait-timeout 90 iwave-form027-api iwave-form027-web` falló: `invalid mount path: 'noexec' mount path must be absolute`. Causa comprobada: el YAML inline `tmpfs: [/tmp:size=8m,noexec,nosuid]` se normaliza como tres elementos (`/tmp:size=8m`, `noexec`, `nosuid`). La validación Compose anterior no detectaba este error de montaje del daemon.
+- Por instrucción del usuario se detuvo la ejecución, sin corregir ni reintentar. Docker creó el volumen `iwave-form027-prod_contact-state`; la consulta final del proyecto no encontró contenedores candidatos creados. No se eliminó ningún recurso.
+- Comparación antes/después: IDs, StartedAt y RestartCount de iwave-prod/test/npm idénticos; hash del Proxy Host 1 NPM idéntico al respaldo privado. No hubo corte público, cambios Cloudflare/DNS/MX, correos adicionales, commits ni push.
+- Pendientes: corregir exclusivamente el tmpfs de la API como un único elemento YAML, validar montaje y reintentar candidatos tras autorización. Salud, DNS entre candidatos, conectividad interna, nginx -t y AUTH desde el candidato **no se ejecutaron** porque no arrancaron. No se certifican por las pruebas históricas de staging.
+
+Corrección propuesta, todavía no aplicada:
+
+```yaml
+tmpfs:
+  - /tmp:size=8m,noexec,nosuid
+```
+
 ## Commit creado; push pendiente por desbloqueo SSH
 
 - Commit de implementación: `fd39c70ee0ca7b0fd28a605ca7327da299ec0736`, en reconstruccion-iwave, con exactamente los 34 archivos aprobados del manifiesto. Índice comprobado y escaneo final de árbol/índice sin secretos. Archivo privado productivo fuera de Git.

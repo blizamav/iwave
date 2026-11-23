@@ -1,28 +1,25 @@
 # FORM-027 — preparación de producción y rollback
 
-Estado: preparación revisada el 2026-11-23; **sin corte público**. El usuario autorizó commit, push y arranque de candidatos, manteniendo NPM y los contenedores existentes intactos. El usuario confirmó en pruebas Turnstile, API, envío Zoho, recepción en contacto@iwave.cl y Reply-To con respuesta al visitante. No se repitieron envíos durante este cierre; no se atribuye una fecha ni un ID a las pruebas del usuario.
+Estado final registrado el 2026-11-23: **FORM-027 operativo en https://iwave.cl**. El usuario confirmó pruebas reales en producción con recepción en contacto@iwave.cl; Turnstile y Reply-To también están confirmados. El cierre no envió correos, modificó NPM, reinició contenedores ni cambió Cloudflare/DNS/MX.
 
-## Estado de ejecución autorizado
+## Estado real de producción
 
-Implementación confirmada en el commit `fd39c70ee0ca7b0fd28a605ca7327da299ec0736`, rama reconstruccion-iwave, exactamente 34 archivos. Configuración privada productiva completa y respaldo privado preparados. El usuario confirmó visualmente iwave.cl en Turnstile.
+- Implementación fd39c70 y documentación 12aae42 publicadas. Las imágenes runtime permanecen etiquetadas `form027-12aae4243b9f7753e70dbe8faad812df513cd175`. La corrección local de tmpfs se incorpora al versionado de cierre, sin reconstruir ni reiniciar los servicios.
+- Web y API FORM-027: running/healthy, red externa existente iwave-web y sin puertos publicados. Web: iwave-form027-web:80. API: iwave-form027-api:3000.
+- Proxy Host **1**, dominios iwave.cl y www.iwave.cl. Destino web: iwave-form027-web, esquema HTTP, puerto 80. Ubicaciones activas **de prefijo** `/api/contact` y `/api/contact/config` hacia iwave-form027-api:3000. La segunda, más larga, coincide con config; ambas tienen prioridad sobre el frontend `/`.
+- La plantilla [npm.locations.conf](form027/npm.locations.conf) conserva una alternativa Advanced con ubicaciones exactas `=`. **No describe literalmente las ubicaciones de prefijo instaladas**; no pegarla adicionalmente ni duplicar las rutas ya activas. El cierre documentó la configuración existente sin modificarla ni acceder a la base de datos.
+- SSL y sus referencias coinciden con el respaldo anterior. iwave-prod sigue activo como respaldo en 127.0.0.1:8081; iwave-test y NPM conservan sus IDs y fechas de inicio. Las pruebas de FORM-027 en 8127/3027 permanecen independientes.
+- La API usa Zoho, origen/hostname iwave.cl y www.iwave.cl por configuración, sin localhost. La autorización de iwave.cl en el widget iWave - Formulario Contacto fue confirmada visualmente por el usuario; conservar la política existente de www. CONTACT_TRUSTED_PROXY_IPS permanece vacío, con límite compartido conservador por proxy. No modificar confianza de IP sin revisar su estabilidad y real-IP por separado.
 
-Push pendiente: la clave SSH GitHub existente es reconocida por GitHub pero está cifrada y no existe agente accesible con ella desbloqueada. Se requiere desbloqueo desde una terminal del usuario, sin compartir la contraseña. No se cambiaron claves/configuración SSH. Tras resolverlo, empujar los commits pendientes y continuar con el SHA final aprobado; los comandos siguientes siguen siendo el procedimiento, no evidencia de ejecución. Candidatos todavía no construidos ni arrancados y corte público sin autorizar.
+## Validaciones del cierre
 
-## Arquitectura vigente y cambio propuesto
+HTTPS y HTML públicos 200; recursos CSS/JS/imágenes correctos; config pública 200 con solo sitekey; POST vacío 400; GET de envío 405. Navegador con movimiento reducido sin errores de recursos/JS ni overflow; no certifica visualmente WebGL. API health 200; nginx -t correcto en NPM; autenticación Zoho TLS465 correcta desde API sin correo. Recepción real en producción confirmada por el usuario, sin atribuir al agente envíos adicionales. [Detalle QA](../contact-form/QA.md).
 
-Inspección de solo lectura: `iwave-prod` usa `iwave-landing:touch026-prod`, publica solo `127.0.0.1:8081:80` y comparte `iwave-web` con `iwave-npm`. NPM atiende 80/443 y su administración está en `127.0.0.1:8181`. Su Proxy Host 1 (`/data/nginx/proxy_host/1.conf`) declara `iwave.cl www.iwave.cl` y dirige `/` a `http://iwave-prod:80`; no tiene rutas `/api/contact`. `iwave-test` conserva 8080 y FORM-027 de pruebas conserva 8127/3027. El historial de Caddy en `PRODUCTION.md` no describe el proxy vigente.
+## Respaldo y recuperación
 
-El archivo nuevo `contact-api/compose.production.yml` prepara un proyecto separado `iwave-form027-prod`, sin nombres de contenedor fijos ni puertos publicados:
+Se conserva el respaldo privado previo npm-host-1.before.conf y el estado de contenedores en `.form027-private/tmpfs-fix-20261123T183402Z/`; permisos privados y claves SSL no copiadas. El respaldo queda fuera de Git y no se publica su contenido. No eliminar iwave-prod ni los volúmenes.
 
-- `iwave-form027-api:3000`: Zoho, SQLite en volumen propio `iwave-form027-prod_contact-state`, usuario Node no root, filesystem de solo lectura y logs acotados.
-- `iwave-form027-web:80`: imagen candidata de los mismos assets, usuario 101, filesystem de solo lectura. Conserva el frontend previo como `iwave-prod`; no lo reemplaza ni detiene.
-- Ambos se conectarían a la red **existente** `iwave-web`. El Compose no crea ni recrea esa red y no administra NPM, SSL, producción anterior o pruebas.
-
-El cambio público futuro será únicamente el destino web del Proxy Host existente y dos ubicaciones API. No cambiar certificados, dominios, ajustes SSL, redirecciones, reglas Cloudflare o DNS/MX. No crear otro Proxy Host para los mismos dominios. Las rutas relativas del frontend conservan el mismo origen.
-
-La API fuerza Zoho, origen `https://iwave.cl,https://www.iwave.cl` y hostnames `iwave.cl,www.iwave.cl`, porque ambos figuran en el host existente; no cambia su política de redirección. Turnstile exige `action=contact`. El usuario confirmó visualmente iwave.cl y localhost en el widget iWave - Formulario Contacto. Esta confirmación resuelve el hostname productivo; verificar www si efectivamente sirve el formulario en lugar de redirigir. La prueba en localhost no acredita por sí sola esta autorización de producción. Si falta, detener la activación y solicitar el ajuste correspondiente, sin cambiar Cloudflare en este procedimiento.
-
-`CONTACT_TRUSTED_PROXY_IPS` queda vacío: no confía en cabeceras arbitrarias y agrupa los visitantes por IP del proxy (por defecto cinco intentos cada diez minutos). La IP observada de NPM en iwave-web es 172.18.0.3, pero no se ha comprobado que sea estática: no confiar en ella automáticamente. Una futura atribución individual exige fijar la IP y revisar real-IP de NPM por separado, con autorización; no ampliar la confianza a una subred.
+Rollback, solo si se autoriza o ante una incidencia durante un despliegue: en el **mismo Proxy Host 1**, por panel/API soportada de NPM, restaurar upstream **iwave-prod:80** y retirar **ambas ubicaciones API de prefijo** activas (y cualquier Advanced FORM-027 si existiera). Conservar todos los campos SSL, opciones de seguridad y otros hosts; validar nginx -t y HTTPS. No sobrescribir archivos generados ni editar SQLite. Conservar web/API actuales, HMAC y volumen contact-state hasta confirmar la restauración; no usar down -v ni borrar reservas. El resto del documento conserva procedimientos de referencia para operaciones futuras, no acciones necesarias para este cierre.
 
 ## Qué versionar y qué conservar privado
 
@@ -32,7 +29,7 @@ Permanecen privados: `.env`, `.env.form027-production`, cualquier `.env.*` excep
 
 La revisión comparó en memoria los valores privados locales y AUTH codificado con archivos versionables y hasta 1000 líneas por contenedor de pruebas, además de patrones de claves privadas/tokens. No hubo coincidencias. Había cero archivos staged. Es una comprobación del árbol actual y de esos logs, no certifica todo el historial Git ni archivos privados externos.
 
-## Commit y push futuros — no ejecutados
+## Referencia de commit y push
 
 Solo después de autorización explícita para cada acción, desde la raíz del repositorio. El manifiesto evita incluir nuevos archivos por accidente; revisar también el contenido antes de confirmar. Nunca imprimir un diff si se sospecha que contiene un secreto: corregirlo privadamente primero. No cambiar de rama ni descartar la reconstrucción local.
 
@@ -53,7 +50,7 @@ git commit -m 'feat(contact): preparar FORM-027 con Zoho y Turnstile'
 git push origin HEAD:reconstruccion-iwave
 ```
 
-No se ejecutó ninguno de estos comandos de escritura Git. Antes de añadir el manifiesto comprobar que el índice no contiene cambios ajenos; si los tiene, resolver su alcance con el usuario sin limpiarlo automáticamente. El push de esta rama no autoriza publicar ni fusionar en otra rama.
+Los commits fd39c70 y 12aae42 ya están publicados; este bloque queda como referencia futura. La corrección tmpfs se validó sin escritura Git; el usuario autorizó expresamente el commit y push de los cambios legítimos para este cierre definitivo. Antes de añadir el manifiesto comprobar que el índice no contiene cambios ajenos; si los tiene, resolver su alcance con el usuario sin limpiarlo automáticamente. El push de esta rama no autoriza publicar ni fusionar en otra rama.
 
 ## Preparación privada y respaldo — ejecutar solo al autorizar despliegue
 
@@ -86,7 +83,7 @@ docker exec iwave-npm nginx -t
 
 No imprimir `docker inspect` completo, `env`, logs sin sanear ni `docker compose config` expandido. No copiar/leer claves SSL. Conservar los volúmenes de NPM y todos los certificados actuales.
 
-## Despliegue candidato y validación — no ejecutados
+## Procedimiento de arranque y validación de candidatos
 
 Desde la misma shell con las tres variables FORM027 exportadas y el archivo privado revisado:
 
@@ -105,7 +102,7 @@ docker exec iwave-npm getent hosts iwave-form027-api iwave-form027-web
 
 Nombres propios y ausencia de puertos publicados evitan colisiones con los cinco contenedores existentes. No ejecutar `docker compose up` genérico, `docker network connect` sobre los existentes, `docker restart iwave-npm`, limpieza global ni `down -v`. `verify-smtp` no envía correo. Si algo falla, detener los candidatos y mantener NPM apuntando a iwave-prod.
 
-## Configuración exacta NPM y corte público — requiere autorización
+## Referencia de activación NPM — ya completada fuera del cierre
 
 Abrir la administración existente mediante su túnel seguro. En **el Proxy Host existente** `iwave.cl / www.iwave.cl`:
 
@@ -115,7 +112,7 @@ Abrir la administración existente mediante su túnel seguro. En **el Proxy Host
 
 El snippet contiene dos ubicaciones exactas `/api/contact` y `/api/contact/config`, ambas con `proxy_pass http://iwave-form027-api:3000` **sin barra final**, conservando URI. Solo POST maneja el límite de 16 KiB. No publica `/healthz` ni hace que Nginx estático gestione la API. `X-Contact-Client-IP` se sobrescribe, aunque inicialmente la API lo ignora por la confianza vacía. Access log apagado en estas ubicaciones para reducir registro de datos de solicitudes.
 
-Guardar en NPM constituye el cambio público; **no hacerlo antes de aprobación**. La sintaxis del snippet ya pasó en un Nginx temporal sin red; no se ha probado insertado en el host real ni se ha resuelto su upstream productivo, porque aún no existe. Comprobar inmediatamente después de guardar:
+Guardar en NPM constituye el cambio público; **no hacerlo antes de aprobación**. La sintaxis del snippet ya pasó en un Nginx temporal sin red; no se ha probado insertado en el host real. Los candidatos ya existen y resuelven entre sí en iwave-web; el enrutamiento público sigue pendiente. Comprobar inmediatamente después de guardar:
 
 ```bash
 docker exec iwave-npm nginx -t
@@ -130,7 +127,7 @@ Un primer envío **en producción** requiere autorización explícita aparte, au
 
 ## Rollback
 
-Primera activación: en el mismo Proxy Host, restaurar Forward Hostname/IP a **iwave-prod**, Scheme `http`, puerto `80`; retirar solo las dos ubicaciones FORM-027 añadidas o restituir el Advanced respaldado. Conservar SSL, certificados y todas las opciones originales. Guardar y comprobar `docker exec iwave-npm nginx -t`, HTTPS, assets y canales de contacto de la versión anterior. No sobrescribir archivos generados de NPM con `docker cp`: restaurar desde sus campos/panel para que la base de datos y la configuración coincidan.
+Primera activación: en el mismo Proxy Host, restaurar Forward Hostname/IP a **iwave-prod**, Scheme `http`, puerto `80`; retirar solo las dos ubicaciones FORM-027 de prefijo activas o restituir el Advanced respaldado. Conservar SSL, certificados y todas las opciones originales. Guardar y comprobar `docker exec iwave-npm nginx -t`, HTTPS, assets y canales de contacto de la versión anterior. No sobrescribir archivos generados de NPM con `docker cp`: restaurar desde sus campos/panel para que la base de datos y la configuración coincidan.
 
 Después de restaurar el tráfico y verificarlo, detener solo los nuevos servicios:
 
@@ -143,7 +140,7 @@ Conservar imágenes, `.env.form027-production`, HMAC y volumen `iwave-form027-pr
 
 Actualizaciones posteriores: restaurar las etiquetas API/web de la release productiva anterior y ejecutar `up -d --no-build --wait` **solo** sobre este proyecto con esas etiquetas; conservar volumen/HMAC. Si el rollback funcional exige volver a iwave-prod, restaurar también Advanced/Details del respaldo de la primera activación. Cualquier formato de datos nuevo exigiría comprobar compatibilidad antes de restaurar imágenes; FORM-027 de este cierre no cambia el esquema.
 
-## Validación realizada en este cierre
+## Historial de validación de la fase documental anterior
 
 25/25 pruebas backend con mocks y regresión navegador 390/768/1440 px aprobadas. Compose productivo validado sin resolver el archivo privado aún no creado; sus variables efectivas, combinadas en memoria con la configuración privada local de pruebas, pasan readConfig con Zoho. Red iwave-web y membresía NPM/iwave-prod inspeccionadas en lectura. Snippet NPM validado por `nginx -t` sin red. Exclusiones/secretos y `git diff --check` revisados; resultados y límites en [QA](../contact-form/QA.md).
 

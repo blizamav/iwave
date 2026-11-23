@@ -1,6 +1,6 @@
 # FORM-027 — Contacto comercial
 
-Entorno Docker de pruebas activado y flujo integral confirmado por el usuario: Turnstile, API, Zoho, recepción y Reply-To. Producción aún sin desplegar; proxy público, certificados y DNS intactos. Preparación, comandos futuros y rollback en [FORM-027 producción](../deployment/FORM-027.md). El formulario conserva campos, CSS y animaciones; solo cambia el transporte mailto por JSON a `/api/contact` y añade el widget de seguridad. El correo y WhatsApp directos siguen disponibles. El widget puede necesitar interacción visible: su interfaz pertenece a Cloudflare y no debe ocultarse.
+FORM-027 está operativo en **https://iwave.cl**. El usuario confirmó recepción real en contacto@iwave.cl; Turnstile, Zoho y Reply-To fueron comprobados. El cierre verificó HTTPS, recursos, API y autenticación SMTP sin nuevos correos ni cambios de producción. El Proxy Host 1 de NPM sirve iwave-form027-web y las rutas API mediante iwave-form027-api. Pruebas locales permanecen independientes en loopback. Estado efectivo y rollback en [FORM-027 producción](../deployment/FORM-027.md); evidencia y límites en [QA](QA.md).
 
 ## Decisión de envío: Zoho primero
 

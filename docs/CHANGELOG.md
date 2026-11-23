@@ -1,3 +1,22 @@
+# 2026-11-23 — FORM-027: cierre definitivo en producción
+
+- Usuario confirmó formulario funcional en https://iwave.cl y recepción real en contacto@iwave.cl. Se registra esta evidencia sin inventar fecha/ID de envío ni reenviar correos.
+- Verificado en lectura: HTTPS/HTML y recursos correctos, API pública config 200, rechazos 400/405, web/API healthy, NPM válido y autenticación Zoho desde API correcta. Navegador sin errores JS/HTTP ni overflow con movimiento reducido; no certifica visualmente WebGL.
+- Proxy Host 1 ya activo con web iwave-form027-web:80 y dos ubicaciones de prefijo API hacia iwave-form027-api:3000. Referencias SSL preservadas; iwave-prod disponible como respaldo. Procedimiento/arquitectura/QA actualizados al estado real.
+- Se incluye la corrección tmpfs autorizada pendiente de versionar. Sin modificaciones de producción, reinicios, cambios DNS/MX/Cloudflare, diseño o correos adicionales durante el cierre. [QA](contact-form/QA.md), [operación y rollback](deployment/FORM-027.md).
+
+# 2026-11-23 — FORM-027: tmpfs corregido y candidatos saludables
+
+- Único cambio de ejecución: tmpfs de API convertido a lista con un string entre comillas; Compose v5.7.1 normaliza un solo montaje. Reutilizadas imágenes de 12aae42, sin reconstrucción.
+- API/web candidatas running/healthy, en iwave-web sin puertos públicos; DNS, comunicación bidireccional, Nginx y autenticación Zoho TLS465 correctos. Montaje real 8 MiB/noexec/nosuid; ningún correo enviado. [Resultados](contact-form/QA.md), [estado y procedimiento](deployment/FORM-027.md).
+- IDs/fechas/reinicios de iwave-prod/test/npm y hash del host NPM sin cambios. Sin corte público ni cambios SSL/Cloudflare/DNS/MX; sin commits ni push. Cambios documentales anteriores preservados.
+
+# 2026-11-23 — FORM-027: imágenes candidatas construidas; arranque detenido
+
+- Confirmados fd39c70/12aae42 en reconstruccion-iwave remota por HTTPS de lectura. Configuración privada productiva validada y ambas imágenes construidas desde 12aae42, sin nuevos commits/push.
+- Arranque rechazado por Docker: tmpfs inline de la API se separa en tres elementos e interpreta noexec como ruta. Detención conforme a la instrucción del usuario; corrección propuesta en QA, sin aplicar ni reintentar. Ningún candidato quedó creado; volumen nuevo conservado.
+- IDs/fechas de arranque/reinicios de iwave-prod/test/npm y hash del host NPM iguales al respaldo. Sin corte público, modificación de protegidos/DNS/Cloudflare ni correos nuevos. [Evidencia y límites](contact-form/QA.md).
+
 # 2026-11-23 — FORM-027: commit realizado; push pendiente de agente SSH
 
 - Creado commit fd39c70 con exactamente los 34 archivos aprobados, sin secretos ni archivos privados. Configuración productiva validada y hostname confirmado por el usuario. Respaldo privado NPM/estado creado.
