@@ -2,6 +2,12 @@
 
 Estado: preparación revisada el 2026-11-23; **sin corte público**. El usuario autorizó commit, push y arranque de candidatos, manteniendo NPM y los contenedores existentes intactos. El usuario confirmó en pruebas Turnstile, API, envío Zoho, recepción en contacto@iwave.cl y Reply-To con respuesta al visitante. No se repitieron envíos durante este cierre; no se atribuye una fecha ni un ID a las pruebas del usuario.
 
+## Estado de ejecución autorizado
+
+Implementación confirmada en el commit `fd39c70ee0ca7b0fd28a605ca7327da299ec0736`, rama reconstruccion-iwave, exactamente 34 archivos. Configuración privada productiva completa y respaldo privado preparados. El usuario confirmó visualmente iwave.cl en Turnstile.
+
+Push pendiente: la clave SSH GitHub existente es reconocida por GitHub pero está cifrada y no existe agente accesible con ella desbloqueada. Se requiere desbloqueo desde una terminal del usuario, sin compartir la contraseña. No se cambiaron claves/configuración SSH. Tras resolverlo, empujar los commits pendientes y continuar con el SHA final aprobado; los comandos siguientes siguen siendo el procedimiento, no evidencia de ejecución. Candidatos todavía no construidos ni arrancados y corte público sin autorizar.
+
 ## Arquitectura vigente y cambio propuesto
 
 Inspección de solo lectura: `iwave-prod` usa `iwave-landing:touch026-prod`, publica solo `127.0.0.1:8081:80` y comparte `iwave-web` con `iwave-npm`. NPM atiende 80/443 y su administración está en `127.0.0.1:8181`. Su Proxy Host 1 (`/data/nginx/proxy_host/1.conf`) declara `iwave.cl www.iwave.cl` y dirige `/` a `http://iwave-prod:80`; no tiene rutas `/api/contact`. `iwave-test` conserva 8080 y FORM-027 de pruebas conserva 8127/3027. El historial de Caddy en `PRODUCTION.md` no describe el proxy vigente.

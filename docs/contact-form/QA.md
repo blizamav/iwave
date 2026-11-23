@@ -1,5 +1,13 @@
 # FORM-027 — cierre y validación real
 
+## Commit creado; push pendiente por desbloqueo SSH
+
+- Commit de implementación: `fd39c70ee0ca7b0fd28a605ca7327da299ec0736`, en reconstruccion-iwave, con exactamente los 34 archivos aprobados del manifiesto. Índice comprobado y escaneo final de árbol/índice sin secretos. Archivo privado productivo fuera de Git.
+- Configuración productiva completa validada: Zoho, SMTP 465, HTTPS, sin localhost, permisos 600 y HMAC dedicado. Hostname iwave.cl confirmado visualmente por el usuario en el widget iWave - Formulario Contacto.
+- Respaldo privado de configuración del Proxy Host 1 y estado de iwave-prod/test/npm creado; no se copiaron claves SSL.
+- Push intentado por SSH predeterminado y después con la clave GitHub existente: no se completó. El diagnóstico confirma que GitHub reconoce esa clave, pero está cifrada y no hay agente SSH accesible con ella desbloqueada. No se solicitó ni expuso su contraseña o contenido. Requiere desbloqueo interactivo en un agente accesible; no se generó ni sustituyó la clave.
+- Conforme al orden autorizado, construcción y arranque de candidatos quedan pendientes del push. No se ejecutó el corte ni se enviaron correos. Los contenedores protegidos y NPM permanecen intactos.
+
 ## Confirmación de hostname productivo y continuación autorizada
 
 El usuario confirmó visualmente que el widget **iWave - Formulario Contacto** permite `iwave.cl` y `localhost`, y ratificó la prueba real de Turnstile, envío, recepción y Reply-To. Esta confirmación resuelve la comprobación pendiente del hostname productivo; la ausencia de token en Chromium automatizado se conserva como limitación de automatización, no como fallo de configuración. No se cambió Cloudflare.

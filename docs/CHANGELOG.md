@@ -1,3 +1,9 @@
+# 2026-11-23 — FORM-027: commit realizado; push pendiente de agente SSH
+
+- Creado commit fd39c70 con exactamente los 34 archivos aprobados, sin secretos ni archivos privados. Configuración productiva validada y hostname confirmado por el usuario. Respaldo privado NPM/estado creado.
+- Push no completado: GitHub reconoce la clave existente, pero requiere contraseña y no hay agente accesible con ella desbloqueada. Pendiente desbloqueo interactivo; no se imprimieron ni solicitaron secretos.
+- Candidatos pendientes del push; no hubo cambios públicos, modificaciones de los contenedores protegidos ni correos nuevos. [Estado y evidencia](contact-form/QA.md).
+
 # 2026-11-23 — FORM-027: hostname confirmado y preparación de candidatos autorizada
 
 - El usuario confirmó visualmente iwave.cl en el widget iWave - Formulario Contacto y ratificó la prueba real completa. Se resuelve la validación pendiente; Chromium sin token queda como limitación de automatización.
