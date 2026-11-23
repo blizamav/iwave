@@ -1,0 +1,112 @@
+{
+  "validatedAt": "2026-11-23T22:07:56.792Z",
+  "release": "1c3529d7bc6e4d7b83071c829c082b5fbbed9ba9",
+  "results": [
+    {
+      "url": "https://iwave.cl/",
+      "status": 200,
+      "contentType": "text/html"
+    },
+    {
+      "url": "https://iwave.cl/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon"
+    },
+    {
+      "url": "https://iwave.cl/robots.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "https://iwave.cl/sitemap.xml",
+      "status": 200,
+      "contentType": "text/xml"
+    },
+    {
+      "url": "https://iwave.cl/img/logo/favicon-48x48.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://iwave.cl/img/logo/favicon-192x192.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://iwave.cl/img/logo/favicon-512x512.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://iwave.cl/img/logo/apple-touch-icon.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://iwave.cl/img/logo/iwave.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://iwave.cl/img/social/iwave-og.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://iwave.cl/styles.css?v=ux014",
+      "status": 200,
+      "contentType": "text/css"
+    },
+    {
+      "url": "https://iwave.cl/img/experience/exp009.css?v=ux014",
+      "status": 200,
+      "contentType": "text/css"
+    },
+    {
+      "url": "https://iwave.cl/img/experience/refinement.css?v=touch026",
+      "status": 200,
+      "contentType": "text/css"
+    },
+    {
+      "url": "https://iwave.cl/script.js?v=fix024",
+      "status": 200,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://iwave.cl/img/experience/journey.js?v=fix024",
+      "status": 200,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://iwave.cl/img/experience/vendor/three.module.min.js",
+      "status": 200,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://iwave.cl/img/experience/exp009.js?v=fix024",
+      "status": 200,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://iwave.cl/img/experience/coverflow.js?v=click025",
+      "status": 200,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://iwave.cl/img/experience/contact.js?v=form027-smtp",
+      "status": 200,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://iwave.cl/api/contact/config",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8"
+    }
+  ],
+  "htmlAndJsonLDValid": true,
+  "formPresent": true,
+  "icoFramesValid": true,
+  "pngDimensionsValid": true,
+  "cloudflareManagedRobotsPreserved": true,
+  "noEmailsSent": true
+}

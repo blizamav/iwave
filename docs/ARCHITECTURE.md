@@ -1,6 +1,8 @@
-# SEO-028 — metadatos y artefactos estáticos preparados
+# SEO-028 — metadatos y artefactos estáticos publicados
 
-`index.html` incorpora únicamente en cabecera metadatos es-CL/OG/Twitter y JSON-LD Organization/WebSite/Service; body, módulos visuales y FORM-027 permanecen idénticos. Los iconos nuevos derivan del JPG oficial en `img/logo`; logo de Organization usa el JPG original público. `robots.txt`, `sitemap.xml` y `favicon.ico` se preparan en raíz. La imagen vigente aún no empaqueta esos archivos: `docs/seo028/static-publication.patch` contiene el ajuste mínimo revisable de entrega, sin aplicarlo a Dockerfile/Nginx/.dockerignore ni a producción. Cloudflare mantiene su robots gestionado. Evidencia y despliegue futuro en [SEO-028](seo028/README.md).
+`index.html` publica es-CL/OG/Twitter y JSON-LD Organization/WebSite/Service, sin cambiar body, CSS, módulos visuales o FORM-027. El logo de Organization sigue siendo el JPG oficial; favicons derivados en raíz/img/logo. Dockerfile/.dockerignore ya empaquetan robots.txt, sitemap.xml y favicon.ico; Nginx web sirve robots/sitemap mediante ubicaciones exactas sin ampliar el resto de rutas. El parche de `docs/seo028/static-publication.patch` fue aplicado con autorización y se conserva para reproducir la entrega aprobada. Cloudflare sigue anteponiendo su robots administrado; no se cambió su configuración.
+
+Imagen web activa: `iwave-landing:seo028-1c3529d7bc6e4d7b83071c829c082b5fbbed9ba9`, servicio existente iwave-form027-web en iwave-web y sin nuevos puertos. NPM y la API 12aae42/volumen persistente conservan identidad y configuración. Imagen web FORM-027 anterior disponible para rollback solo de web, sin modificar NPM ni restaurar SQLite. [Publicación y evidencia](seo028/DEPLOYMENT.md).
 
 # FORM-027 — contacto mediante API (vigente)
 

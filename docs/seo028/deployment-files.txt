@@ -1,0 +1,17 @@
+Dockerfile
+.dockerignore
+nginx.conf
+docs/PROJECT.md
+docs/ARCHITECTURE.md
+docs/CHANGELOG.md
+docs/deployment/PRODUCTION.md
+docs/deployment/FORM-027.md
+docs/seo028/README.md
+docs/seo028/DEPLOYMENT.md
+docs/seo028/deployment-results.json
+docs/seo028/production-http-results.json
+docs/seo028/production-browser-results.json
+docs/seo028/evidence/production-390.png
+docs/seo028/evidence/production-768.png
+docs/seo028/evidence/production-1440.png
+docs/seo028/deployment-files.txt

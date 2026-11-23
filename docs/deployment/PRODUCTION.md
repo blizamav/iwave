@@ -1,10 +1,14 @@
-# Estado vigente — FORM-027 operativo en producción
+# Estado vigente — FORM-027 y SEO-028 operativos en producción
 
 Cierre registrado el 2026-11-23. El usuario confirmó funcionamiento y recepción de correos reales desde https://iwave.cl. Comprobación independiente de lectura: HTTPS 200, HTML/assets FORM-027, API config 200 y rechazos 400/405, NPM válido y Zoho SMTP autenticado sin enviar correos adicionales.
 
 El Proxy Host 1 de **iwave-npm** atiende iwave.cl/www con SSL existente: web hacia **iwave-form027-web:80** y ubicaciones de prefijo `/api/contact` y `/api/contact/config` hacia **iwave-form027-api:3000**. Web/API healthy, conectadas a iwave-web, sin puertos publicados. **iwave-prod** se conserva activo como respaldo en loopback 8081; iwave-test permanece en 8080 y FORM-027 de pruebas en 8127/3027. Referencias SSL y contenedores originales preservados.
 
 Operación, imágenes y rollback en [FORM-027.md](FORM-027.md); resultados y límites en [QA](../contact-form/QA.md). No se modificó producción ni se reinició ningún servicio durante el cierre.
+
+## SEO-028 — publicación del 2026-11-23
+
+Web actualizada únicamente a la imagen iwave-landing:seo028-1c3529d7bc6e4d7b83071c829c082b5fbbed9ba9. Robots/sitemap/favicon y metadatos públicos validados; API, NPM y volúmenes preservados. Imagen web anterior conservada para rollback sin cambiar NPM ni la API. Evidencia, tiempos y controles: [SEO-028](../seo028/DEPLOYMENT.md).
 
 **Las secciones DEPLOY-017 siguientes son historia de Caddy**, no instrucciones para el proxy vigente. No ejecutar sus comandos de instalación/recarga ni modificar certificados/DNS a partir de ese historial. Se conservan para trazabilidad.
 

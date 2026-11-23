@@ -1,0 +1,41 @@
+{
+  "validatedAt": "2026-11-23T22:08:38.364Z",
+  "results": [
+    {
+      "width": 390,
+      "formPresent": true,
+      "htmlLang": "es-CL",
+      "noOverflow": true,
+      "jsErrors": [],
+      "assetErrors": [],
+      "webglActive": false,
+      "carouselInteractive": false,
+      "blockedPosts": 0,
+      "noEmailsSent": true
+    },
+    {
+      "width": 768,
+      "formPresent": true,
+      "htmlLang": "es-CL",
+      "noOverflow": true,
+      "jsErrors": [],
+      "assetErrors": [],
+      "webglActive": false,
+      "carouselInteractive": false,
+      "blockedPosts": 0,
+      "noEmailsSent": true
+    },
+    {
+      "width": 1440,
+      "formPresent": true,
+      "htmlLang": "es-CL",
+      "noOverflow": true,
+      "jsErrors": [],
+      "assetErrors": [],
+      "webglActive": true,
+      "carouselInteractive": true,
+      "blockedPosts": 0,
+      "noEmailsSent": true
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "deploymentStartedAt": "2026-11-23T22:04:28Z",
+  "validatedAt": "2026-11-23T22:08:42Z",
+  "result": "deployed-and-validated",
+  "releaseCommit": "1c3529d7bc6e4d7b83071c829c082b5fbbed9ba9",
+  "newWebImage": "iwave-landing:seo028-1c3529d7bc6e4d7b83071c829c082b5fbbed9ba9",
+  "newWebImageID": "sha256:3a78c48ec3d661c12d31d5cd963844f60ce5823589120ef849b5c82ea6eae2e5",
+  "previousWebImage": "iwave-landing:form027-12aae4243b9f7753e70dbe8faad812df513cd175",
+  "previousWebImageID": "sha256:4d0aee240af93ab1c004eaacee13b9660a04556af441fa8788d21f50d6a51276",
+  "backupDirectory": ".form027-private/seo028-deploy-20261123T220428Z",
+  "rollbackAvailable": true,
+  "rollbackExecuted": false,
+  "protectedContainersUnchanged": true,
+  "apiVolumeMetadataUnchanged": true,
+  "npmConfigUnchanged": true,
+  "emailsSent": false,
+  "services": [
+    {
+      "name": "iwave-form027-prod-iwave-form027-web-1",
+      "id": "2e65960fe24d71ba7bc9b19d9441a62858e0b6ef70936cb72cd7283d24e7b5d6",
+      "state": "running",
+      "health": "healthy",
+      "startedAt": "2026-11-23T22:07:49.241228238Z",
+      "image": "iwave-landing:seo028-1c3529d7bc6e4d7b83071c829c082b5fbbed9ba9"
+    },
+    {
+      "name": "iwave-form027-prod-iwave-form027-api-1",
+      "id": "289487044b876ab2ba5c4897e6b14f450ab5ea7e4dced8a7ee7fde92adf9fc2d",
+      "state": "running",
+      "health": "healthy",
+      "startedAt": "2026-11-23T18:34:02.763982Z",
+      "image": "iwave-contact-api:form027-12aae4243b9f7753e70dbe8faad812df513cd175"
+    },
+    {
+      "name": "iwave-npm",
+      "id": "7ba26eee71928c5132a11ccdc30181a7d37a8e5356cd423ed352aac43ee35c64",
+      "state": "running",
+      "health": "not-configured",
+      "startedAt": "2026-11-19T21:12:19.132117182Z",
+      "image": "jc21/nginx-proxy-manager:2.17.1"
+    },
+    {
+      "name": "iwave-prod",
+      "id": "2bb48e2ccae3de503d15a35a1e8e7167c07c09c4aa56851ac32a99dc43993fb6",
+      "state": "running",
+      "health": "not-configured",
+      "startedAt": "2026-11-20T20:22:11.128010813Z",
+      "image": "iwave-landing:touch026-prod"
+    },
+    {
+      "name": "iwave-test",
+      "id": "88382aa9b5b383ecdfceafe38be915ca6fed7c985c8b5dbce5faba809a544c28",
+      "state": "running",
+      "health": "not-configured",
+      "startedAt": "2026-11-20T19:56:21.972017105Z",
+      "image": "iwave-landing:touch026"
+    },
+    {
+      "name": "iwave-form027-test-web-1",
+      "id": "6056e30c443a7d915d23766474c56515097aa36f771bf9db8b2e4d78696a0ada",
+      "state": "running",
+      "health": "not-configured",
+      "startedAt": "2026-11-23T17:20:50.128345533Z",
+      "image": "nginx:alpine"
+    },
+    {
+      "name": "iwave-form027-test-contact-api-1",
+      "id": "2b2ddb5e326f4124af3bc08b8d43a12a6f603e7dcab51d671c0c8b98bcc0e399",
+      "state": "running",
+      "health": "healthy",
+      "startedAt": "2026-11-23T17:20:18.88767005Z",
+      "image": "iwave-form027-test-contact-api"
+    }
+  ]
+}

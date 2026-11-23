@@ -1,3 +1,10 @@
+# 2026-11-23 — SEO-028: publicación autorizada en producción
+
+- Publicado 1c3529d más el parche estático aprobado; web actualizada a imagen SEO-028. Inicio real de web: 2026-11-23T22:07:49.241228238Z; validación final: 2026-11-23T22:08:42Z. Fuente de empaquetado alineada con el artefacto desplegado.
+- 20 URLs públicas HTTP 200, incluidos home, favicon, robots, sitemap, PNG512 y config de contacto. HTML/JSON-LD/iconos válidos; navegador público 390/768/1440 sin errores JS/assets ni overflow, WebGL/carrusel activos en escritorio.
+- NPM sin cambios de archivo ni reinicio; API y sus montajes persistentes idénticos. iwave-prod/test y restantes servicios conservados. Sin cambios de apariencia, lógica FORM-027, SMTP, Cloudflare o DNS/MX y sin correos reales.
+- Rollback automático preparado, no utilizado; imagen web anterior y respaldo privado conservados. [Evidencia y procedimiento](seo028/DEPLOYMENT.md). Search Console/Bing pendientes de la cuenta del usuario.
+
 # 2026-11-23 — SEO-028: SEO y marca de buscadores, sin cambios visuales
 
 - Cabecera es-CL, title/descripción orientados a automatización/productividad para empresas en Chile, robots explícito, OG/Twitter coherentes y JSON-LD Organization/WebSite/cuatro Service del contenido real. Logo oficial original preservado; sin perfiles, direcciones, testimonios o clientes inventados.

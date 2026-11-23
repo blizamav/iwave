@@ -1,6 +1,6 @@
-## SEO-028 — preparado, sin despliegue
+## SEO-028 — publicado y validado
 
-SEO técnico y branding de buscadores implementados sin alterar contenido visible, apariencia, animaciones o FORM-027. Comparación visual: 0 píxeles diferentes en móvil/tablet/escritorio. Se conservan logo oficial y OG; favicon/Apple derivados, JSON-LD y sitemap preparados. Publicación de los archivos de raíz requiere el parche estático documentado y autorización separada; no se modificó infraestructura. [Auditoría, pruebas y Search Console](seo028/README.md).
+SEO técnico y branding de buscadores publicados en https://iwave.cl desde el commit 1c3529d, con el parche estático aprobado incorporado al empaquetado web. Favicon, robots combinado con Cloudflare y sitemap responden HTTP 200. Se reemplazó únicamente la web; NPM, API/volúmenes, SMTP, Cloudflare y DNS permanecen intactos. Apariencia y módulos conservados; navegador público en tres tamaños y WebGL/carrusel en escritorio verificados, sin correos reales. [Evidencia y rollback](seo028/DEPLOYMENT.md), [Search Console pendiente](seo028/README.md).
 
 ## FORM-027 — contacto comercial vigente
 

@@ -4,7 +4,7 @@ Estado final registrado el 2026-11-23: **FORM-027 operativo en https://iwave.cl*
 
 ## Estado real de producción
 
-- Implementación fd39c70 y documentación 12aae42 publicadas. Las imágenes runtime permanecen etiquetadas `form027-12aae4243b9f7753e70dbe8faad812df513cd175`. La corrección local de tmpfs se incorpora al versionado de cierre, sin reconstruir ni reiniciar los servicios.
+- Implementación fd39c70 y documentación 12aae42 publicadas. La API runtime permanece etiquetada `form027-12aae4243b9f7753e70dbe8faad812df513cd175`; la web fue actualizada posteriormente a `seo028-1c3529d7bc6e4d7b83071c829c082b5fbbed9ba9` sin cambios funcionales de FORM-027. Para rollback de SEO usar solo la imagen web anterior, según [SEO-028](../seo028/DEPLOYMENT.md); no revertir las rutas NPM o la API. La corrección local de tmpfs se incorpora al versionado de cierre, sin reconstruir ni reiniciar los servicios.
 - Web y API FORM-027: running/healthy, red externa existente iwave-web y sin puertos publicados. Web: iwave-form027-web:80. API: iwave-form027-api:3000.
 - Proxy Host **1**, dominios iwave.cl y www.iwave.cl. Destino web: iwave-form027-web, esquema HTTP, puerto 80. Ubicaciones activas **de prefijo** `/api/contact` y `/api/contact/config` hacia iwave-form027-api:3000. La segunda, más larga, coincide con config; ambas tienen prioridad sobre el frontend `/`.
 - La plantilla [npm.locations.conf](form027/npm.locations.conf) conserva una alternativa Advanced con ubicaciones exactas `=`. **No describe literalmente las ubicaciones de prefijo instaladas**; no pegarla adicionalmente ni duplicar las rutas ya activas. El cierre documentó la configuración existente sin modificarla ni acceder a la base de datos.

@@ -1,10 +1,12 @@
 # SEO-028 — SEO técnico y branding de iWave
 
-Preparado y validado el 2026-11-23 sobre `reconstruccion-iwave`, referencia anterior `5549c26`. **No desplegado**. No se modificaron Dockerfile, nginx.conf, .dockerignore, contenedores productivos, NPM, Cloudflare ni DNS. El cambio de entrega estática requerido se proporciona únicamente como parche revisable, no aplicado.
+**Publicado en https://iwave.cl** desde el commit aprobado `1c3529d7bc6e4d7b83071c829c082b5fbbed9ba9`. Web iniciada a las 2026-11-23T22:07:49.241228238Z y publicación validada a las 2026-11-23T22:08:42Z. Se actualizó únicamente el servicio web, aplicando el parche estático aprobado. NPM, API/volúmenes, Cloudflare, DNS y servicios de respaldo se conservaron. No se enviaron correos reales.
+
+Evidencia, imágenes, estado de todos los servicios y rollback en [DEPLOYMENT.md](DEPLOYMENT.md), [HTTP público](production-http-results.json) y [navegador público](production-browser-results.json). La preparación previa se validó sin desplegar sobre la referencia 5549c26; sus resultados y capturas se conservan abajo. El empaquetado probado ya se incorporó en Dockerfile, nginx.conf y .dockerignore de esta rama; el parche permanece como registro reproducible.
 
 ## Antes y después
 
-| Área | Auditoría inicial | Fuente preparada |
+| Área | Auditoría inicial | Versión publicada |
 | --- | --- | --- |
 | Idioma | es | es-CL |
 | Title | iWave / productividad digital / operación | iWave / automatización y productividad digital / Chile; 55 caracteres |
@@ -42,11 +44,11 @@ Inventario de **todas las imágenes** con dimensiones, bytes y SHA-256: [audit.j
 
 ## Rastreo y acceso público: alcance real
 
-[public-baseline.json](public-baseline.json) registra la lectura del sitio antes del despliegue: home, logo oficial, OG y robots responden 200; favicon raíz y sitemap responden 404. **No se afirma HTTP 200 público para los archivos nuevos:** todavía no se publicaron.
+[public-baseline.json](public-baseline.json) registra la lectura del sitio antes del despliegue: home, logo oficial, OG y robots responden 200; favicon raíz y sitemap responden 404. **Estado posterior:** los archivos nuevos ya responden HTTP 200 en producción; ver [resultados públicos](production-http-results.json). El baseline se conserva como evidencia del antes.
 
-El origen actual no copia robots.txt/sitemap.xml/favicon.ico a la imagen y su Nginx no admite XML/TXT salvo reglas específicas. El parche [static-publication.patch](static-publication.patch) añade solo el empaquetado y las dos rutas estáticas exactas. No modifica las rutas API, seguridad general, imágenes o JavaScript. `git apply --check` pasa, pero el parche permanece sin aplicar por la restricción de infraestructura.
+El origen anterior no copiaba robots.txt/sitemap.xml/favicon.ico a la imagen ni admitía sus rutas estáticas. La versión publicada ya los empaqueta y sirve. El parche [static-publication.patch](static-publication.patch) añade solo el empaquetado y las dos rutas estáticas exactas. No modifica las rutas API, seguridad general, imágenes o JavaScript. Se aplicó solo tras la autorización de publicación; `git apply --reverse --check` confirma su incorporación en la fuente actual.
 
-Se probó la configuración propuesta en un Nginx temporal **sin red ni puertos publicados**, con usuario 101, filesystem de solo lectura y archivos públicos montados. nginx -t correcto; HTTP 200 interno para robots, sitemap, ICO, cuatro PNG y logo oficial. Ese ensayo valida el parche; no constituye un despliegue productivo.
+Se probó la configuración propuesta en un Nginx temporal **sin red ni puertos publicados**, con usuario 101, filesystem de solo lectura y archivos públicos montados. nginx -t correcto; HTTP 200 interno para robots, sitemap, ICO, cuatro PNG y logo oficial. Ese ensayo fue la validación previa; el despliegue posterior y las verificaciones del dominio se registran por separado.
 
 El robots público incluye contenido administrado por Cloudflare. Según [su documentación](https://developers.cloudflare.com/bots/additional-configurations/managed-robots-txt/), al recibir un robots propio del origen con 200, Cloudflare antepone su contenido gestionado. No se borran ni copian sus reglas en el repositorio: se conserva la política del panel. Googlebot y Bingbot pueden rastrear la home actual y la política del origen propuesta. Las restricciones existentes para otros agentes, incluidos Baiduspider/PetalBot, continúan bajo la política Cloudflare; no se habilitaron bots bloqueados. Revisar el resultado combinado después de una publicación autorizada.
 
@@ -83,15 +85,15 @@ python3 docs/seo028/audit.py
 node docs/seo028/qa.cjs
 node --test contact-api/test/contact.test.mjs contact-api/test/verify-smtp.test.mjs
 node docs/contact-form/browser.cjs
-git apply --check docs/seo028/static-publication.patch
+git apply --reverse --check docs/seo028/static-publication.patch
 git diff --check
 ```
 
 Generación opcional de iconos: `node docs/seo028/generate-icons.cjs`. Usa únicamente el JPG oficial y Canvas; no requiere ImageMagick, Pillow ni paquetes de producción. Las capturas nuevas se guardan en /tmp/iwave-seo028 por defecto; no sobrescriben automáticamente la evidencia versionada.
 
-## Publicar después de autorización — NO ejecutado
+## Procedimiento de publicación — ejecutado con autorización
 
-Es necesario autorizar tanto el parche estático como la actualización de **solo la web**. No basta reconstruir el Dockerfile actual sin el parche: robots/sitemap seguirían sin servirse en el origen. No ejecutar el procedimiento durante el desarrollo ni modificar NPM, API, credenciales o Cloudflare. Al reemplazar únicamente el contenedor web puede existir una interrupción breve; realizarlo en la ventana autorizada y conservar la imagen anterior para volver atrás.
+La publicación se autorizó y ejecutó para el parche estático y la actualización de **solo la web**. Los comandos siguientes quedan como referencia para futuras publicaciones autorizadas. No basta reconstruir el Dockerfile actual sin el parche: robots/sitemap seguirían sin servirse en el origen. No ejecutar el procedimiento durante el desarrollo ni modificar NPM, API, credenciales o Cloudflare. Al reemplazar únicamente el contenedor web puede existir una interrupción breve; realizarlo en la ventana autorizada y conservar la imagen anterior para volver atrás.
 
 Usar un checkout separado del SHA SEO aprobado. No aplicar el parche sobre un árbol con cambios ajenos. Este checkout temporal contiene una aplicación reproducible del parche que ya está versionado dentro del SHA; no se afirma que el archivo Dockerfile raíz del commit haya cambiado.
 
@@ -103,8 +105,12 @@ export SEO028_REVISION=SHA_SEO_APROBADO
 export SEO028_RELEASE_DIR="/tmp/iwave-seo028-release-${SEO028_REVISION}"
 git worktree add --detach "$SEO028_RELEASE_DIR" "$SEO028_REVISION"
 cd "$SEO028_RELEASE_DIR"
-git apply --check docs/seo028/static-publication.patch
-git apply docs/seo028/static-publication.patch
+if git apply --reverse --check docs/seo028/static-publication.patch 2>/dev/null; then
+  printf 'Empaquetado estático ya incorporado en esta revisión.\n'
+else
+  git apply --check docs/seo028/static-publication.patch
+  git apply docs/seo028/static-publication.patch
+fi
 # Compartir solo el archivo privado existente con Compose, sin copiarlo al contexto servido.
 ln -s /opt/iwave/proyectos/landing-iwave/.env.form027-production .env.form027-production
 export SEO028_PREVIOUS_WEB_IMAGE="$(docker inspect --format '{{.Config.Image}}' iwave-form027-prod-iwave-form027-web-1)"
@@ -134,13 +140,13 @@ curl --fail --silent --show-error --output /dev/null https://iwave.cl/
 curl --fail --silent --show-error --output /dev/null https://iwave.cl/api/contact/config
 ```
 
-No tocar SQLite, HMAC o volúmenes, no detener iwave-prod/test/npm y no borrar la imagen anterior o el respaldo. La publicación y su rollback se ejecutan únicamente tras autorización; no se hicieron aquí.
+No tocar SQLite, HMAC o volúmenes, no detener iwave-prod/test/npm y no borrar la imagen anterior o el respaldo. La publicación se ejecutó con autorización; no fue necesario aplicar rollback. La imagen anterior y el respaldo siguen disponibles.
 
 ## Pendientes de Search Console y Bing
 
 1. Después de publicar y comprobar HTTP 200 real, usar una propiedad de Search Console ya verificada para iwave.cl. No se accedió a ninguna cuenta ni se agregaron verificaciones o DNS. Si no existe propiedad, crear una de prefijo https://iwave.cl/ con un método HTML autorizado; la propiedad Domain necesita verificación DNS y queda fuera de esta tarea.
 2. Probar la URL pública con Inspección de URLs y la prueba en vivo; comprobar canonical elegido, rastreo permitido, HTML renderizado, logo e iconos accesibles por Googlebot-Image. Solicitar indexación de la home.
-3. Enviar https://iwave.cl/sitemap.xml y revisar su estado. No enviar el sitemap mientras el dominio aún responda 404 para esa ruta.
+3. Enviar https://iwave.cl/sitemap.xml y revisar su estado. La ruta ya responde 200 y el sitemap puede enviarse; no se accedió a las cuentas de webmaster ni se presentó automáticamente.
 4. Ejecutar Rich Results Test y Schema Markup Validator sobre la versión publicada. Revisar Organization/WebSite; Service no implica una presentación enriquecida garantizada. No añadir reviews o direcciones ficticias para satisfacer sugerencias.
 5. Revisar después páginas indexadas, canonical, mejoras y rendimiento. El favicon, logo, título y snippet finales los decide el buscador; pueden tardar en actualizarse y no se garantizan posición o fecha.
 6. En Bing Webmaster Tools, usar el sitio verificado, enviar el mismo sitemap y comprobar rastreo. Sin claves de API o datos de propiedad inventados ni cambios de políticas Cloudflare.
