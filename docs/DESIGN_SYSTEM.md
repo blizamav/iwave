@@ -1,3 +1,7 @@
+# SEO-028 — marca de navegador y buscadores
+
+Favicons ICO/PNG y Apple Touch Icon son derivados mecánicos del emblema de `img/logo/iwave.jpg`, sin redibujado ni recoloración, sobre Midnight #050B14. El logo completo de Organization sigue siendo el JPG oficial. No se sustituyen imágenes de la landing ni OG, no se cambian tokens, CSS, tipografías, dimensiones o animaciones; comparación de página completa idéntica en tres tamaños. Coordenadas y generación reproducible en [SEO-028](seo028/README.md).
+
 # FIX-024 — sincronización y limpieza visual
 
 El Coverflow conserva dimensiones, posiciones, perspectiva, tarjetas y respiración de UX-022. Movimiento y fragmentación comparten 800 ms; ambas marcas se estabilizan al terminar. Se conserva el anillo CSS del escenario. Se desactiva el grupo WebGL ambiental de contornos de cajas y conexiones que cruzaba las marcas; partículas e iluminación permanecen. WhatsApp permanece visible durante todo el recorrido con su capa y tamaño existentes.

@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://iwave.cl/",
+    "status": 200,
+    "finalURL": "https://iwave.cl/",
+    "confirmedReachable": true
+  },
+  {
+    "url": "https://wa.me/56953442563",
+    "status": 200,
+    "finalURL": "https://api.whatsapp.com/send/?phone=56953442563&text&type=phone_number&app_absent=0",
+    "confirmedReachable": true
+  },
+  {
+    "url": "https://www.bancochile.cl/",
+    "status": null,
+    "confirmedReachable": false,
+    "reason": "timeout-or-network"
+  },
+  {
+    "url": "https://www.bancoestado.cl/",
+    "status": 200,
+    "finalURL": "https://www.bancoestado.cl/",
+    "confirmedReachable": true
+  },
+  {
+    "url": "https://www.metlife.cl/",
+    "status": 403,
+    "finalURL": "https://www.metlife.cl/",
+    "confirmedReachable": false
+  },
+  {
+    "url": "https://www.scotiabankchile.cl/",
+    "status": 200,
+    "finalURL": "https://www.scotiabankchile.cl/",
+    "confirmedReachable": true
+  }
+]

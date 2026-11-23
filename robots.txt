@@ -1,0 +1,11 @@
+# Política del origen. Conservar las reglas administradas por Cloudflare.
+User-agent: *
+Disallow: /api/
+Disallow: /healthz
+Disallow: /contact-api/
+Disallow: /docs/
+Disallow: /.git/
+Disallow: /.env
+Allow: /
+
+Sitemap: https://iwave.cl/sitemap.xml

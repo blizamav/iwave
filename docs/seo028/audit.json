@@ -1,0 +1,133 @@
+{
+  "htmlBalanced": true,
+  "lang": "es-CL",
+  "headings": {
+    "h1": 1,
+    "h2": 6,
+    "h3": 14,
+    "h4": 4
+  },
+  "imageElements": 7,
+  "allImagesHaveAltAndDimensions": true,
+  "internalLinksValid": true,
+  "linkedLocalResourcesExist": true,
+  "structuredDataTypes": {
+    "Organization": 1,
+    "WebSite": 1,
+    "Service": 4
+  },
+  "sitemapURLs": [
+    "https://iwave.cl/"
+  ],
+  "googleAndBingAllowed": true,
+  "icoFrames": [
+    16,
+    32,
+    48
+  ],
+  "images": [
+    {
+      "path": "img/experience/brands/bancochile.svg",
+      "bytes": 8959,
+      "dimensions": "0 0 26458333 5264837.7",
+      "sha256": "9972c6c32608be69e9774983a9f7207e53a04c2309e6f096c8f5cae90a0b2719"
+    },
+    {
+      "path": "img/experience/brands/bancoestado.png",
+      "bytes": 44365,
+      "dimensions": [
+        1280,
+        249
+      ],
+      "sha256": "e5777072ace5be94e1bbce686d2e3536251bc7fb8d77f47953a6bb864f4ff80f"
+    },
+    {
+      "path": "img/experience/brands/metlife.png",
+      "bytes": 7997,
+      "dimensions": [
+        354,
+        80
+      ],
+      "sha256": "f63abc0747cf6da71f9d2cd59cd5d757dfa4c61c9f99c45d267d597c374b503a"
+    },
+    {
+      "path": "img/experience/brands/scotiabank.svg",
+      "bytes": 9027,
+      "dimensions": "0 0 303 44",
+      "sha256": "5ef6b5a922a81e6df600544bf6327c0109cc8d5844e5a5b6462ab9a8bf370be9"
+    },
+    {
+      "path": "img/experience/iwave-hologram.svg",
+      "bytes": 97763,
+      "dimensions": "180 265 890 710",
+      "sha256": "910232593f1b59d36592a54d9bf0a20b668b2de883ab5e0f374eb5023a28081e"
+    },
+    {
+      "path": "img/logo/apple-touch-icon.png",
+      "bytes": 17097,
+      "dimensions": [
+        180,
+        180
+      ],
+      "sha256": "070219b2e08938285334f897e138515cf64a7fda92154364dd5db0ce584d414b"
+    },
+    {
+      "path": "img/logo/favicon-192x192.png",
+      "bytes": 18927,
+      "dimensions": [
+        192,
+        192
+      ],
+      "sha256": "5890bce52c4022cf639535292b73d59aa23fa598c5db4aafc0bf18719da76136"
+    },
+    {
+      "path": "img/logo/favicon-48x48.png",
+      "bytes": 2031,
+      "dimensions": [
+        48,
+        48
+      ],
+      "sha256": "63b6ac4d4e214ba36d98803279a411323e1825bde254db8777bdae26e2b58339"
+    },
+    {
+      "path": "img/logo/favicon-512x512.png",
+      "bytes": 91717,
+      "dimensions": [
+        512,
+        512
+      ],
+      "sha256": "445d0a4020f3c2f316b4b2b42ac995e7205f3d45c5627d487b4b90e39b89db31"
+    },
+    {
+      "path": "img/logo/iwave.jpg",
+      "bytes": 72884,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "62b15e72165ff2434152edc3f4fd0327363a0f42a45e970bb621f286f9890909"
+    },
+    {
+      "path": "img/social/iwave-og.jpg",
+      "bytes": 88239,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "sha256": "7a2790b409594bdf8d4357d5388b37b8966acc79b879df3ca1c4d1ac2aaa587b"
+    }
+  ],
+  "externalLinks": [
+    "https://iwave.cl/",
+    "https://wa.me/56953442563",
+    "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20de%20automatizaci%C3%B3n%20de%20procesos.%20Tu%20equipo%20repite%20las%20mismas%20tareas%20todos%20los%20d%C3%ADas.",
+    "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20de%20gesti%C3%B3n%20e%20integraci%C3%B3n%20de%20informaci%C3%B3n.%20La%20informaci%C3%B3n%20est%C3%A1%20repartida%20entre%20archivos%20y%20sistemas.",
+    "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20de%20inteligencia%20de%20negocios.%20Preparar%20reportes%20retrasa%20las%20decisiones%20de%20tu%20negocio.",
+    "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluaci%C3%B3n%20de%20soluciones%20digitales.%20Tu%20operaci%C3%B3n%20necesita%20m%C3%A1s%20que%20planillas%20y%20correos.",
+    "https://wa.me/56953442563?text=Hola%20iWave%2C%20quiero%20solicitar%20una%20evaluacion%20de%20productividad%20digital.",
+    "https://www.bancochile.cl/",
+    "https://www.bancoestado.cl/",
+    "https://www.metlife.cl/",
+    "https://www.scotiabankchile.cl/"
+  ]
+}

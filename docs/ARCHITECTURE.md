@@ -1,3 +1,7 @@
+# SEO-028 — metadatos y artefactos estáticos preparados
+
+`index.html` incorpora únicamente en cabecera metadatos es-CL/OG/Twitter y JSON-LD Organization/WebSite/Service; body, módulos visuales y FORM-027 permanecen idénticos. Los iconos nuevos derivan del JPG oficial en `img/logo`; logo de Organization usa el JPG original público. `robots.txt`, `sitemap.xml` y `favicon.ico` se preparan en raíz. La imagen vigente aún no empaqueta esos archivos: `docs/seo028/static-publication.patch` contiene el ajuste mínimo revisable de entrega, sin aplicarlo a Dockerfile/Nginx/.dockerignore ni a producción. Cloudflare mantiene su robots gestionado. Evidencia y despliegue futuro en [SEO-028](seo028/README.md).
+
 # FORM-027 — contacto mediante API (vigente)
 
 El formulario de `index.html` conserva sus cinco campos y estilos; `img/experience/contact.js` envía JSON a `POST /api/contact`, carga la sitekey desde `GET /api/contact/config` e integra Turnstile sin recarga. El servicio independiente `contact-api/` usa Node >=24, Zoho SMTP mediante Nodemailer o Resend HTTPS seleccionable por entorno, validación Siteverify de hostname/action, Reply-To del visitante y SQLite persistente para límites/deduplicación. No depende del motor visual ni añade librerías al frontend. Las descripciones mailto inferiores son históricas y quedan sustituidas por esta entrada. Sin JS se muestran instrucciones para los canales directos; el envío API requiere JS y verificación.

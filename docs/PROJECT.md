@@ -1,3 +1,7 @@
+## SEO-028 — preparado, sin despliegue
+
+SEO técnico y branding de buscadores implementados sin alterar contenido visible, apariencia, animaciones o FORM-027. Comparación visual: 0 píxeles diferentes en móvil/tablet/escritorio. Se conservan logo oficial y OG; favicon/Apple derivados, JSON-LD y sitemap preparados. Publicación de los archivos de raíz requiere el parche estático documentado y autorización separada; no se modificó infraestructura. [Auditoría, pruebas y Search Console](seo028/README.md).
+
 ## FORM-027 — contacto comercial vigente
 
 El formulario está **operativo en https://iwave.cl** mediante POST /api/contact, Cloudflare Turnstile y Zoho SMTP. El usuario confirmó recepción real en contacto@iwave.cl y el funcionamiento de Reply-To; no se enviaron correos adicionales durante el cierre. NPM mantiene SSL y sirve la web iwave-form027-web:80 y las rutas API mediante iwave-form027-api:3000 en la red existente iwave-web. Ambos servicios están saludables; iwave-prod permanece disponible como respaldo e iwave-test se conserva. No cambian diseño, animaciones, identidad comercial ni DNS/MX de Zoho. Configuración privada excluida de Git; evidencias en [QA](contact-form/QA.md), operación y rollback en [FORM-027 producción](deployment/FORM-027.md).

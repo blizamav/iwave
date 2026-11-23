@@ -1,0 +1,17 @@
+{
+  "site": "https://iwave.cl/",
+  "observedBeforeDeployment": true,
+  "home": 200,
+  "robots": {
+    "status": 200,
+    "cloudflareManaged": true,
+    "googlebotAllowed": true,
+    "bingbotAllowed": true,
+    "sitemapDirective": false
+  },
+  "sitemap": 404,
+  "favicon": 404,
+  "officialLogo": 200,
+  "openGraphImage": 200,
+  "newAssetsPublished": false
+}

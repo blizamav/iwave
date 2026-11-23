@@ -1,3 +1,10 @@
+# 2026-11-23 — SEO-028: SEO y marca de buscadores, sin cambios visuales
+
+- Cabecera es-CL, title/descripción orientados a automatización/productividad para empresas en Chile, robots explícito, OG/Twitter coherentes y JSON-LD Organization/WebSite/cuatro Service del contenido real. Logo oficial original preservado; sin perfiles, direcciones, testimonios o clientes inventados.
+- Generados ICO 16/32/48, favicon PNG 48/192/512 y Apple 180 mediante derivados mecánicos del emblema oficial, con compresión sin pérdida. Creados robots del origen y sitemap canónico de una URL.
+- Comparación de página completa antes/después: cero píxeles distintos y geometría idéntica en 390/768/1440. WebGL activo y Coverflow probados; 25/25 pruebas backend y pruebas de navegador FORM-027 aprobadas con mocks. Body/CSS/JS/backend/imágenes visibles intactos, sin correos reales.
+- Parche estático de Dockerfile/Nginx/contexto preparado **sin aplicar** para publicar los tres archivos de raíz. Nginx temporal sin red verificó sintaxis y HTTP 200. Producción, NPM, Cloudflare y DNS intactos; favicon/sitemap nuevos aún no publicados. Auditoría, evidencia, limitaciones, procedimiento y Search Console en [SEO-028](seo028/README.md).
+
 # 2026-11-23 — FORM-027: cierre definitivo en producción
 
 - Usuario confirmó formulario funcional en https://iwave.cl y recepción real en contacto@iwave.cl. Se registra esta evidencia sin inventar fecha/ID de envío ni reenviar correos.

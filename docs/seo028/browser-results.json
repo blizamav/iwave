@@ -1,0 +1,34 @@
+{
+  "baseRevision": "5549c26",
+  "results": [
+    {
+      "width": 390,
+      "pixels": 0,
+      "height": 9552,
+      "layoutIdentical": true,
+      "noErrors": true
+    },
+    {
+      "width": 768,
+      "pixels": 0,
+      "height": 8120,
+      "layoutIdentical": true,
+      "noErrors": true
+    },
+    {
+      "width": 1440,
+      "pixels": 0,
+      "height": 7693,
+      "layoutIdentical": true,
+      "noErrors": true
+    },
+    {
+      "webglReady": true,
+      "coverflowInteractive": true,
+      "noErrors": true
+    }
+  ],
+  "externalFontsCached": 3,
+  "bodyIdentical": true,
+  "formAndAnimationsByteIdentical": true
+}
