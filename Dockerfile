@@ -1,5 +1,8 @@
 FROM nginx:alpine
 
+ARG IWAVE_REVISION
+LABEL org.opencontainers.image.revision=$IWAVE_REVISION
+
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY index.html /usr/share/nginx/html/index.html
 COPY styles.css /usr/share/nginx/html/styles.css

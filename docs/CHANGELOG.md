@@ -1,3 +1,55 @@
+# 2026-11-23 — FORM-027: hostname confirmado y preparación de candidatos autorizada
+
+- El usuario confirmó visualmente iwave.cl en el widget iWave - Formulario Contacto y ratificó la prueba real completa. Se resuelve la validación pendiente; Chromium sin token queda como limitación de automatización.
+- Configuración privada productiva validada sin localhost, secretos excluidos y manifiesto de 34 archivos revisado, incluidos cambios preexistentes. Autorizados commit/push a reconstruccion-iwave y candidatos aislados; corte NPM/público permanece sin autorizar.
+
+# 2026-11-23 — FORM-027: preparación privada y pausa antes de candidatos
+
+- Recuperado el estado tras interrupción, sin reconstruir la aplicación. Preparado archivo privado productivo ignorado, permisos 600, credenciales existentes y HMAC dedicado; validación completa y ausencia de localhost productivo.
+- Manifiesto de 34 archivos comprobado, sin secretos ni rutas privadas; 25 pruebas backend con mocks aprobadas. Turnstile cargó con hostname iwave.cl mediante interceptación local del navegador, sin token ni resultado concluyente sobre autorización.
+- Solicitada confirmación del hostname en el widget correspondiente. Commit, push y candidatos pendientes de resolver esta validación; sin envíos ni corte público, y sin cambios en NPM/producción/DNS/MX. [Detalle](contact-form/QA.md).
+
+# 2026-11-23 — FORM-027: cierre de pruebas y preparación productiva
+
+- Registrada confirmación del usuario: Turnstile real, API, envío Zoho, recepción en contacto@iwave.cl y Reply-To con respuesta al visitante. Sin repetir envíos ni inventar fechas/IDs de mensajes.
+- Preparado Compose productivo separado con API/web en iwave-web, nombres exclusivos, sin puertos publicados y conservando iwave-prod/test/npm. NPM mantiene SSL y recibe solo ubicaciones API exactas y un cambio reversible de upstream al candidato web. Nada desplegado.
+- Documentados manifiesto explícito de versionado, archivos privados, comandos de commit/push/despliegue sujetos a autorización, validaciones y rollback; historial Caddy identificado como superado por NPM. Exclusiones ampliadas para logs, material privado y respaldos; origen de ejemplo alineado con 8127.
+- 25/25 pruebas backend y navegador con mocks en 390/768/1440 px aprobados. Compose válido y snippet nginx -t aprobado sin red. Sin secretos detectados en archivos versionables/logs de pruebas inspeccionados; .env ignorado y no rastreado. [QA y límites](contact-form/QA.md), [procedimiento](deployment/FORM-027.md).
+- Sin cambios de diseño, animaciones, infraestructura activa, certificados, Cloudflare o DNS/MX; sin commit/push. Cambios preexistentes preservados.
+
+# 2026-11-23 — FORM-027: activación aislada en pruebas
+
+- Validada configuración privada completa sin exponer valores; Compose ajustado al puerto libre 8127 para evitar `iwave-test` (8080), con API local 3027, proveedor Zoho, origen/hostname locales, red y volumen independientes. `.env` intacto.
+- Construida imagen Node 24 y arrancados solo web/API de `iwave-form027-test`; API healthy, Nginx válido, frontend → config/POST comprobado, archivos privados no accesibles. AUTH Zoho correcto desde Docker, sin correo; Siteverify real rechaza token inválido.
+- Widget real bloqueado por 110200: falta permitir localhost en Turnstile. No requiere dominio público ni DNS; pendiente validar token real y autorizar primer envío. 25/25 pruebas backend y navegador con mocks en 390/768/1440 px aprobados. [Acceso y pasos pendientes](contact-form/README.md), [evidencias](contact-form/QA.md).
+- Contenedores existentes conservan IDs/arranques/reinicios. Sin cambios del proxy público, producción, DNS/MX, diseño o animaciones; sin commits ni push.
+
+# 2026-11-23 — FORM-027: autenticación Zoho verificada y diagnóstico corregido
+
+- Causa del fallo original: `verify-smtp.mjs` exigía configuración completa de API y se detenía por `CONTACT_HASH_SECRET` vacío antes de conectar. Claves Turnstile también pendientes para la API. No hubo evidencia de rechazo de credenciales.
+- Extraída validación compartida `readMailConfig`; verificador independiente de secretos ajenos a SMTP, con destino/TLS, etapa, categoría y códigos saneados, sin respuestas crudas ni valores AUTH. API conserva sus requisitos. Plantilla y documentación actualizadas.
+- Autenticación real aprobada fuera del sandbox hacia `smtp.zoho.com:465`, TLS/certificado validado, salida 0. Sin envío de correo; aceptación y entrega pendientes. 25/25 pruebas con mocks aprobadas y sintaxis comprobada. Detalles en [QA](contact-form/QA.md).
+- `.env` y cambios preexistentes preservados; sin cambios propios de infraestructura, DNS, producción, commits ni push.
+
+# 2026-11-23 — FORM-027: diagnóstico SMTP tras reanudación SSH
+
+- Recuperados los avances y resultados previos; sin reconstrucción ni cambios de aplicación. El mismo diagnóstico reproduce EPERM/gaierror dentro del sandbox y confirma fuera de él resolución DNS, TCP 465/587, TLS 1.3 con certificado válido y EHLO 250 hacia smtp.zoho.com desde la VPS.
+- Evidencia y límites añadidos a [QA de contacto](contact-form/QA.md). La causa reproducida es la restricción de red del sandbox; no se requiere corregir DNS de Ubuntu con esta evidencia. Autenticación de la cuenta y entrega siguen pendientes. Sin credenciales, envío de correos, cambios de infraestructura/DNS/producción, despliegues, commits ni push.
+
+# 2026-11-23 — FORM-027: simplificar mediante Zoho SMTP
+
+- Revisada documentación oficial: Zoho publica SMTP para organizaciones gratuitas. Conectividad desde VPS confirmada con certificado TLS válido en smtp.zoho.com:465 y STARTTLS en :587, EHLO 250 y AUTH LOGIN/PLAIN anunciados. No se probó autenticación ni envío real del buzón. Sonda reproducible en `docs/contact-form/check-smtp.py`.
+- API preparada para `CONTACT_MAIL_PROVIDER=zoho` con Nodemailer fijado por lockfile, TLS obligatorio, From igual al usuario SMTP y Reply-To del visitante. Resend permanece como alternativa manual compatible con las configuraciones anteriores. Variables de ejemplo orientadas a Zoho; verificador de autenticación sin envío en `contact-api/verify-smtp.mjs` para ejecutar después con configuración privada.
+- Validación, Turnstile, límites, SQLite, diseño y animaciones conservados. Resultado SMTP ambiguo bloquea reenvío idéntico durante 24 h y muestra aviso sin confirmar entrega; no cambia automáticamente a Resend. Plantilla Docker de la API incorpora instalación reproducible de su única dependencia; infraestructura raíz intacta.
+- 22 pruebas API/MIME aprobadas con mocks y navegador 390/768/1440 px, incluido aviso de envío incierto. Configuración y límites actualizados en [guía](contact-form/README.md) y [QA](contact-form/QA.md). Sin credenciales reales, envíos, cambios DNS/MX, despliegues, commits ni push. Cambios preexistentes preservados.
+
+# 2026-11-21 — FORM-027: API de contacto comercial
+
+- Sustituido el transporte mailto del formulario por POST JSON sin recarga; campos, CSS y animaciones conservados. Añadido widget Turnstile, validación accesible, bloqueo de doble envío y estados que distinguen aceptación de entrega.
+- API Docker independiente preparada con Node >=24 sin dependencias npm: HTTPS Resend, Reply-To del visitante, validación servidor de Turnstile/hostname/action, límites persistentes por IP y presupuestos globales, deduplicación SQLite e idempotencia Resend. Sin contenido personal en almacenamiento ni logs de solicitudes.
+- Añadidos `.env.example`, exclusiones de secretos/estado, plantillas Docker de pruebas y NPM, y [guía de configuración](contact-form/README.md). Sin modificaciones propias a infraestructura existente; se preservan sus cambios recibidos y `docs/deployment/`.
+- 13 pruebas API con mocks aprobadas; QA Chromium en 390/768/1440 px, revisión de capturas móvil/escritorio y comprobaciones de sintaxis/Compose/whitespace. Evidencias y límites en [QA](contact-form/QA.md). No hubo correos reales, construcción/arranque Docker, cambios DNS/MX, despliegue, commit ni push.
+
 # 2026-11-20 — TOUCH-026: ondas interactivas móviles
 
 - Extendidas las ondas cian/menta de CLICK-025 a taps en controles habilitados, con el mismo Canvas/RAF, duración de 640ms y límite de ocho. Sin estela táctil ni duplicación por click de compatibilidad.

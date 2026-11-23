@@ -1,0 +1,19 @@
+# Credenciales y estado local del formulario
+.env
+.env.*
+!.env.example
+contact-api/data/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Dependencias locales del transporte SMTP
+contact-api/node_modules/
+
+# Material privado operativo; nunca versionar logs o respaldos de despliegue
+*.log
+*.key
+*.pem
+*.p12
+*.pfx
+.form027-private/

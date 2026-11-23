@@ -237,8 +237,8 @@
               <div class="contact-direct"><a href="mailto:contacto@iwave.cl">contacto@iwave.cl ↗</a><a href="https://wa.me/56953442563">Conversar por WhatsApp ↗</a><span>+56 9 5344 2563</span></div>
             </div>
 
-            <form id="contact-form" class="contact-form" action="mailto:contacto@iwave.cl" method="post" enctype="text/plain" aria-describedby="contact-help">
-              <p id="contact-help">Este formulario abre tu aplicación de correo. Debes completar el envío desde allí.</p>
+            <form id="contact-form" class="contact-form" action="/api/contact" method="post" aria-describedby="contact-help">
+              <p id="contact-help">Envíanos tu solicitud. Te responderemos al correo que indiques.</p>
               <div class="form-grid">
                 <div class="form-field"><label for="full-name">Nombre completo <span>(obligatorio)</span></label><input id="full-name" name="nombre" autocomplete="name" required maxlength="120" aria-describedby="name-error" /><small class="field-error" id="name-error"></small></div>
                 <div class="form-field"><label for="company">Empresa <span>(opcional)</span></label><input id="company" name="empresa" autocomplete="organization" maxlength="160" /></div>
@@ -246,9 +246,11 @@
                 <div class="form-field"><label for="solution">Tipo de solución <span>(obligatorio)</span></label><select id="solution" name="solucion" required aria-describedby="solution-error"><option value="">Selecciona una solución</option><option>Automatización de procesos</option><option>Gestión de información</option><option>Inteligencia de Negocios</option><option>Soluciones digitales</option><option>Optimización operativa</option><option>Integración de servicios</option><option>Alertas y monitoreo</option><option>Plataformas de apoyo a la operación</option><option>Otra consulta</option></select><small class="field-error" id="solution-error"></small></div>
                 <div class="form-field field-wide"><label for="message">Mensaje <span>(obligatorio)</span></label><textarea id="message" name="mensaje" rows="4" required maxlength="1500" aria-describedby="message-error"></textarea><small class="field-error" id="message-error"></small></div>
               </div>
-              <button class="button button-primary" type="submit">Preparar correo <span aria-hidden="true">↗</span></button>
+              <div id="contact-verification" tabindex="-1" aria-label="Verificación de seguridad"></div>
+              <noscript><p>Activa JavaScript para enviar el formulario o escríbenos a contacto@iwave.cl.</p></noscript>
+              <button class="button button-primary" type="submit">Enviar solicitud <span aria-hidden="true">↗</span></button>
               <p id="contact-status" role="status" aria-live="polite"></p>
-              <p class="form-privacy">No guardamos los datos del formulario en este sitio. Evita incluir información sensible.</p>
+              <p class="form-privacy">Usamos tus datos para responder tu consulta y procesamos el envío mediante nuestro proveedor de correo y Cloudflare Turnstile. Evita incluir información sensible.</p>
             </form>
           </div>
         </section>
@@ -268,7 +270,7 @@
     <script type="module" src="img/experience/coverflow.js?v=click025"></script>
     <script type="module" src="img/experience/cursor.js?v=touch026"></script>
     <script type="module" src="img/experience/lifecycle.js?v=exp009"></script>
-    <script type="module" src="img/experience/contact.js"></script>
+    <script type="module" src="img/experience/contact.js?v=form027-smtp"></script>
     <script type="module" src="img/experience/enterprise.js?v=ux014"></script>
   </body>
 </html>

@@ -1,0 +1,9 @@
+*
+!Dockerfile
+!package.json
+!config.mjs
+!store.mjs
+!server.mjs
+!package-lock.json
+!smtp.mjs
+!verify-smtp.mjs

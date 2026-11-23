@@ -1,0 +1,30 @@
+# Plantilla para un entorno NPM de pruebas. Revisar antes de usar.
+name: iwave-contact-staging
+services:
+  contact-api:
+    build: .
+    env_file: ../.env
+    restart: unless-stopped
+    volumes:
+      - contact-state:/data
+    networks:
+      - proxy
+    read_only: true
+    tmpfs:
+      - /tmp:size=8m,noexec,nosuid
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 64
+    mem_limit: 128m
+    cpus: 0.5
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/healthz').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+networks:
+  proxy:
+    external: true
+    name: ${CONTACT_PROXY_NETWORK:?Definir la red Docker del NPM de pruebas}
+volumes:
+  contact-state:
